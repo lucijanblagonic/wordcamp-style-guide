@@ -1,0 +1,34 @@
+/* =Settings: Colors
+===================================================== */
+
+// Typography
+//
+// Write about your typography choices for this WordCamp.
+//
+// **Typeface Name** is used as the font for WordCamp logo and for all headlines.
+//
+// **Typeface Name** is used for body text, buttons, forms etc.
+//
+// Style guide: 1.typography
+
+/* Modular scale */
+$ms-base: 1em;
+$ms-ratio: 1.25;
+
+/* Fonts */
+$font-brand-primary:              "ingra", $helvetica;
+$font-brand-secondary:            "mostra-nuova-alt-d", $helvetica;
+
+/* Font use case */
+$font-body:                       $font-brand-primary;
+$font-headline:                   $font-brand-secondary;
+
+/* Font weights */
+$hairline:                        100;
+$thin:                            200;
+$light:                           300;
+$regular:                         400;
+$medium:                          500;
+$semibold:                        600;
+$bold:                            700;
+$black:                           900;

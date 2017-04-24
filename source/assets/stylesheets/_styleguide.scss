@@ -1,0 +1,422 @@
+/*
+ * KSS Template
+ *
+ * Styling of the default Knyle Style Sheets template
+ */
+
+/* Define basic variables and colors */
+$styleguide-color-main: #FF9505;
+$styleguide-color-link: #EC4E20;
+$styleguide-color-link-alt: red;
+$styleguide-color-weak: rgba(0,0,0,.7);
+$styleguide-color-strong: rgba(0,0,0,.9);
+$styleguide-border-radius-small: 3px;
+
+.kss-doc-title {
+
+  margin-bottom: rem(24);
+
+  @include font-size(18);
+  line-height: 1.5;
+  color: $styleguide-color-strong;
+  text-transform: none;
+  font-weight: $bold;
+
+}
+
+/* KSS sidebar */
+.kss-sidebar {
+
+  @include container-padding(1);
+
+  background-color: tint($styleguide-color-main, 90%);
+
+  @include breakpoint(medium) {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    // width: 30%;
+    width: rem(300);
+    min-height: 100vh;
+    height: 400px;
+    overflow-y: scroll;
+
+  }
+
+}
+
+/* KSS main */
+.kss-main {
+
+  @include breakpoint(medium) {
+
+    margin-left: rem(300);
+
+  }
+
+}
+
+/* KSS section */
+.kss-section {
+
+  @include container-padding(1);
+
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background-color: #fff;
+
+  &:last-child {
+
+    border-bottom: 0;
+
+  }
+
+  &:target {
+
+    .kss-title__permalink {
+
+      color: #222!important;
+      text-decoration: none!important;
+
+    }
+
+  }
+
+  > .kss-text,
+  > .kss-style,
+  > .kss-modifier__wrapper,
+  > .kss-markup {
+
+    max-width: rem(1000);
+    margin: 0 auto;
+
+    code,
+    pre {
+
+      border: none;
+      padding: 0;
+      margin: 0;
+
+    }
+
+  }
+
+  /* Title */
+  .kss-title {
+
+    margin-bottom: rem(24);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-family: $helvetica;
+    font-weight: $bold;
+    color: #444;
+    text-transform: none;
+
+    @include breakpoint(small) {
+
+      @include font-size(20);
+      line-height: 1.5;
+
+    }
+
+  }
+
+  .kss-title__permalink {
+
+    color: $styleguide-color-link;
+
+  }
+
+  .kss-title__ref {
+
+    font-weight: $regular;
+    color: $styleguide-color-link;
+
+  }
+
+  .kss-title__permalink-hash {
+
+    display: none;
+
+  }
+
+  /* Modifier */
+
+  .kss-modifier__heading {
+
+    margin-bottom: rem(16);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-weight: $bold;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.9);
+
+    border-left: 4px solid $styleguide-color-main;
+    border-radius: $styleguide-border-radius-small;
+    padding: rem(8) rem(24);
+    background-color: tint($styleguide-color-main, 80%);
+
+  }
+
+  .kss-modifier__wrapper {
+
+    // @include breakpoint-proportion(padding-top);
+    // @include breakpoint-proportion(padding-bottom);
+
+  }
+
+  .kss-modifier__example {
+
+    margin-top: rem(24);
+    margin-bottom: rem(24);
+    @include clearfix();
+
+    // &:last-child {
+
+    //   margin-bottom: 0;
+
+    // }
+
+  }
+
+  .kss-modifier__default-name,
+  .kss-modifier__name {
+
+    display: inline-block;
+    margin-right: rem(10);
+
+    @include font-size(14);
+    line-height: 1.5;
+    font-weight: $bold;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.9);
+
+  }
+
+  .kss-modifier__description {
+
+    display: inline-block;
+
+    @include font-size(14);
+    line-height: 1.5;
+    font-weight: $regular;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.7);
+
+  }
+
+  /* Markup */
+
+  .kss-markup {
+
+    padding: rem(24);
+    border-radius: $styleguide-border-radius-small;
+    // box-shadow: inset rem(4) 0 0 #fce053;
+    border-left: 4px solid $styleguide-color-main;
+    background-color: tint($styleguide-color-main, 95%);
+
+    clear: both;
+
+  }
+
+  pre[class*="language-"] {
+
+    margin: 0;
+    padding: 0;
+
+    @include font-size(14);
+    line-height: 1.4;
+
+    background-color: transparent;
+
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    -webkit-tab-size: 2;
+
+  }
+
+}
+
+/* KSS description */
+.kss-description {
+
+  margin-bottom: rem(24);
+
+}
+
+/* KSS style */
+.kss-style {
+
+  p {
+
+      margin-top: 0;
+      margin-bottom: rem(24);
+
+      &:last-child {
+
+        margin-bottom: 0;
+
+      }
+
+  }
+
+  p,
+  li {
+
+    font-family: $helvetica;
+    @include font-size(16);
+    line-height: 1.5;
+    color: #444;
+
+    @include breakpoint(small) {
+
+      @include font-size(18);
+      line-height: 1.6;
+
+    }
+
+  }
+
+}
+
+/* KSS menu */
+.kss-nav__menu {
+
+  @include list-reset();
+
+  // @include breakpoint-proportion(margin-left, negative);
+  // @include breakpoint-proportion(margin-right, negative);
+
+  ul {
+
+    @include list-reset();
+
+  }
+
+  li {
+
+    margin: 0;
+
+    border-top: 1px solid rgba(0,0,0,.05);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-weight: bold;
+
+  }
+
+  li li {
+
+    font-weight: normal;
+
+  }
+
+  a {
+
+    display: block;
+    padding: rem(4) rem(10);
+    color: $styleguide-color-link;
+
+  }
+
+  .kss-nav__ref {
+
+    display: inline-block;
+    margin-right: rem(10);
+    color: rgba(0,0,0,.5);
+
+  }
+
+}
+
+.kss-nav__menu-item {
+
+  @include font-size(16);
+  line-height: 1.5;
+
+}
+
+/*
+ * Style guide preview
+ *
+ * Action for switching from project to style guide
+ * This is visible **on the project itself**
+ */
+
+.action-styleguide {
+
+  display: block;
+  padding: rem(20) rem(20);
+  border: none;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: rgba(255,255,255,.75);
+  background-color: #151515;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    border: none;
+
+    background: #000;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+
+  }
+
+}
+
+.action-styleguide__title {
+
+  margin: 0;
+
+  @include font-size(18);
+  line-height: 1.5;
+  font-weight: $bold;
+
+  color: yellow;
+
+}
+
+.action-styleguide__description {
+
+  margin: 0;
+
+  @include font-size(14);
+  line-height: 1.5;
+  font-weight: $regular;
+
+  color: inherit;
+
+}
+
+.kss-text {
+
+  > h1,
+  > h2,
+  > h3,
+  > h4 {
+
+    margin-top: $unit-l;
+    text-transform: none;
+    letter-spacing: 0;
+
+    &:first-child {
+
+      margin-top: 0;
+
+    }
+
+  }
+
+}

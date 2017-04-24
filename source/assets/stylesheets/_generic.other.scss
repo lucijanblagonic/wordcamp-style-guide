@@ -1,0 +1,34 @@
+/* =Generic: Page
+===================================================== */
+
+body {
+
+  font-size: 1em;
+  line-height: ms(2);
+  font-family: $font-body;
+
+  color: $color-text;
+  background: #fff;
+
+  @include font-feature-settings("liga");
+
+  @include breakpoint(small) {
+
+		font-size: 1.125em;
+
+  }
+
+  @include breakpoint(medium) {
+
+		font-size: 1.25em;
+
+  }
+
+}
+
+::selection {
+
+  color: #fff;
+  background-color: $color-brand-primary;
+
+}

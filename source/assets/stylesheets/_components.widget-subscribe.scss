@@ -1,0 +1,104 @@
+/* =Subscribe widget
+===================================================== */
+
+// Subscribe
+//
+// Subscribe jetpack widget
+//
+// Markup:
+// <div id="secondary">
+//   <aside id="" class="widget jetpack_subscription_widget">
+//    <h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
+//    <form action="#" method="post" accept-charset="utf-8" id="">
+//      <div id="subscribe-text">
+//        <p>Enter your email address to subscribe to this site and receive news by email.</p>
+//      </div>
+//      <p id="subscribe-email">
+//        <label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">Email Address</label>
+//        <input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address">
+//      </p>
+//      <p id="subscribe-submit">
+//        <input type="submit" value="Sign me up!" name="jetpack_subscriptions_widget">
+//      </p>
+//    </form>
+//   </aside>
+// </div>
+//
+// Style guide: 6.widget.subscribe
+
+.jetpack_subscription_widget {
+
+  &:before {
+
+    // background-image: $image-pattern-01;
+    background-color: $color-brand-secondary!important;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+  }
+
+  text-align: center;
+
+  p {
+
+    margin: 0;
+    color: rgba(255,255,255,.8);
+
+  }
+
+  input[type="email"] {
+
+    width: 100%!important; // Override jetpack CSS
+
+  }
+
+  input[type="submit"] {
+
+    width: 100%;
+    color: $color-text;
+    text-transform: uppercase;
+    background-color: $color-button-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong;
+      background-color: $color-button-primary-hover;
+
+    }
+
+  }
+
+  #subscribe-text {
+
+    margin-bottom: $unit-m;
+
+  }
+
+  #subscribe-email,
+  #subscribe-submit {
+
+    display: inline-block;
+    width: rem(200);
+    margin: rem(4);
+    vertical-align: top;
+
+  }
+
+  #subscribe-email {
+
+    @include breakpoint(small) {
+
+      width: rem(400);
+
+    }
+
+  }
+
+  #subscribe-submit {
+
+  }
+
+}

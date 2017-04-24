@@ -1,0 +1,109 @@
+/* =Page
+===================================================== */
+
+// Page
+//
+// Different text elements
+//
+// Style guide: 4.page
+
+// Paragraph
+//
+// Paragraph example. List items share the font size and line height with paragraph text.
+//
+// Markup:
+// <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laudantium maiores nobis voluptatibus commodi, aspernatur animi optio dicta ullam hic, nisi, assumenda facere tenetur explicabo architecto repellendus, minima. Aut, eligendi.</p>
+//
+// Style guide: 4.page.paragraph
+
+p {
+
+  margin-top: 0;
+  margin-bottom: rem(24);
+
+  // @include font-size(16);
+  font-size: ms(0);
+  line-height: ms(2);
+  // line-height: 1.5;
+  color: $color-text-paragraph;
+
+  @include breakpoint(small) {
+
+    // @include font-size(18);
+    line-height: ms(2);
+
+  }
+
+  @include breakpoint(medium) {
+
+    // @include font-size(20);
+    line-height: ms(2);
+
+  }
+
+}
+
+// Strong
+//
+// Markup:
+// <strong>Strong text</strong>
+//
+// Style guide: 4.page.strong
+
+strong {
+
+  font-weight: $bold;
+  color: darken($color-text-paragraph, 20%);
+
+}
+
+// Emphasis
+//
+// Markup:
+// <em>Emphasized text</em>
+//
+// Style guide: 4.page.emphasis
+
+em {
+
+  font-stretch: italic;
+
+}
+
+
+// Sup + Sub
+
+sup
+sub, {
+
+  font-size:75%;
+  line-height: 0;
+  position: relative;
+
+}
+
+// Sup
+//
+// Markup:
+// <p>Example<sup>text</sup></p>
+//
+// Style guide: 4.page.sup
+
+sup {
+
+  top: -0.5em;
+
+}
+
+// Sub
+//
+// Markup:
+// <p>Example<sub>text</sub></p>
+//
+// Style guide: 4.page.sub
+
+sub {
+
+  bottom: -0.25em;
+
+}

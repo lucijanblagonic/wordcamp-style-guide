@@ -1,0 +1,165 @@
+/* =Social widget
+===================================================== */
+
+// Social
+//
+// Custom social widget
+//
+// Markup:
+// <div id="secondary">
+//   <aside class="widget widget_text" id="text-2">
+//     <h1 class="widget-title">Follow WordCamp Name</h1>
+//     <div class="textwidget">
+//       <ul class="list-social">
+//         <li class="social-twitter" id="twitter">
+//           <a href="#"><strong>@WordCampName</strong> on Twitter</a>
+//         </li>
+//         <li class="social-facebook" id="facebook">
+//           <a href="#"><strong>WordCamp Name</strong> on Facebook</a>
+//         </li>
+//       </ul>
+//     </div>
+//   </aside>
+// </div>
+//
+// Style guide: 6.widget.text-social
+
+#text-2 {
+
+  &:before {}
+
+}
+
+/*
+ * Social list
+ *
+ * Large social list buttons for Twitter and Facebook
+ */
+
+.list-social {
+
+  @include clearfix();
+  @include list-reset();
+  text-align: center;
+
+  li {
+
+    font-size: ms(0);
+    line-height: ms(1);
+
+    display: block;
+    margin-top: $unit-s;
+
+    text-align: center;
+
+    @include breakpoint(extra-small) {
+
+      width: 46%;
+      display: inline-block;
+
+    }
+
+    @include breakpoint(small) {
+
+      min-width: rem(240);
+
+    }
+
+  }
+
+  strong {
+
+    display: block;
+    color: inherit;
+
+  }
+
+  a {
+
+    position: relative;
+
+    display: block;
+    padding: $unit-s $unit-m;
+    padding-top: rem(68);
+
+
+    color: rgba(0,0,0,.8);
+    border-radius: $border-radius-small;
+    text-decoration: none;
+
+    &:empty {
+
+      display: none;
+
+    }
+
+    &:before {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%)  rotate(45deg);
+
+      display: block;
+      width: rem(36);
+      height: rem(36);
+      border: 6px double $color-link;
+
+      background-color: $color-grey-10;
+
+      content :"";
+
+      transition: all .1s ease;
+
+    }
+
+    &:after {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: rem(48);
+      height: rem(48);
+
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 36px;
+
+      content :"";
+
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-link-hover;
+      text-decoration: none;
+      background-color: $color-brand-tertiary;
+
+      &:before {
+
+        background-color: $color-link-hover;
+        border-color: $color-link-hover;
+
+      }
+
+    }
+
+  }
+
+  .social-twitter a:after {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-twitter.png');
+
+  }
+
+  .social-facebook a:after {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-facebook.png');
+
+  }
+
+}

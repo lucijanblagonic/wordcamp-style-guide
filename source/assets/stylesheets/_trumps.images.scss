@@ -1,0 +1,75 @@
+/*
+ * Images
+ */
+
+.alignleft,
+.alignright {
+
+  position: relative;
+  max-width: none;
+  width: 100%;
+
+  @include breakpoint(extra-small) {
+
+    top: rem(6);
+    margin-bottom: $unit-m;
+    width: 36%;
+
+  }
+
+  @include breakpoint(medium) {
+
+    top: rem(10);
+    width: 44%;
+
+  }
+
+}
+
+.alignleft {
+
+  @include breakpoint(extra-small) {
+
+    float: left;
+    margin-right: $unit-m;
+
+  }
+
+}
+
+.alignright {
+
+  @include breakpoint(extra-small) {
+
+    float: right;
+    margin-left: $unit-m;
+
+  }
+
+}
+
+.wp-caption {
+
+  max-width: 100%;
+  margin-bottom: $unit-default;
+
+  img {
+
+    margin-bottom: 0;
+    max-width: none;
+    width: 100%;
+
+  }
+
+  p {
+
+    margin-top: $unit-xs;
+    margin-bottom: 0;
+
+    font-size: ms(-1);
+    line-height: ms(2);
+    color: $color-text-weak;
+
+  }
+
+}

@@ -1,0 +1,396 @@
+/* =Navigation
+===================================================== */
+
+// Navigation
+//
+// Main navigation of the site
+//
+// Markup:
+// <header id="masthead" class="site-header" role="banner">
+//   <div class="menu-main-navigation-container">
+//    <ul id="menu-main-navigation" class="menu">
+//      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
+//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
+//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
+//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
+//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
+//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
+//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
+//    </ul>
+//   </div>
+// </header>
+//
+// Style guide: 6.navigation
+
+/*
+ * Menu toggle
+ *
+ * Mobile menu switcher
+ */
+
+.menu-toggle {
+
+  padding: $unit-s $unit-s;
+  margin: 0;
+
+  font-size: ms(0);
+  font-weight: $bold;
+  text-align: center;
+  letter-spacing: .05em;
+  color: $color-link;
+
+  background-color: rgba($color-brand-tertiary, .9);
+
+  cursor: pointer;
+
+  &:after {
+
+    position: relative;
+    top: -(rem(2));
+
+    display: inline-block;
+    border: rem(6) solid transparent;
+    margin-left: $unit-xs;
+
+    vertical-align: middle;
+
+    border-top-color: $color-link;
+
+    content: "";
+
+  }
+
+  &.toggled-on {
+
+    color: $color-link;
+
+    &:after {
+
+      border-top-color: transparent;
+      border-bottom-color: $color-link;
+
+    }
+
+  }
+
+}
+
+/*
+ * Main navigation
+ *
+ * Main header navigation
+ * Classes switch via JS on viewport width
+ */
+
+
+// .menu-main-navigation-container {}
+
+.main-navigation {
+
+  position: relative;
+
+  background-color: rgba(#000, .2);
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: rem(2);
+    background-color: $color-link;
+
+    content: "";
+
+  }
+
+}
+
+.main-small-navigation {
+
+  background-color: $color-brand-tertiary;
+
+}
+
+.menu {
+
+  @include list-reset();
+  @include clearfix();
+
+  display: none;
+
+  text-align: center;
+
+  @include breakpoint(small) {
+
+    display: block;
+
+  }
+
+  @include breakpoint(large) {
+
+    // display: table;
+    // width: 100%;
+
+    // > .menu-item {
+
+    //   float: none;
+    //   display: table-cell;
+
+    // }
+
+  }
+
+  .main-small-navigation & {
+
+    border-top: 1px solid rgba(255,255,255,.2);
+
+  }
+
+}
+
+.menu-item {
+
+  position: relative;
+
+  margin: 0;
+  display: block;
+
+  font-family: $font-headline;
+  font-size: ms(0);
+  font-weight: $bold;
+  text-align: left;
+
+  @include breakpoint(small) {
+
+    margin: 0 rem(1);
+    display: inline-block;
+
+    @include font-size(18);
+    line-height: em(24,18);
+    text-align: center;
+
+  }
+
+}
+
+.menu-item a {
+
+  display: block;
+  color: $color-link-hover;
+  padding: $unit-xs $unit-s;
+
+  text-decoration: none;
+  transition: all .1s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-strong;
+    background-color: $color-link;
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: $unit-s $unit-m;
+
+  }
+
+  @include breakpoint(large) {
+
+    padding: $unit-m $unit-l;
+
+  }
+
+}
+
+.current-menu-item > a {
+
+  color: $color-text-strong;
+  background-color: $color-link-hover;
+
+}
+
+/*
+ * Sub menu
+ */
+
+.menu-item-has-children {
+
+  background-color: rgba($color-brand-tertiary, .6);
+
+  @include breakpoint(small) {
+
+    background-color: transparent;
+
+    > a {
+
+      &:after {
+
+        position: relative;
+        top: -(rem(2));
+
+        display: inline-block;
+        border: rem(6) solid transparent;
+        margin-left: $unit-xs;
+
+        vertical-align: middle;
+
+        border-top-color: $color-link-hover;
+
+        content: "";
+
+      }
+
+    }
+
+    &:hover > a {
+
+      color: $color-text-strong;
+      background-color: $color-link;
+
+      &:after {
+
+        border-top-color: $color-text-strong;
+
+      }
+
+    }
+
+    &:hover > .sub-menu {
+
+      display: block;
+
+    }
+
+    &.current-menu-item > a:after {
+
+      border-top-color: $color-text-strong;
+
+    }
+
+  }
+
+}
+
+.sub-menu {
+
+  @include list-reset();
+
+  .menu-item {
+
+    text-transform: none;
+    font-weight: $regular;
+    font-family: $font-body;
+
+  }
+
+  a {
+
+    .main-small-navigation & {
+
+      padding-left: rem(40);
+
+      background-image: $image-bullet-color;
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: $unit-s 50%;
+
+      &:hover,
+      &:focus {
+
+        background-image: $image-bullet-dark;
+
+      }
+
+    }
+
+
+  }
+
+  @include breakpoint(small) {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: $z-index-navigation-submenu;
+
+    display: none;
+    min-width: rem(260);
+
+    background-color: $color-link;
+
+    .menu-item {
+
+      width: 100%;
+      margin: 0;
+      border-top: 1px solid rgba(255,255,255,.2);
+
+      text-align: left;
+
+    }
+
+    a {
+
+      padding: rem(10) $unit-s;
+
+      color: $color-text;
+
+    }
+
+  }
+
+  @include breakpoint(medium) {
+
+    a {
+
+      padding-left: $unit-m;
+      padding-right: $unit-m;
+
+    }
+
+  }
+
+  @include breakpoint(large) {
+
+    a {
+
+      padding-left: $unit-l;
+      padding-right: $unit-l;
+
+    }
+
+  }
+
+}
+
+/*
+ * Prepare markup for theme update
+ */
+
+// .main-navigation {}
+// .main-navigation.toggled {}
+
+// .menu-toggle {
+
+//   margin-top: rem(2);
+//   width: 100%;
+//   border-radius: 0;
+
+//   @include breakpoint(small) {
+
+//     display: none;
+
+//   }
+
+// }
+
+// .menu-toggle[aria-expanded="true"] {}
+// .menu-toggle[aria-expanded="false"] {}
+
+// .menu[aria-expanded="true"] {}
+// .menu[aria-expanded="false"] {}

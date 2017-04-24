@@ -1,0 +1,119 @@
+/* =Objects: Colors
+===================================================== */
+
+/*
+ * Color cards
+ *
+ * Color cards are displayed only in the style guide.
+ */
+
+.cc-title {
+
+  margin-bottom: rem(24);
+
+  @include font-size(18);
+  line-height: 1.5;
+  font-family: $helvetica;
+  text-transform: none;
+
+}
+
+.cc-group {
+
+  @include clearfix;
+
+}
+
+.cc {
+
+  @include list-reset();
+
+  position: relative;
+  display: block;
+
+  margin-bottom: rem(24);
+  padding: rem(16);
+  padding-top: rem(96);
+  border: 1px solid #ddd;
+
+  border-radius: $border-radius-small;
+
+  &:after,
+  &:before {
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(80);
+
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
+
+    content: "";
+
+  }
+
+  &:before {
+
+    // Created with http://www.patternify.com/
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAH0lEQVQoU2NkYGAwZkAFZ5G5jPRRgOYEVDeB3EBjBQBOZwTVugIGyAAAAABJRU5ErkJggg==);
+
+  }
+
+  dt {
+
+    margin: 0;
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-family: $helvetica;
+
+  }
+
+  dd {
+
+    margin: 0;
+
+    @include font-size(13);
+    line-height: 1.4;
+    font-family: $monospace;
+    @include font-feature-settings(normal);
+
+  }
+
+  @include breakpoint(small) {
+
+    @include gallery(2 of 4);
+
+  }
+
+  @include breakpoint(medium) {
+
+    @include gallery(2 of 6);
+
+  }
+
+}
+
+.cc__title {
+
+  font-weight: $bold;
+  font-family: $helvetica;
+
+}
+.cc__variable {
+
+  font-family: $monospace;
+  color: rgba(0,0,0,.6);
+
+  &:after {
+
+    color: rgba(0,0,0,.8);
+    display: block;
+
+  }
+
+}

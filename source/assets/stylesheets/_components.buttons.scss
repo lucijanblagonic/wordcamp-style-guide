@@ -1,0 +1,138 @@
+/* =Buttons
+===================================================== */
+
+// Buttons
+//
+// Button variations and usage examples.
+//
+// :hover - Hover state
+// :focus - Focus state
+// .button--primary   - Primary button example
+// .button--primary:hover   - Primary button hover example
+// .button--primary:focus   - Primary button focus example
+// .button--secondary - Secondary button example
+// .button--secondary:hover - Secondary button hover example
+// .button--secondary:focus - Secondary button focus example
+// .button--invert    - Invert button example
+// .button--invert:hover    - Invert button hover example
+// .button--invert:focus    - Invert button focus example
+// .button--inactive  - Inactive button example
+//
+// Markup:
+// <a class="button {{modifier_class}}" href="#">Button</a>
+// <input class="{{modifier_class}}" type="button" value="Input Button">
+// <input class="{{modifier_class}}" type="submit" value="Input Submit">
+//
+// Style guide: 6.buttons
+
+.button,
+#{$all-buttons} {
+
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  display: inline-block;
+  padding: rem(7) rem(16);
+  border: 1px solid $color-button-regular;
+
+  /* Typography */
+  font-size: ms(0);
+  line-height: ms(2);
+  text-align: center;
+  color: $color-text;
+  font-family: $font-brand-primary;
+  font-weight: $bold;
+  text-decoration: none;
+
+  /* Visual */
+  background-color: $color-button-regular;
+  border-radius: $border-radius-small;
+  border-color: transparent;
+
+  /* Misc */
+  cursor: pointer;
+  transition: all .1s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-strong;
+    background-color: $color-button-regular-hover;
+    text-decoration: none;
+
+  }
+
+  @include breakpoint(medium) {
+
+    font-size: ms(0);
+    line-height: ms(2);
+
+  }
+
+  &.button--primary {
+
+    color: $color-text-invert;
+    background-color: $color-button-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong-invert;
+      background-color: $color-button-primary-hover;
+
+    }
+
+  }
+
+  &.button--secondary {
+
+    color: $color-text-invert;
+    background-color: $color-button-secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong-invert;
+      background-color: $color-button-secondary-hover;
+
+    }
+
+  }
+
+  &.button--invert {
+
+    color: $color-text;
+    background-color: $color-button-invert;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong;
+      background-color: $color-button-invert-hover;
+
+    }
+
+  }
+
+  &.button--inactive {
+
+    color: rgba(0,0,0,.3);
+    background-color: $color-button-inactive;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: rgba(0,0,0,.3);
+      background-color: $color-button-inactive;
+
+    }
+
+  }
+
+}

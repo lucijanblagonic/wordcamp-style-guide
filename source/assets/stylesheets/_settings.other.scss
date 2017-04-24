@@ -1,0 +1,64 @@
+/* =Settings: Other
+===================================================== */
+
+/* Z-index */
+$z-index-header:                  200;
+$z-index-branding:                290;
+$z-index-navigation:              300;
+$z-index-navigation-submenu:      310;
+$z-index-main:                    100;
+$z-index-footer:                  100;
+$z-index-modal:                   500;
+$z-index-skip-links:              600;
+
+/* Units */
+$unit-xs:                       rem(8);
+$unit-s:                        rem(16);
+$unit-m:                        rem(24);
+$unit-l:                        rem(32);
+$unit-xl:                       rem(48);
+$unit-default:                  rem(24);
+
+/* Container padding */
+$container-unit-small:          $unit-s;
+$container-unit-medium:         $unit-l;
+$container-unit-large:          $unit-xl;
+
+/* Container max width */
+$container-max-width:           rem(800);
+
+/* Border radius */
+$border-radius-small:           rem(3);
+$border-radius-normal:          rem(6);
+$border-radius-large:           rem(10);
+
+/* Box shadow */
+$box-shadow-small:              0 rem(1) rem(3) 0 rgba(0,0,0,.2);
+$box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
+$box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
+
+/* Logo size */
+$site-logo-width:               360px; // Width of the image/element
+$site-logo-height:              360px; // Height of the image/element
+$site-logo-proportion:          .5; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
+$site-logo-path:                url('https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png'); // Logo image
+// $site-logo-path:                url('https://2017.europe.wordcamp.org/files/2016/11/logo-wceu17-dark-icon.png'); // Logo image
+
+/* Hero */
+$site-hero-path-small:          url('https://c2.staticflickr.com/8/7342/27927265956_6755e5913e_b.jpg'); // Background image
+$site-hero-path-large:          url('https://c2.staticflickr.com/8/7342/27927265956_e66b460cbe_o.jpg'); // Background image
+$site-hero-background:          tint($color-brand-secondary, 90%); // Hero color background
+$site-hero-overlay:             .8; // Image overlay color opacity
+
+/* Media queries */
+$extra-small-value:             24em; // 384px
+$small-value:                   37.5em; // 600px
+$medium-value:                  48em; // 768px
+$large-value:                   62em; // 992px
+$extra-large-value:             80em; // 1280px
+
+/* Background images */
+$image-pattern-01:              url('https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png');
+$image-realistic-ticket:        url('https://2017.europe.wordcamp.org/files/2017/01/realistic-ticket.png');
+$image-bullet-color:            url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
+$image-bullet-dark:             url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');

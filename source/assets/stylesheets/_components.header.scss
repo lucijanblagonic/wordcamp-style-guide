@@ -1,0 +1,61 @@
+/* =Header
+===================================================== */
+
+// Header
+//
+// Header of the site (includes site branding and navigation)
+// Animated lights based on the pen by Umair Razzaq http://codepen.io/umairrazzaq/pen/dMQbzb
+//
+// Markup:
+// <div class="home">
+// <header id="masthead" class="site-header" role="banner">
+//   <hgroup>
+//    <h1 class="site-title"><a href="#" title="WordCamp Name" rel="home">WordCamp Name</a></h1>
+//    <h2 class="site-description">City, Country – Month, Date, Year.</h2>
+//   </hgroup>
+// </header>
+// </div>
+//
+// Style guide: 6.header
+
+.site-header {
+
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: fixed;
+  background-image: $site-hero-path-small;
+
+  @include breakpoint(medium) {
+
+    background-image: $site-hero-path-large;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+
+  @include transition-fast();
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba($site-hero-background, $site-hero-overlay);
+
+    content: "";
+
+  }
+
+  > * {
+
+    position: relative;
+    z-index: $z-index-header;
+
+  }
+
+}

@@ -1,0 +1,201 @@
+/* =Custom mixins
+===================================================== */
+
+// Clearfix
+//
+// Markup:
+// @include clearfix();
+//
+// Style guide: 2.clearfix
+
+// Clearfix (IE8+)
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+
+// Visually Hidden
+//
+// Hides element visually but keeps it visible for screen readers.
+// More information http://webaim.org/techniques/css/invisiblecontent/
+//
+// Markup:
+// @include visually-hidden;
+//
+// Style guide: 2.visually-hidden
+
+@mixin visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+// Visually Visible
+//
+// Resets visually hidden element.
+//
+// Markup:
+// @include visually-visible;
+//
+// Style guide: 2.visually-visible
+
+@mixin visually-visible {
+  position: relative;
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+
+// Hide text
+//
+// Moves text off screen for background image purposes.
+//
+// Markup:
+// @include hide-text;
+//
+// Style guide: 2.hide-text
+
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+// Show text
+//
+// Resets hide-text mixin.
+//
+// Markup:
+// @include show-text;
+//
+// Style guide: 2.show-text
+
+@mixin show-text {
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+// Word wrap
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+
+// Ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+// Rem to px conversion
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 16) + rem;
+}
+
+// List reset
+//
+// Resets basic list styles (margin, padding etc.).
+//
+// Markup:
+// @include list-reset;
+//
+// Style guide: 2.list-reset
+
+// List reset
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Transition fast
+//
+// Uniform fast transition
+//
+// Markup:
+// @include transition-fast;
+//
+// Style guide: 2.transition-fast
+
+@mixin transition-fast {
+  transition: all .15s ease;
+}
+
+
+// Transition normal
+//
+// Uniform normal transition
+//
+// Markup:
+// @include transition-normal;
+//
+// Style guide: 2.transition-normal
+
+@mixin transition-normal {
+  transition: all .3s ease;
+}
+
+
+// Transition slow
+//
+// Uniform slow transition
+//
+// Markup:
+// @include transition-slow;
+//
+// Style guide: 2.transition-slow
+
+@mixin transition-slow {
+  transition: all .45s ease;
+}
+
+
+// Container padding
+//
+// Add container padding accross resolutions with the ability to set multiplicator for top and bottom padding.
+//
+// Markup:
+// @include container-padding(1.5);
+//
+// Style guide: 2.container-padding
+
+@mixin container-padding($proportion) {
+
+  padding: ($container-unit-small * $proportion) $container-unit-small;
+
+  @include breakpoint(small) {
+
+    padding: ($container-unit-medium * $proportion) $container-unit-medium;
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: ($container-unit-large * $proportion) $container-unit-large;
+
+  }
+
+}

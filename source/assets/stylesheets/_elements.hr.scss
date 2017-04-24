@@ -1,0 +1,20 @@
+/* =Horizontal rule
+===================================================== */
+
+// Horizontal rule
+//
+// Horizontal rule example
+//
+// Markup:
+// <hr>
+//
+// Style guide: 4.hr
+
+hr {
+
+  margin: $unit-default 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $color-grey-10;
+
+}

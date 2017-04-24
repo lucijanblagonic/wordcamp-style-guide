@@ -1,0 +1,89 @@
+/* =Speakers
+===================================================== */
+
+// Speakers
+//
+// Speakers list
+//
+// Markup:
+// <div class="wcorg-speakers">
+//   <div id="wcorg-speaker-adrian-roselli" class="wcorg-speaker wcorg-speaker-adrian-roselli">
+//     <h2><a href="#">Adrian Rosell</a></h2>
+//     <div class="wcorg-speaker-description">
+//       <img alt="" src="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-827aaee5d1086eef593e63feccb16bc6-0">            <p>Adrian is a member of the W3C Web Platform Working Group, W3C Accessible Rich Internet Applications Working Group, and W3C Accessibility Task Force. He has written articles for trade journals, web sites, and participated as an author and editor on five web-related books. Back in 1998 he co-founded a software development consulting firm before leaving at the start of 2016 to start all over. Some may recognize Adrian from his days helping to run evolt.org, one of the first communities for web developers. Adrian has been developing for the Web since 1993.</p>
+//     </div>
+//   </div><!-- .wcorg-speaker -->
+//   <div id="wcorg-speaker-julka-grodel" class="wcorg-speaker wcorg-speaker-julka-grodel">
+//     <h2><a href="#">Julka Grodel</a></h2>
+//     <div class="wcorg-speaker-description">
+//       <img alt="" src="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-5fe06444777fda6da69ba4b14621da18-0">            <p>Julka Grodel is a Senior Software Engineer at AddThis and has been working with CMSs for over 10 years. She is passionate about writing easily maintainable and extendable code and is on a mission to make it simple to use AddThis’ social tools on single page apps and within a dynamic DOM. Julka spends most of her time on open source projects that integrate AddThis tools for various CMSs and JavaScript frameworks and is the primary developer on AddThis’s WordPress plugins. When not working, she spends her time volunteering with the Junior League, in a pilates studio, or doting over her blind cat Batman and his BFF Robin.</p>
+//     </div>
+//   </div><!-- .wcorg-speaker -->
+//   <div id="wcorg-speaker-pirate-dunbar" class="wcorg-speaker wcorg-speaker-pirate-dunbar">
+//     <h2><a href="#">Pirate Dunbar</a></h2>
+//     <div class="wcorg-speaker-description">
+//       <img alt="" src="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-55858e8107fd45c5508bb4f8db815d4f-0">            <p>Ptah Dunbar is a self-taught digital architect, internationally renowned speaker, educator and serial entrepreneur with over a decade experience creating software and contributing to open source. Ptah speaks 10 languages, teaches students how to code, and is on a mission to create software that empowers a trillion people over the next decade.</p>
+//     </div>
+//   </div><!-- .wcorg-speaker -->
+//   <div id="wcorg-speaker-rian-rietveld" class="wcorg-speaker wcorg-speaker-rian-rietveld">
+//     <h2><a href="#">Rian Rietveld</a></h2>
+//     <div class="wcorg-speaker-description">
+//       <img alt="" src="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-3f9ae6766cc6ed1a6e549fad70e96b46-0">            <p>Rian is a WordPress engineer, specialised in web accessibility. She works for the WordPress agency <a href="https://hmn.md">Human Made</a> and is part of the <a href="https://make.wordpress.org/accessibility/">WordPress Accessibility Team</a>. If she’s not coding, you can find her working in her garden.</p>
+//     </div>
+//   </div><!-- .wcorg-speaker -->
+//   <div id="wcorg-speaker-yoav-farhi" class="wcorg-speaker wcorg-speaker-yoav-farhi">
+//     <h2><a href="#">Yoav Farhi</a></h2>
+//     <div class="wcorg-speaker-description">
+//       <img alt="" src="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-ae98ec38ec28f129a33a424e5eba5769-0">            <p>Yoav Farhi is an Iñtërnâtiônàlizætiønër at Automattic, who works on everything related i18n (that’s internationalization) and l10n (localization) and of course, translation. A core contributor to WordPress for 8 years now, he works hard to make the web a better place.</p>
+//     </div>
+//   </div><!-- .wcorg-speaker -->
+// </div>
+//
+// Style guide: 6.speakers
+
+.wcorg-speakers {
+
+
+}
+
+.wcorg-speaker {
+
+  border-top: 6px double $color-border-weak;
+  padding: $unit-default 0;
+
+  .wcorg-speaker-description {
+
+    @include clearfix();
+
+  }
+
+
+  .avatar {
+
+    float: left;
+    margin: $unit-xs $unit-s $unit-xs 0;
+
+  }
+
+  p {
+
+    margin-bottom: $unit-xs;
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  h3 {
+
+    text-transform: none;
+
+  }
+
+  ul {}
+  li {}
+
+}

@@ -1,0 +1,302 @@
+/* =Comments
+===================================================== */
+
+// Comments
+//
+// Comments area
+//
+// Markup:
+// <h2 class="comments-title">5 thoughts on “<span>First photos from #WCEU</span>”</h2>
+// <ol class="commentlist">
+//   <li class="comment byuser comment-author-rarst even thread-even depth-1" id="li-comment-2952">
+//     <article id="comment-2952" class="comment">
+//       <footer>
+//         <div class="comment-author vcard">
+//           <img alt="" src="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=40&amp;d=mm&amp;r=g" scale="2">
+//           <cite class="fn"><a href="http://www.Rarst.net" rel="external nofollow" class="url">Andrey "Rarst" Savchenko</a></cite> <span class="says">says:</span>
+//         </div><!-- .comment-author .vcard -->
+//         <div class="comment-meta commentmetadata">
+//           <a href="#"><time pubdate="" datetime="2016-06-29T13:03:40+00:00">June 29, 2016 at 13:03</time></a>
+//         </div><!-- .comment-meta .commentmetadata -->
+//       </footer>
+//       <div class="comment-content">
+//         <p>My photos are up on flickr: <a href="#" rel="nofollow">https://www.flickr.com/photos/rarst/albums/72157670221662536</a> <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/2/svg/1f642.svg" scale="0"></p>
+//       </div>
+//       <div class="reply">
+//         <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+//       </div><!-- .reply -->
+//     </article><!-- #comment-## -->
+//   </li><!-- #comment-## -->
+//   <li class="comment byuser comment-author-karmatosed odd alt thread-odd thread-alt depth-1" id="li-comment-2953">
+//     <article id="comment-2953" class="comment">
+//       <footer>
+//         <div class="comment-author vcard">
+//           <img alt="" src="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=40&amp;d=mm&amp;r=g" scale="2">
+//           <cite class="fn"><a href="#" rel="external nofollow" class="url">Tammie</a></cite> <span class="says">says:</span>
+//         </div><!-- .comment-author .vcard -->
+//         <div class="comment-meta commentmetadata">
+//           <a href="#"><time pubdate="" datetime="2016-06-29T13:28:18+00:00">June 29, 2016 at 13:28</time></a>
+//         </div><!-- .comment-meta .commentmetadata -->
+//       </footer>
+//       <div class="comment-content">
+//         <p>I have a collection of photos up here: <a href="#" rel="nofollow">https://eyetaken.com/2016/06/29/wordcamp-europe-2016-vienna/</a></p>
+//       </div>
+//       <div class="reply">
+//         <a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Tammie">Reply</a>
+//         </div><!-- .reply -->
+//     </article><!-- #comment-## -->
+//   </li><!-- #comment-## -->
+//   <li class="comment even thread-even depth-1" id="li-comment-2956">
+//     <article id="comment-2956" class="comment">
+//       <footer>
+//         <div class="comment-author vcard">
+//           <img alt="" src="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=40&amp;d=mm&amp;r=g" scale="2">
+//           <cite class="fn"><a href="#" rel="external nofollow" class="url">Ernst Michalek</a></cite> <span class="says">says:</span>        </div><!-- .comment-author .vcard -->
+//         <div class="comment-meta commentmetadata">
+//           <a href="#"><time pubdate="" datetime="2016-06-29T14:51:15+00:00">June 29, 2016 at 14:51</time></a>
+//         </div><!-- .comment-meta .commentmetadata -->
+//       </footer>
+//       <div class="comment-content"><p>I made a few 360°-panoramic images – <a href="http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/" rel="nofollow">http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/</a> available also on my Facebook page <a href="http://www.facebook.com/www.egm.at" rel="nofollow">http://www.facebook.com/www.egm.at</a></p>
+//       </div>
+//       <div class="reply">
+//         <a rel="nofollow" class="comment-reply-link" href="https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2956#respond" aria-label="Reply to Ernst Michalek">Reply</a>
+//       </div><!-- .reply -->
+//     </article><!-- #comment-## -->
+//   </li><!-- #comment-## -->
+//   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2957">
+//     <article id="comment-2957" class="comment">
+//       <footer>
+//         <div class="comment-author vcard">
+//           <img alt="" src="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=40&amp;d=mm&amp;r=g" scale="2">
+//           <cite class="fn"><a href="#" rel="external nofollow" class="url">Dario BF</a></cite> <span class="says">says:</span>        </div><!-- .comment-author .vcard -->
+//         <div class="comment-meta commentmetadata">
+//           <a href="#"><time pubdate="" datetime="2016-06-29T16:07:57+00:00">June 29, 2016 at 16:07</time></a>
+//         </div><!-- .comment-meta .commentmetadata -->
+//       </footer>
+//       <div class="comment-content">
+//         <p>My photos are there on Flickr: <a href="https://www.flickr.com/photos/dariobf/albums/72157670385205355" rel="nofollow">https://www.flickr.com/photos/dariobf/albums/72157670385205355</a></p>
+//       </div>
+//       <div class="reply">
+//         <a rel="nofollow" class="comment-reply-link" href="https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2957#respond" aria-label="Reply to Dario BF">Reply</a>
+//       </div><!-- .reply -->
+//     </article><!-- #comment-## -->
+//   </li><!-- #comment-## -->
+//   <li class="post pingback">
+//     <p>Pingback: <a href="http://www.wpmayor.com/our-experience-wordcamp-europe-2016/" rel="external nofollow" class="url">Our Experience at WordCamp Europe 2016 - WP Mayor</a></p>
+//   </li><!-- #comment-## -->
+// </ol>
+// <div id="respond" class="comment-respond">
+//     <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/first-photos-from-wceu/#respond" style="display:none;">Cancel reply</a></small></h3>
+//   <form action="#" id="commentform" class="comment-form">
+//     <p class="logged-in-as">
+//       <a href="#" aria-label="Logged in as Lucijan Blagonic. Edit your profile.">Logged in as Lucijan Blagonic</a>.
+//       <a href="#">Log out?</a>
+//     </p>
+//     <p class="comment-form-comment">
+//       <label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>
+//     </p>
+//     <p class="form-submit">
+//       <input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="15753" id="comment_post_ID">
+//       <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+//     </p>
+//     <p class="comment-subscription-form">
+//       <input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label>
+//     </p>
+//     <p class="comment-subscription-form">
+//       <input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label>
+//     </p>
+//   </form>
+// </div><!-- #respond -->
+//
+// Style guide: 6.comments
+
+.comments-area {
+
+  margin-top: $unit-l;
+
+}
+
+.comments-title {
+
+  @include visually-hidden()
+
+}
+
+/*
+ * Comment listing
+ */
+
+.commentlist {
+
+  @include list-reset();
+  margin-bottom: $unit-m;
+
+  > .comment {
+
+    margin-top: $unit-m;
+
+  }
+
+  .post {}
+
+}
+
+
+/*
+ * Single comment
+ */
+
+article.comment {
+
+  position: relative;
+  padding-left: rem(52);
+
+  footer {
+
+  }
+
+}
+
+.comment-author {
+
+  display: block;
+  font-size: ms(-1);
+  line-height: ms(2);
+
+  .avatar {
+
+    position: absolute;
+    // top: rem(4);
+    top: 0;
+    left: 0;
+
+    width: rem(42);
+
+  }
+
+  .fn {
+
+    font-style: normal;
+    font-weight: $bold;
+
+  }
+
+  .says {
+
+    display: none;
+
+  }
+
+}
+
+.comment-meta {
+
+  // display: inline-block;
+  font-size: ms(-2);
+  line-height: ms(2);
+
+}
+
+.comment-content {
+
+  margin-top: $unit-xs;
+
+  p {
+
+    margin-bottom: $unit-xs;
+
+    font-size: ms(-1);
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+}
+
+.reply {
+
+  margin-top: $unit-xs;
+
+  font-size: ms(-1);
+  line-height: ms(2);
+
+}
+
+
+/*
+ * Other
+ */
+
+.pingback {
+
+  @include visually-hidden();
+
+}
+
+/*
+ * Respond section
+ *
+ * Form fields and checkboxes
+ */
+
+.comment-respond {
+
+  padding: $unit-m;
+
+  background-color: #fff;
+  background-color: $color-grey-10;
+  border-radius: $border-radius-small;
+
+}
+
+.comment-form {
+
+  label {
+
+    font-size: ms(0);
+    line-height: ms(2);
+
+  }
+
+  p {
+
+    margin-bottom: $unit-s;
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+}
+
+.comment-reply-title {
+
+  font-size: ms(0);
+  margin-bottom: $unit-s;
+
+}
+
+.comment-notes {
+
+  @include visually-hidden()
+
+}
+
+.comment-subscription-form {
+
+  margin-bottom: $unit-xs;
+
+  label {
+
+    font-size: ms(-1);
+
+  }
+
+}

@@ -1,0 +1,128 @@
+/* =Main
+===================================================== */
+
+// Main
+//
+// Main section of the site
+//
+// Markup:
+//
+// Style guide: 6.main
+
+
+@mixin container-center {
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/*
+ * Main
+ *
+ * Container for primary and secondary content
+ * <div id="main"> ... </div>
+ */
+
+#main {
+
+
+
+}
+
+
+/*
+ * Primary content
+ *
+ * Container for main content
+ * <div id="primary" class="site-content"> ... </div>
+ */
+
+#primary {
+
+  @include container-center();
+
+  text-align: left;
+
+}
+
+
+/*
+ * Content
+ *
+ * Container for posts and pages
+ * <div id="content" role="main"> ... </div>
+ */
+
+#content {
+
+  @include container-padding(1.5);
+
+}
+
+
+/*
+ * Secondary content
+ *
+ * Container for secondary content (widgets)
+ * <div id="secondary" class="widget-area"> ... </div>
+ */
+
+#secondary {
+
+  @include container-center();
+
+  text-align: left;
+
+}
+
+
+/*
+ * Primary sidebar
+ *
+ * Container for primary sidebar
+ * <div id="primary-sidebar"> ... </div>
+ */
+
+#primary-sidebar {
+
+  .widget {
+
+    // @include container-padding(2);
+
+  }
+
+}
+
+/*
+ * After header widgets
+ *
+ * Container for after header widgets
+ * <div id="after-header-widgets" class="widget-area front-page"> ... </div>
+ */
+
+#after-header-widgets {
+
+  @include container-center();
+
+  text-align: left;
+
+}
+
+
+/*
+ * Before content widgets
+ *
+ * Container for before content widgets
+ * <div id="before-content-widgets" class="widget-area front-page"> ... </div>
+ */
+
+#before-content-widgets {
+
+  @include container-center();
+
+  text-align: left;
+
+}

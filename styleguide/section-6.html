@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>WordCamp Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/prism.css">
+  <link rel="stylesheet" href="../build/assets/stylesheets/style.css">
+
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">WordCamp Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Settings</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Tools</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Generic</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-4.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Elements</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-5.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Objects</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-6.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Components</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-attendees">
+                <span class="kss-nav__ref ">6.1</span
+                ><span class="kss-nav__name">Attendees</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-branding">
+                <span class="kss-nav__ref ">6.2</span
+                ><span class="kss-nav__name">Site branding</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-buttons">
+                <span class="kss-nav__ref ">6.3</span
+                ><span class="kss-nav__name">Buttons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-comments">
+                <span class="kss-nav__ref ">6.4</span
+                ><span class="kss-nav__name">Comments</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-footer">
+                <span class="kss-nav__ref ">6.5</span
+                ><span class="kss-nav__name">Footer</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-header">
+                <span class="kss-nav__ref ">6.6</span
+                ><span class="kss-nav__name">Header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-main">
+                <span class="kss-nav__ref ">6.7</span
+                ><span class="kss-nav__name">Main</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-navigation">
+                <span class="kss-nav__ref ">6.8</span
+                ><span class="kss-nav__name">Navigation</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-oembed">
+                <span class="kss-nav__ref ">6.9</span
+                ><span class="kss-nav__name">oEmbed</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-organizers">
+                <span class="kss-nav__ref ">6.10</span
+                ><span class="kss-nav__name">Organizers</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-pagination">
+                <span class="kss-nav__ref ">6.11</span
+                ><span class="kss-nav__name">Pagination</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-post">
+                <span class="kss-nav__ref ">6.12</span
+                ><span class="kss-nav__name">Post</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-schedule">
+                <span class="kss-nav__ref ">6.13</span
+                ><span class="kss-nav__name">Schedule</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-sessions">
+                <span class="kss-nav__ref ">6.14</span
+                ><span class="kss-nav__name">Sessions</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-speakers">
+                <span class="kss-nav__ref ">6.15</span
+                ><span class="kss-nav__name">Speakers</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-tickets">
+                <span class="kss-nav__ref ">6.16</span
+                ><span class="kss-nav__name">Tickets</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-widget-subscribe">
+                <span class="kss-nav__ref kss-nav__ref-child">6.17.1</span
+                ><span class="kss-nav__name">Subscribe</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-widget-text-social">
+                <span class="kss-nav__ref kss-nav__ref-child">6.17.2</span
+                ><span class="kss-nav__name">Social</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-7.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Trumps</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-6" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-6">
+          <span class="kss-title__ref">
+              6
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Components
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Designed components, chunks of UI</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-6-attendees" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-attendees">
+          <span class="kss-title__ref">
+              6.1
+            <span class="kss-title__permalink-hash">
+                #6.attendees
+            </span>
+          </span>
+          Attendees
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Attendees listing</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="tix-attendees">
+  <ul class="tix-attendee-list tix-columns-3">
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Bernhard</span>
+        <span class="tix-last">Kau</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/2ndkauboy">@2ndkauboy</a><a class="tix-field tix-attendee-url" href="https://kau-boys.de">kau-boys.de</a>
+    </li>
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Dominik</span>
+        <span class="tix-last">Schilling</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/ocean90">@ocean90</a><a class="tix-field tix-attendee-url" href="https://dominikschilling.de">dominikschilling.de</a>
+    </li>
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Sonja</span>
+        <span class="tix-last">Leix</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/sonjaleix">@sonjaleix</a><a class="tix-field tix-attendee-url" href="http://sonjaleix.com">sonjaleix.com</a>
+    </li>
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Bernhard</span>
+        <span class="tix-last">Kau</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/2ndkauboy">@2ndkauboy</a><a class="tix-field tix-attendee-url" href="https://kau-boys.de">kau-boys.de</a>
+    </li>
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Dominik</span>
+        <span class="tix-last">Schilling</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/ocean90">@ocean90</a><a class="tix-field tix-attendee-url" href="https://dominikschilling.de">dominikschilling.de</a>
+    </li>
+    <li>
+      <img alt="" src="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;d=mm&amp;r=g" scale="2">
+      <div class="tix-field tix-attendee-name">
+        <span class="tix-first">Sonja</span>
+        <span class="tix-last">Leix</span>
+      </div>
+      <a class="tix-field tix-attendee-twitter" href="http://twitter.com/sonjaleix">@sonjaleix</a><a class="tix-field tix-attendee-url" href="http://sonjaleix.com">sonjaleix.com</a>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;tix-attendees&quot;&gt;
+  &lt;ul class=&quot;tix-attendee-list tix-columns-3&quot;&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Bernhard&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Kau&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/2ndkauboy&quot;&gt;@2ndkauboy&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;https://kau-boys.de&quot;&gt;kau-boys.de&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Dominik&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Schilling&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/ocean90&quot;&gt;@ocean90&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;https://dominikschilling.de&quot;&gt;dominikschilling.de&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Sonja&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Leix&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/sonjaleix&quot;&gt;@sonjaleix&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;http://sonjaleix.com&quot;&gt;sonjaleix.com&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Bernhard&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Kau&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/2ndkauboy&quot;&gt;@2ndkauboy&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;https://kau-boys.de&quot;&gt;kau-boys.de&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Dominik&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Schilling&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/ocean90&quot;&gt;@ocean90&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;https://dominikschilling.de&quot;&gt;dominikschilling.de&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-96 photo&quot; height=&quot;96&quot; width=&quot;96&quot; originals=&quot;96&quot; src-orig=&quot;https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+      &lt;div class=&quot;tix-field tix-attendee-name&quot;&gt;
+        &lt;span class=&quot;tix-first&quot;&gt;Sonja&lt;/span&gt;
+        &lt;span class=&quot;tix-last&quot;&gt;Leix&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a class=&quot;tix-field tix-attendee-twitter&quot; href=&quot;http://twitter.com/sonjaleix&quot;&gt;@sonjaleix&lt;/a&gt;&lt;a class=&quot;tix-field tix-attendee-url&quot; href=&quot;http://sonjaleix.com&quot;&gt;sonjaleix.com&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-branding" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-branding">
+          <span class="kss-title__ref">
+              6.2
+            <span class="kss-title__permalink-hash">
+                #6.branding
+            </span>
+          </span>
+          Site branding
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Site logo, title and description.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header id="masthead" class="site-header" role="banner">
+  <hgroup>
+   <h1 class="site-title"><a href="#" title="WordCamp Name" rel="home">WordCamp Name</a></h1>
+   <h2 class="site-description">City, Country – Month, Date, Year.</h2>
+  </hgroup>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
+  &lt;hgroup&gt;
+   &lt;h1 class=&quot;site-title&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;WordCamp Name&quot; rel=&quot;home&quot;&gt;WordCamp Name&lt;/a&gt;&lt;/h1&gt;
+   &lt;h2 class=&quot;site-description&quot;&gt;City, Country – Month, Date, Year.&lt;/h2&gt;
+  &lt;/hgroup&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-buttons" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-buttons">
+          <span class="kss-title__ref">
+              6.3
+            <span class="kss-title__permalink-hash">
+                #6.buttons
+            </span>
+          </span>
+          Buttons
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Button variations and usage examples.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button [modifier class]" href="#">Button</a>
+<input class="[modifier class]" type="button" value="Input Button">
+<input class="[modifier class]" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          :hover
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Hover state
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button pseudo-class-hover" href="#">Button</a>
+<input class="pseudo-class-hover" type="button" value="Input Button">
+<input class="pseudo-class-hover" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          :focus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Focus state
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button pseudo-class-focus" href="#">Button</a>
+<input class="pseudo-class-focus" type="button" value="Input Button">
+<input class="pseudo-class-focus" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--primary
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary button example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--primary" href="#">Button</a>
+<input class="button--primary" type="button" value="Input Button">
+<input class="button--primary" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--primary:hover
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary button hover example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--primary pseudo-class-hover" href="#">Button</a>
+<input class="button--primary pseudo-class-hover" type="button" value="Input Button">
+<input class="button--primary pseudo-class-hover" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--primary:focus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary button focus example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--primary pseudo-class-focus" href="#">Button</a>
+<input class="button--primary pseudo-class-focus" type="button" value="Input Button">
+<input class="button--primary pseudo-class-focus" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--secondary
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Secondary button example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--secondary" href="#">Button</a>
+<input class="button--secondary" type="button" value="Input Button">
+<input class="button--secondary" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--secondary:hover
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Secondary button hover example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--secondary pseudo-class-hover" href="#">Button</a>
+<input class="button--secondary pseudo-class-hover" type="button" value="Input Button">
+<input class="button--secondary pseudo-class-hover" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--secondary:focus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Secondary button focus example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--secondary pseudo-class-focus" href="#">Button</a>
+<input class="button--secondary pseudo-class-focus" type="button" value="Input Button">
+<input class="button--secondary pseudo-class-focus" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--invert
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Invert button example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--invert" href="#">Button</a>
+<input class="button--invert" type="button" value="Input Button">
+<input class="button--invert" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--invert:hover
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Invert button hover example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--invert pseudo-class-hover" href="#">Button</a>
+<input class="button--invert pseudo-class-hover" type="button" value="Input Button">
+<input class="button--invert pseudo-class-hover" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--invert:focus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Invert button focus example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--invert pseudo-class-focus" href="#">Button</a>
+<input class="button--invert pseudo-class-focus" type="button" value="Input Button">
+<input class="button--invert pseudo-class-focus" type="submit" value="Input Submit">
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button--inactive
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Inactive button example
+        </div>
+        <div class="kss-modifier__example">
+          <a class="button button--inactive" href="#">Button</a>
+<input class="button--inactive" type="button" value="Input Button">
+<input class="button--inactive" type="submit" value="Input Submit">
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;a class=&quot;button [modifier class]&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+&lt;input class=&quot;[modifier class]&quot; type=&quot;button&quot; value=&quot;Input Button&quot;&gt;
+&lt;input class=&quot;[modifier class]&quot; type=&quot;submit&quot; value=&quot;Input Submit&quot;&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-comments" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-comments">
+          <span class="kss-title__ref">
+              6.4
+            <span class="kss-title__permalink-hash">
+                #6.comments
+            </span>
+          </span>
+          Comments
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Comments area</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <h2 class="comments-title">5 thoughts on “<span>First photos from #WCEU</span>”</h2>
+<ol class="commentlist">
+  <li class="comment byuser comment-author-rarst even thread-even depth-1" id="li-comment-2952">
+    <article id="comment-2952" class="comment">
+      <footer>
+        <div class="comment-author vcard">
+          <img alt="" src="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=40&amp;d=mm&amp;r=g" scale="2">
+          <cite class="fn"><a href="http://www.Rarst.net" rel="external nofollow" class="url">Andrey "Rarst" Savchenko</a></cite> <span class="says">says:</span>
+        </div><!-- .comment-author .vcard -->
+        <div class="comment-meta commentmetadata">
+          <a href="#"><time pubdate="" datetime="2016-06-29T13:03:40+00:00">June 29, 2016 at 13:03</time></a>
+        </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+      <div class="comment-content">
+        <p>My photos are up on flickr: <a href="#" rel="nofollow">https://www.flickr.com/photos/rarst/albums/72157670221662536</a> <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/2/svg/1f642.svg" scale="0"></p>
+      </div>
+      <div class="reply">
+        <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+  </li><!-- #comment-## -->
+  <li class="comment byuser comment-author-karmatosed odd alt thread-odd thread-alt depth-1" id="li-comment-2953">
+    <article id="comment-2953" class="comment">
+      <footer>
+        <div class="comment-author vcard">
+          <img alt="" src="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=40&amp;d=mm&amp;r=g" scale="2">
+          <cite class="fn"><a href="#" rel="external nofollow" class="url">Tammie</a></cite> <span class="says">says:</span>
+        </div><!-- .comment-author .vcard -->
+        <div class="comment-meta commentmetadata">
+          <a href="#"><time pubdate="" datetime="2016-06-29T13:28:18+00:00">June 29, 2016 at 13:28</time></a>
+        </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+      <div class="comment-content">
+        <p>I have a collection of photos up here: <a href="#" rel="nofollow">https://eyetaken.com/2016/06/29/wordcamp-europe-2016-vienna/</a></p>
+      </div>
+      <div class="reply">
+        <a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Tammie">Reply</a>
+        </div><!-- .reply -->
+    </article><!-- #comment-## -->
+  </li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-2956">
+    <article id="comment-2956" class="comment">
+      <footer>
+        <div class="comment-author vcard">
+          <img alt="" src="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=40&amp;d=mm&amp;r=g" scale="2">
+          <cite class="fn"><a href="#" rel="external nofollow" class="url">Ernst Michalek</a></cite> <span class="says">says:</span>        </div><!-- .comment-author .vcard -->
+        <div class="comment-meta commentmetadata">
+          <a href="#"><time pubdate="" datetime="2016-06-29T14:51:15+00:00">June 29, 2016 at 14:51</time></a>
+        </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+      <div class="comment-content"><p>I made a few 360°-panoramic images – <a href="http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/" rel="nofollow">http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/</a> available also on my Facebook page <a href="http://www.facebook.com/www.egm.at" rel="nofollow">http://www.facebook.com/www.egm.at</a></p>
+      </div>
+      <div class="reply">
+        <a rel="nofollow" class="comment-reply-link" href="https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2956#respond" aria-label="Reply to Ernst Michalek">Reply</a>
+      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2957">
+    <article id="comment-2957" class="comment">
+      <footer>
+        <div class="comment-author vcard">
+          <img alt="" src="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=80&amp;d=mm&amp;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" originals="40" src-orig="https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=40&amp;d=mm&amp;r=g" scale="2">
+          <cite class="fn"><a href="#" rel="external nofollow" class="url">Dario BF</a></cite> <span class="says">says:</span>        </div><!-- .comment-author .vcard -->
+        <div class="comment-meta commentmetadata">
+          <a href="#"><time pubdate="" datetime="2016-06-29T16:07:57+00:00">June 29, 2016 at 16:07</time></a>
+        </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+      <div class="comment-content">
+        <p>My photos are there on Flickr: <a href="https://www.flickr.com/photos/dariobf/albums/72157670385205355" rel="nofollow">https://www.flickr.com/photos/dariobf/albums/72157670385205355</a></p>
+      </div>
+      <div class="reply">
+        <a rel="nofollow" class="comment-reply-link" href="https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2957#respond" aria-label="Reply to Dario BF">Reply</a>
+      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+  </li><!-- #comment-## -->
+  <li class="post pingback">
+    <p>Pingback: <a href="http://www.wpmayor.com/our-experience-wordcamp-europe-2016/" rel="external nofollow" class="url">Our Experience at WordCamp Europe 2016 - WP Mayor</a></p>
+  </li><!-- #comment-## -->
+</ol>
+<div id="respond" class="comment-respond">
+    <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/first-photos-from-wceu/#respond" style="display:none;">Cancel reply</a></small></h3>
+  <form action="#" id="commentform" class="comment-form">
+    <p class="logged-in-as">
+      <a href="#" aria-label="Logged in as Lucijan Blagonic. Edit your profile.">Logged in as Lucijan Blagonic</a>.
+      <a href="#">Log out?</a>
+    </p>
+    <p class="comment-form-comment">
+      <label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>
+    </p>
+    <p class="form-submit">
+      <input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="15753" id="comment_post_ID">
+      <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+    </p>
+    <p class="comment-subscription-form">
+      <input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label>
+    </p>
+    <p class="comment-subscription-form">
+      <input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label>
+    </p>
+  </form>
+</div><!-- #respond -->
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;h2 class=&quot;comments-title&quot;&gt;5 thoughts on “&lt;span&gt;First photos from #WCEU&lt;/span&gt;”&lt;/h2&gt;
+&lt;ol class=&quot;commentlist&quot;&gt;
+  &lt;li class=&quot;comment byuser comment-author-rarst even thread-even depth-1&quot; id=&quot;li-comment-2952&quot;&gt;
+    &lt;article id=&quot;comment-2952&quot; class=&quot;comment&quot;&gt;
+      &lt;footer&gt;
+        &lt;div class=&quot;comment-author vcard&quot;&gt;
+          &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=80&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-40 photo&quot; height=&quot;40&quot; width=&quot;40&quot; originals=&quot;40&quot; src-orig=&quot;https://secure.gravatar.com/avatar/ab89ce39f47b327f1c85e4019e865a71?s=40&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+          &lt;cite class=&quot;fn&quot;&gt;&lt;a href=&quot;http://www.Rarst.net&quot; rel=&quot;external nofollow&quot; class=&quot;url&quot;&gt;Andrey &quot;Rarst&quot; Savchenko&lt;/a&gt;&lt;/cite&gt; &lt;span class=&quot;says&quot;&gt;says:&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+        &lt;div class=&quot;comment-meta commentmetadata&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;time pubdate=&quot;&quot; datetime=&quot;2016-06-29T13:03:40+00:00&quot;&gt;June 29, 2016 at 13:03&lt;/time&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+      &lt;/footer&gt;
+      &lt;div class=&quot;comment-content&quot;&gt;
+        &lt;p&gt;My photos are up on flickr: &lt;a href=&quot;#&quot; rel=&quot;nofollow&quot;&gt;https://www.flickr.com/photos/rarst/albums/72157670221662536&lt;/a&gt; &lt;img draggable=&quot;false&quot; class=&quot;emoji&quot; alt=&quot;🙂&quot; src=&quot;https://s.w.org/images/core/emoji/2/svg/1f642.svg&quot; scale=&quot;0&quot;&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;reply&quot;&gt;
+        &lt;a rel=&quot;nofollow&quot; class=&quot;comment-reply-link&quot; href=&quot;#&quot;&gt;Reply&lt;/a&gt;
+      &lt;/div&gt;&lt;!-- .reply --&gt;
+    &lt;/article&gt;&lt;!-- #comment-## --&gt;
+  &lt;/li&gt;&lt;!-- #comment-## --&gt;
+  &lt;li class=&quot;comment byuser comment-author-karmatosed odd alt thread-odd thread-alt depth-1&quot; id=&quot;li-comment-2953&quot;&gt;
+    &lt;article id=&quot;comment-2953&quot; class=&quot;comment&quot;&gt;
+      &lt;footer&gt;
+        &lt;div class=&quot;comment-author vcard&quot;&gt;
+          &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=80&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-40 photo&quot; height=&quot;40&quot; width=&quot;40&quot; originals=&quot;40&quot; src-orig=&quot;https://secure.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=40&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+          &lt;cite class=&quot;fn&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;external nofollow&quot; class=&quot;url&quot;&gt;Tammie&lt;/a&gt;&lt;/cite&gt; &lt;span class=&quot;says&quot;&gt;says:&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+        &lt;div class=&quot;comment-meta commentmetadata&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;time pubdate=&quot;&quot; datetime=&quot;2016-06-29T13:28:18+00:00&quot;&gt;June 29, 2016 at 13:28&lt;/time&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+      &lt;/footer&gt;
+      &lt;div class=&quot;comment-content&quot;&gt;
+        &lt;p&gt;I have a collection of photos up here: &lt;a href=&quot;#&quot; rel=&quot;nofollow&quot;&gt;https://eyetaken.com/2016/06/29/wordcamp-europe-2016-vienna/&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;reply&quot;&gt;
+        &lt;a rel=&quot;nofollow&quot; class=&quot;comment-reply-link&quot; href=&quot;#&quot; aria-label=&quot;Reply to Tammie&quot;&gt;Reply&lt;/a&gt;
+        &lt;/div&gt;&lt;!-- .reply --&gt;
+    &lt;/article&gt;&lt;!-- #comment-## --&gt;
+  &lt;/li&gt;&lt;!-- #comment-## --&gt;
+  &lt;li class=&quot;comment even thread-even depth-1&quot; id=&quot;li-comment-2956&quot;&gt;
+    &lt;article id=&quot;comment-2956&quot; class=&quot;comment&quot;&gt;
+      &lt;footer&gt;
+        &lt;div class=&quot;comment-author vcard&quot;&gt;
+          &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=80&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-40 photo&quot; height=&quot;40&quot; width=&quot;40&quot; originals=&quot;40&quot; src-orig=&quot;https://secure.gravatar.com/avatar/a4a3ab3273e7dd77f12170ad4459bbee?s=40&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+          &lt;cite class=&quot;fn&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;external nofollow&quot; class=&quot;url&quot;&gt;Ernst Michalek&lt;/a&gt;&lt;/cite&gt; &lt;span class=&quot;says&quot;&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+        &lt;div class=&quot;comment-meta commentmetadata&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;time pubdate=&quot;&quot; datetime=&quot;2016-06-29T14:51:15+00:00&quot;&gt;June 29, 2016 at 14:51&lt;/time&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+      &lt;/footer&gt;
+      &lt;div class=&quot;comment-content&quot;&gt;&lt;p&gt;I made a few 360°-panoramic images – &lt;a href=&quot;http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/&quot; rel=&quot;nofollow&quot;&gt;http://pano.egm.at/panokat/wordcamp-europe-2016-vienna/&lt;/a&gt; available also on my Facebook page &lt;a href=&quot;http://www.facebook.com/www.egm.at&quot; rel=&quot;nofollow&quot;&gt;http://www.facebook.com/www.egm.at&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;reply&quot;&gt;
+        &lt;a rel=&quot;nofollow&quot; class=&quot;comment-reply-link&quot; href=&quot;https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2956#respond&quot; aria-label=&quot;Reply to Ernst Michalek&quot;&gt;Reply&lt;/a&gt;
+      &lt;/div&gt;&lt;!-- .reply --&gt;
+    &lt;/article&gt;&lt;!-- #comment-## --&gt;
+  &lt;/li&gt;&lt;!-- #comment-## --&gt;
+  &lt;li class=&quot;comment odd alt thread-odd thread-alt depth-1&quot; id=&quot;li-comment-2957&quot;&gt;
+    &lt;article id=&quot;comment-2957&quot; class=&quot;comment&quot;&gt;
+      &lt;footer&gt;
+        &lt;div class=&quot;comment-author vcard&quot;&gt;
+          &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=100&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=80&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-40 photo&quot; height=&quot;40&quot; width=&quot;40&quot; originals=&quot;40&quot; src-orig=&quot;https://secure.gravatar.com/avatar/0e5b7c3ba4098e8e6de2c3b3faf2562c?s=40&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+          &lt;cite class=&quot;fn&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;external nofollow&quot; class=&quot;url&quot;&gt;Dario BF&lt;/a&gt;&lt;/cite&gt; &lt;span class=&quot;says&quot;&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+        &lt;div class=&quot;comment-meta commentmetadata&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;time pubdate=&quot;&quot; datetime=&quot;2016-06-29T16:07:57+00:00&quot;&gt;June 29, 2016 at 16:07&lt;/time&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+      &lt;/footer&gt;
+      &lt;div class=&quot;comment-content&quot;&gt;
+        &lt;p&gt;My photos are there on Flickr: &lt;a href=&quot;https://www.flickr.com/photos/dariobf/albums/72157670385205355&quot; rel=&quot;nofollow&quot;&gt;https://www.flickr.com/photos/dariobf/albums/72157670385205355&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;reply&quot;&gt;
+        &lt;a rel=&quot;nofollow&quot; class=&quot;comment-reply-link&quot; href=&quot;https://2016.europe.wordcamp.org/first-photos-from-wceu/?replytocom=2957#respond&quot; aria-label=&quot;Reply to Dario BF&quot;&gt;Reply&lt;/a&gt;
+      &lt;/div&gt;&lt;!-- .reply --&gt;
+    &lt;/article&gt;&lt;!-- #comment-## --&gt;
+  &lt;/li&gt;&lt;!-- #comment-## --&gt;
+  &lt;li class=&quot;post pingback&quot;&gt;
+    &lt;p&gt;Pingback: &lt;a href=&quot;http://www.wpmayor.com/our-experience-wordcamp-europe-2016/&quot; rel=&quot;external nofollow&quot; class=&quot;url&quot;&gt;Our Experience at WordCamp Europe 2016 - WP Mayor&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;&lt;!-- #comment-## --&gt;
+&lt;/ol&gt;
+&lt;div id=&quot;respond&quot; class=&quot;comment-respond&quot;&gt;
+    &lt;h3 id=&quot;reply-title&quot; class=&quot;comment-reply-title&quot;&gt;Leave a Reply &lt;small&gt;&lt;a rel=&quot;nofollow&quot; id=&quot;cancel-comment-reply-link&quot; href=&quot;/first-photos-from-wceu/#respond&quot; style=&quot;display:none;&quot;&gt;Cancel reply&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;
+  &lt;form action=&quot;#&quot; id=&quot;commentform&quot; class=&quot;comment-form&quot;&gt;
+    &lt;p class=&quot;logged-in-as&quot;&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Logged in as Lucijan Blagonic. Edit your profile.&quot;&gt;Logged in as Lucijan Blagonic&lt;/a&gt;.
+      &lt;a href=&quot;#&quot;&gt;Log out?&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p class=&quot;comment-form-comment&quot;&gt;
+      &lt;label for=&quot;comment&quot;&gt;Comment&lt;/label&gt; &lt;textarea id=&quot;comment&quot; name=&quot;comment&quot; cols=&quot;45&quot; rows=&quot;8&quot; maxlength=&quot;65525&quot; aria-required=&quot;true&quot; required=&quot;required&quot;&gt;&lt;/textarea&gt;
+    &lt;/p&gt;
+    &lt;p class=&quot;form-submit&quot;&gt;
+      &lt;input name=&quot;submit&quot; type=&quot;submit&quot; id=&quot;submit&quot; class=&quot;submit&quot; value=&quot;Post Comment&quot;&gt; &lt;input type=&quot;hidden&quot; name=&quot;comment_post_ID&quot; value=&quot;15753&quot; id=&quot;comment_post_ID&quot;&gt;
+      &lt;input type=&quot;hidden&quot; name=&quot;comment_parent&quot; id=&quot;comment_parent&quot; value=&quot;0&quot;&gt;
+    &lt;/p&gt;
+    &lt;p class=&quot;comment-subscription-form&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;subscribe_comments&quot; id=&quot;subscribe_comments&quot; value=&quot;subscribe&quot; style=&quot;width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;&quot;&gt; &lt;label class=&quot;subscribe-label&quot; id=&quot;subscribe-label&quot; for=&quot;subscribe_comments&quot;&gt;Notify me of follow-up comments by email.&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p class=&quot;comment-subscription-form&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;subscribe_blog&quot; id=&quot;subscribe_blog&quot; value=&quot;subscribe&quot; style=&quot;width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;&quot;&gt; &lt;label class=&quot;subscribe-label&quot; id=&quot;subscribe-blog-label&quot; for=&quot;subscribe_blog&quot;&gt;Notify me of new posts by email.&lt;/label&gt;
+    &lt;/p&gt;
+  &lt;/form&gt;
+&lt;/div&gt;&lt;!-- #respond --&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-footer" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-footer">
+          <span class="kss-title__ref">
+              6.5
+            <span class="kss-title__permalink-hash">
+                #6.footer
+            </span>
+          </span>
+          Footer
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Footer of the site (includes site info and widgets)</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <footer id="colophon" class="site-footer" role="contentinfo">
+ <div id="footer-widgets"></div><!-- #footer-widgets -->
+ <div class="site-info">
+   <a class="site-info-generator" href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+   <a class="site-info-network" href="http://central.wordcamp.org/" title="Return to WordCamp Central">Go to WordCamp Central</a>
+ </div>
+</footer>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;footer id=&quot;colophon&quot; class=&quot;site-footer&quot; role=&quot;contentinfo&quot;&gt;
+ &lt;div id=&quot;footer-widgets&quot;&gt;&lt;/div&gt;&lt;!-- #footer-widgets --&gt;
+ &lt;div class=&quot;site-info&quot;&gt;
+   &lt;a class=&quot;site-info-generator&quot; href=&quot;http://wordpress.org/&quot; title=&quot;A Semantic Personal Publishing Platform&quot; rel=&quot;generator&quot;&gt;Proudly powered by WordPress&lt;/a&gt;
+   &lt;a class=&quot;site-info-network&quot; href=&quot;http://central.wordcamp.org/&quot; title=&quot;Return to WordCamp Central&quot;&gt;Go to WordCamp Central&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-header" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-header">
+          <span class="kss-title__ref">
+              6.6
+            <span class="kss-title__permalink-hash">
+                #6.header
+            </span>
+          </span>
+          Header
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Header of the site (includes site branding and navigation)
+Animated lights based on the pen by Umair Razzaq <a href="http://codepen.io/umairrazzaq/pen/dMQbzb">http://codepen.io/umairrazzaq/pen/dMQbzb</a></p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="home">
+<header id="masthead" class="site-header" role="banner">
+  <hgroup>
+   <h1 class="site-title"><a href="#" title="WordCamp Name" rel="home">WordCamp Name</a></h1>
+   <h2 class="site-description">City, Country – Month, Date, Year.</h2>
+  </hgroup>
+</header>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;home&quot;&gt;
+&lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
+  &lt;hgroup&gt;
+   &lt;h1 class=&quot;site-title&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;WordCamp Name&quot; rel=&quot;home&quot;&gt;WordCamp Name&lt;/a&gt;&lt;/h1&gt;
+   &lt;h2 class=&quot;site-description&quot;&gt;City, Country – Month, Date, Year.&lt;/h2&gt;
+  &lt;/hgroup&gt;
+&lt;/header&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-main" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-main">
+          <span class="kss-title__ref">
+              6.7
+            <span class="kss-title__permalink-hash">
+                #6.main
+            </span>
+          </span>
+          Main
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Main section of the site</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          Markup:
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">Markup:</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-navigation" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-navigation">
+          <span class="kss-title__ref">
+              6.8
+            <span class="kss-title__permalink-hash">
+                #6.navigation
+            </span>
+          </span>
+          Navigation
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Main navigation of the site</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header id="masthead" class="site-header" role="banner">
+  <div class="menu-main-navigation-container">
+   <ul id="menu-main-navigation" class="menu">
+     <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
+     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
+     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
+     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
+     <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
+     <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
+     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
+   </ul>
+  </div>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
+  &lt;div class=&quot;menu-main-navigation-container&quot;&gt;
+   &lt;ul id=&quot;menu-main-navigation&quot; class=&quot;menu&quot;&gt;
+     &lt;li class=&quot;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item&quot;&gt;&lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a href=&quot;#&quot;&gt;Volunteer&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a href=&quot;#&quot;&gt;Être bénévole&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a href=&quot;#&quot;&gt;Tickets&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;use-title-for-small menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a title=&quot;Info&quot; href=&quot;#&quot;&gt;Attendee Information&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;use-title-for-small menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a title=&quot;CoC&quot; href=&quot;#&quot;&gt;Code of Conduct&lt;/a&gt;&lt;/li&gt;
+     &lt;li class=&quot;menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-oembed" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-oembed">
+          <span class="kss-title__ref">
+              6.9
+            <span class="kss-title__permalink-hash">
+                #6.oembed
+            </span>
+          </span>
+          oEmbed
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Google Maps oEmbed</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed"></iframe>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;iframe width=&quot;100%&quot; height=&quot;480&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://www.google.com/maps/embed&quot;&gt;&lt;/iframe&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-organizers" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-organizers">
+          <span class="kss-title__ref">
+              6.10
+            <span class="kss-title__permalink-hash">
+                #6.organizers
+            </span>
+          </span>
+          Organizers
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Organizer listing</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="wcorg-organizers">
+ <div class="wcorg-organizer">
+   <h2>Phillip Roth</h2>
+   <div class="wcorg-organizer-description">
+     <img alt="" src="https://secure.gravatar.com/avatar/?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo avatar-default" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g" scale="2">
+     <p>I’m keeping my customers satisfied as a web and graphic designer in Cologne. Co-organizer @WordCampCGN, WordPress Meetup Cologne @WPcgn, Speaker and WordPress enthusiast.</p>
+   </div>
+ </div>
+ <div class="wcorg-organizer">
+   <h2>Siobhan Bamber</h2>
+   <div class="wcorg-organizer-description">
+     <img alt="" src="https://secure.gravatar.com/avatar/?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo avatar-default" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g" scale="2">
+     <p>WordPresser. Automattician. Hails from Wales. Loves to explore. Keeps busy through books, travel plans, and endless day dreaming.</p>
+     <p><a href="#">Link</a></p>
+   </div>
+ </div>
+ <div class="wcorg-organizer">
+   <h2>Emanuel Blagonic</h2>
+   <div class="wcorg-organizer-description">
+     <img alt="" src="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=100&amp;d=mm&amp;r=g" scale="2">
+     <p>Father. Designer. WordPresser. Activist. Problem solver. Wants to change the world. Doesn’t accept no as an answer. Always in a hurry. #wpmeetupzg &amp; #wchr co-organizer. Doesn’t have superpowers. Yet.</p>
+     <p><a href="#">Link</a></p>
+   </div>
+ </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;wcorg-organizers&quot;&gt;
+ &lt;div class=&quot;wcorg-organizer&quot;&gt;
+   &lt;h2&gt;Phillip Roth&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-organizer-description&quot;&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/?s=160&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo avatar-default&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+     &lt;p&gt;I’m keeping my customers satisfied as a web and graphic designer in Cologne. Co-organizer @WordCampCGN, WordPress Meetup Cologne @WPcgn, Speaker and WordPress enthusiast.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;wcorg-organizer&quot;&gt;
+   &lt;h2&gt;Siobhan Bamber&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-organizer-description&quot;&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/?s=160&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo avatar-default&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+     &lt;p&gt;WordPresser. Automattician. Hails from Wales. Loves to explore. Keeps busy through books, travel plans, and endless day dreaming.&lt;/p&gt;
+     &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;wcorg-organizer&quot;&gt;
+   &lt;h2&gt;Emanuel Blagonic&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-organizer-description&quot;&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=160&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot;&gt;
+     &lt;p&gt;Father. Designer. WordPresser. Activist. Problem solver. Wants to change the world. Doesn’t accept no as an answer. Always in a hurry. #wpmeetupzg &amp;amp; #wchr co-organizer. Doesn’t have superpowers. Yet.&lt;/p&gt;
+     &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-pagination" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-pagination">
+          <span class="kss-title__ref">
+              6.11
+            <span class="kss-title__permalink-hash">
+                #6.pagination
+            </span>
+          </span>
+          Pagination
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Bottom navigation for previous/next page of listing</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <nav role="navigation" id="nav-bottom" class="site-navigation paging-navigation">
+<h1 class="assistive-text">Post navigation</h1>
+ <div class="nav-previous">
+   <a href="#"><span class="meta-nav">←</span> Older posts</a>
+ </div>
+ <div class="nav-next">
+   <a href="#">Newer posts <span class="meta-nav">→</span></a>
+ </div>
+</nav>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;nav role=&quot;navigation&quot; id=&quot;nav-bottom&quot; class=&quot;site-navigation paging-navigation&quot;&gt;
+&lt;h1 class=&quot;assistive-text&quot;&gt;Post navigation&lt;/h1&gt;
+ &lt;div class=&quot;nav-previous&quot;&gt;
+   &lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;meta-nav&quot;&gt;←&lt;/span&gt; Older posts&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;nav-next&quot;&gt;
+   &lt;a href=&quot;#&quot;&gt;Newer posts &lt;span class=&quot;meta-nav&quot;&gt;→&lt;/span&gt;&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-post" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-post">
+          <span class="kss-title__ref">
+              6.12
+            <span class="kss-title__permalink-hash">
+                #6.post
+            </span>
+          </span>
+          Post
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Post entry</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-wceu-2016">
+ <header class="entry-header">
+   <h1 class="entry-title"><a href="#" title="Permalink to WordCamp Europe 2016: The big recap | #WCEU" rel="bookmark">WordCamp Europe 2016: The big recap | #WCEU</a></h1>
+   <div class="entry-meta">
+     Posted on
+     <a href="#" title="12:44 pm" rel="bookmark">
+       <time class="entry-date" datetime="2016-07-26T12:44:02+00:00" pubdate="">July 26, 2016</time>
+     </a>
+     <span class="byline"> by
+       <span class="author vcard">
+         <a class="url fn n" href="#" title="View all posts by Mark Johnson" rel="author">Mark Johnson</a>
+       </span>
+     </span>
+   </div>
+ </header>
+ <div class="entry-content">
+   <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit. Facere fugiat eligendi tempora, harum minus repudiandae iure maiores praesentium vitae nam itaque, natus ullam quaerat, incidunt nihil sed ipsum voluptas. Provident.</p>
+   <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. Accusamus laborum alias eaque, maxime numquam id impedit atque dicta, itaque dignissimos nam molestias et animi placeat omnis culpa reprehenderit doloribus excepturi quae minima, aliquam non sint ducimus dolorum facere. Voluptas delectus sequi cum, ipsum incidunt aperiam, animi nam fugit quidem at dolorum ab. Quas asperiores provident culpa, eaque inventore ab. Nulla eum, doloremque, in ipsa libero unde quae velit sunt! Quasi ipsa sint, deleniti repellat <a href="#">molestiae reprehenderit aperiam</a>, excepturi modi a totam rem sed, delectus voluptates cumque iste vitae, atque quidem nemo minima aliquam repellendus ea quae expedita voluptatum. Dicta, nihil.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odio temporibus accusantium expedita est, ea aliquid repellat vel aliquam qui aperiam voluptatem architecto pariatur esse nulla fugiat, totam autem veritatis, optio dicta voluptatum. Ullam odit, vero nostrum adipisci illo saepe, minima. Voluptates libero et, dolore officia nisi. Ex inventore, maiores.</p>
+ </div>
+ <footer class="entry-meta">
+   <span class="sep"> | </span>
+   <span class="tag-links">Tagged <a href="#" rel="tag">wceu 2016</a></span>
+   <span class="sep"> | </span>
+   <span class="comments-link"><a href="#">Leave a comment</a></span>
+   <span class="sep"> | </span>
+   <span class="edit-link"><a class="post-edit-link" href="#">Edit</a></span>
+ </footer>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;article class=&quot;post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-wceu-2016&quot;&gt;
+ &lt;header class=&quot;entry-header&quot;&gt;
+   &lt;h1 class=&quot;entry-title&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;Permalink to WordCamp Europe 2016: The big recap | #WCEU&quot; rel=&quot;bookmark&quot;&gt;WordCamp Europe 2016: The big recap | #WCEU&lt;/a&gt;&lt;/h1&gt;
+   &lt;div class=&quot;entry-meta&quot;&gt;
+     Posted on
+     &lt;a href=&quot;#&quot; title=&quot;12:44 pm&quot; rel=&quot;bookmark&quot;&gt;
+       &lt;time class=&quot;entry-date&quot; datetime=&quot;2016-07-26T12:44:02+00:00&quot; pubdate=&quot;&quot;&gt;July 26, 2016&lt;/time&gt;
+     &lt;/a&gt;
+     &lt;span class=&quot;byline&quot;&gt; by
+       &lt;span class=&quot;author vcard&quot;&gt;
+         &lt;a class=&quot;url fn n&quot; href=&quot;#&quot; title=&quot;View all posts by Mark Johnson&quot; rel=&quot;author&quot;&gt;Mark Johnson&lt;/a&gt;
+       &lt;/span&gt;
+     &lt;/span&gt;
+   &lt;/div&gt;
+ &lt;/header&gt;
+ &lt;div class=&quot;entry-content&quot;&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href=&quot;#&quot;&gt;consectetur adipisicing&lt;/a&gt; elit. Facere fugiat eligendi tempora, harum minus repudiandae iure maiores praesentium vitae nam itaque, natus ullam quaerat, incidunt nihil sed ipsum voluptas. Provident.&lt;/p&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, &lt;strong&gt;consectetur adipisicing elit&lt;/strong&gt;. Accusamus laborum alias eaque, maxime numquam id impedit atque dicta, itaque dignissimos nam molestias et animi placeat omnis culpa reprehenderit doloribus excepturi quae minima, aliquam non sint ducimus dolorum facere. Voluptas delectus sequi cum, ipsum incidunt aperiam, animi nam fugit quidem at dolorum ab. Quas asperiores provident culpa, eaque inventore ab. Nulla eum, doloremque, in ipsa libero unde quae velit sunt! Quasi ipsa sint, deleniti repellat &lt;a href=&quot;#&quot;&gt;molestiae reprehenderit aperiam&lt;/a&gt;, excepturi modi a totam rem sed, delectus voluptates cumque iste vitae, atque quidem nemo minima aliquam repellendus ea quae expedita voluptatum. Dicta, nihil.&lt;/p&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum odio temporibus accusantium expedita est, ea aliquid repellat vel aliquam qui aperiam voluptatem architecto pariatur esse nulla fugiat, totam autem veritatis, optio dicta voluptatum. Ullam odit, vero nostrum adipisci illo saepe, minima. Voluptates libero et, dolore officia nisi. Ex inventore, maiores.&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;footer class=&quot;entry-meta&quot;&gt;
+   &lt;span class=&quot;sep&quot;&gt; | &lt;/span&gt;
+   &lt;span class=&quot;tag-links&quot;&gt;Tagged &lt;a href=&quot;#&quot; rel=&quot;tag&quot;&gt;wceu 2016&lt;/a&gt;&lt;/span&gt;
+   &lt;span class=&quot;sep&quot;&gt; | &lt;/span&gt;
+   &lt;span class=&quot;comments-link&quot;&gt;&lt;a href=&quot;#&quot;&gt;Leave a comment&lt;/a&gt;&lt;/span&gt;
+   &lt;span class=&quot;sep&quot;&gt; | &lt;/span&gt;
+   &lt;span class=&quot;edit-link&quot;&gt;&lt;a class=&quot;post-edit-link&quot; href=&quot;#&quot;&gt;Edit&lt;/a&gt;&lt;/span&gt;
+ &lt;/footer&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-schedule" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-schedule">
+          <span class="kss-title__ref">
+              6.13
+            <span class="kss-title__permalink-hash">
+                #6.schedule
+            </span>
+          </span>
+          Schedule
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Schedule table</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <table class="wcpt-schedule" border="0">
+  <thead>
+    <tr>
+      <th class="wcpt-col-time">Time</th>
+      <th class="wcpt-col-track"><span class="wcpt-track-name">Track 1 - Halle E</span></th>
+      <th class="wcpt-col-track"><span class="wcpt-track-name">Track 2 - Halle G</span></th>
+      <th class="wcpt-col-track"><span class="wcpt-track-name">Track 3 - Leopold</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="wcpt-time-0800 global-session registration">
+      <td class="wcpt-time">08:00</td>
+      <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-registration"
+          data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
+          <span class="wcpt-session-title">Registration</span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-0915">
+      <td class="wcpt-time">09:15</td>
+      <td colspan="1" class="wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-opening-remarks"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#opening-remarks/">Opening Remarks</a> <span class="wcpt-session-speakers"><a href="#speaker/petya-raykovska/">Petya
+         Raykovska</a></span>
+      </td>
+      <td class="wcpt-session-empty"></td>
+      <td class="wcpt-session-empty"></td>
+    </tr>
+    <tr class="wcpt-time-0930">
+      <td class="wcpt-time">09:30</td>
+      <td colspan="1" class="wcb-speaker-mike-little wcb-track-track-1 wcpt-session-type-session wcb-session-tbd"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#tbd/">WordPress: the early years. A
+         co-founder&rsquo;s view</a> <span class="wcpt-session-speakers"><a href="#speaker/mike-little/">Mike Little</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-gary-pendergast wcb-track-track-2 wcpt-session-type-session wcb-session-connected-wordpress"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#connected-wordpress/">Connected WordPress</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/gary-pendergast/">Gary
+         Pendergast</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-marcos-schratzenstaller wcb-track-track-3 wcpt-session-type-session wcb-session-wp-cli-for-beginners"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#wp-cli-for-beginners/">WP-CLI for beginners</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/marcos-schratzenstaller/">Marcos
+         Schratzenstaller</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1000">
+      <td class="wcpt-time">10:00</td>
+      <td colspan="1" class="wcb-speaker-john-blackbourn wcb-track-track-1 wcpt-session-type-session wcb-session-moving-forward-with-a-mature-platform"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#moving-forward-with-a-mature-platform/">Moving
+         forward with a mature platform</a> <span class="wcpt-session-speakers"><a href="#speaker/john-blackbourn/">John
+         Blackbourn</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-adam-silverstein wcb-track-track-2 wcpt-session-type-session wcb-session-making-ads-great-again"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#making-ads-great-again/">Making Ads Great
+         Again</a> <span class="wcpt-session-speakers"><a href="#speaker/adam-silverstein/">Adam
+         Silverstein</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-jeremy-felt wcb-track-track-3 wcpt-session-type-session wcb-session-multisite"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#multisite/">Multisite!</a> <span class="wcpt-session-speakers"><a href="#speaker/jeremy-felt/">Jeremy Felt</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1030">
+      <td class="wcpt-time">10:30</td>
+      <td colspan="1" class="wcb-speaker-magne-ilsaas wcb-speaker-brian-krogsgard wcb-speaker-alexander-frison wcb-speaker-matt-johnson wcb-speaker-ilona-filipi wcb-track-track-1 wcpt-session-type-session wcb-session-cultivating-happy-teams-for-better-business-panel"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#cultivating-happy-teams-for-better-business-panel/">Cultivating happy teams, for better business (panel)</a> <span class="wcpt-session-speakers"><a href="#speaker/magne-ilsaas/">Magne Ilsaas</a>, <a href=
+         <a href="#speaker/matt-johnson/">Matt Johnson</a>,
+         <a href="#speaker/ilona-filipi/">Ilona
+         Filipi</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-dan-blows wcb-speaker-maurizio-pelizzone wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-01"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#short-talks-01/">Short Talks: WordPress Hardening
+         &ndash; Ten tips in ten minutes, What&rsquo;s New in PHP7 and what to expect in PHP7.1</a> <span class="wcpt-session-speakers"><a href="#speaker/dan-blows/">Dan Blows</a>, <a href=
+         Pelizzone</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-edmund-turbin wcb-track-track-3 wcpt-session-type-session wcb-session-theming-in-wordpress-where-do-i-start"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#theming-in-wordpress-where-do-i-start/">Theming
+         in WordPress: Where do I start?</a> <span class="wcpt-session-speakers"><a href="#speaker/edmund-turbin/">Edmund Turbin</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1100 global-session morning-break">
+      <td class="wcpt-time">11:00</td>
+      <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-morning-break"
+          data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
+          <span class="wcpt-session-title">Morning
+          Break</span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1130">
+      <td class="wcpt-time">11:30</td>
+      <td colspan="1" class="wcb-speaker-morten-rand-hendriksen wcb-track-track-1 wcpt-session-type-session wcb-session-empathy-and-acceptance-in-design-and-community"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#empathy-and-acceptance-in-design-and-community/">Empathy
+         and Acceptance in Design and Community</a> <span class="wcpt-session-speakers"><a href="#speaker/morten-rand-hendriksen/">Morten
+         Rand-Hendriksen</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-luc-princen wcb-track-track-2 wcpt-session-type-session wcb-session-thinking-outside-the-boxmodel-an-introduction-to-flexbox"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#thinking-outside-the-boxmodel-an-introduction-to-flexbox/">
+      Thinking outside the box(model) &ndash; An introduction to
+      Flexbox</a> <span class="wcpt-session-speakers"><a href=
+      "#speaker/luc-princen/">Luc Princen</a></span>
+  </td>
+      <td colspan="1" class="wcb-speaker-aaron-campbell wcb-track-track-3 wcpt-session-type-session wcb-session-website-security-the-big-picture-w-simple-steps-to-take"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#website-security-the-big-picture-w-simple-steps-to-take/">
+      Website Security &ndash; The Big Picture w/ Simple Steps to
+      Take</a> <span class="wcpt-session-speakers"><a href=
+      "#speaker/aaron-campbell/">Aaron Campbell</a></span>
+  </td>
+    </tr>
+    <tr class="wcpt-time-1200">
+      <td class="wcpt-time">12:00</td>
+      <td colspan="1" class="wcb-speaker-juan-zapata wcb-speaker-dion-beetson wcb-track-track-1 wcpt-session-type-session wcb-session-how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip/">
+      How NewsCorp Australia scaled WordPress to host Australias
+      largest &lsquo;news&rsquo; websites on WordPress VIP</a>
+      <span class="wcpt-session-speakers"><a href="#speaker/juan-zapata/">Juan Zapata</a>, <a href="#speaker/dion-beetson/">Dion Beetson</a></span>
+  </td>
+      <td colspan="1" class="wcb-speaker-graham-armfield wcb-track-track-2 wcpt-session-type-session wcb-session-assistive-technology-demo"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#assistive-technology-demo/">Assistive Technology
+         Demo</a> <span class="wcpt-session-speakers"><a href="#speaker/graham-armfield/">Graham
+         Armfield</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-ulrich-pogson wcb-track-track-3 wcpt-session-type-session wcb-session-themes-plugins-in-harmony"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#themes-plugins-in-harmony/">Themes &amp; Plugins
+         in harmony</a> <span class="wcpt-session-speakers"><a href="#speaker/ulrich-pogson/">Ulrich Pogson</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1230">
+      <td class="wcpt-time">12:30</td>
+      <td colspan="1" class="wcb-speaker-mike-schroder wcb-track-track-1 wcpt-session-type-session wcb-session-tbd-2"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#tbd-2/">Decision-making in WordPress core
+         development</a> <span class="wcpt-session-speakers"><a href="#speaker/mike-schroder/">Mike Schroder</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-thomas-kraftner wcb-speaker-andrea-badgley wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-02"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#short-talks-02/">Short Talks: Your content is
+         trapped &ndash; How a proper content architecture can
+         save it, Publish in 10 Minutes Per Day</a> <span class="wcpt-session-speakers"><a href="#speaker/thomas-kraftner/">Thomas Kr&auml;ftner</a>,
+         <a href="#speaker/andrea-badgley/">Andrea
+         Badgley</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-matt-geri wcb-track-track-3 wcpt-session-type-session wcb-session-the-ultimate-wordpress-development-environment"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#the-ultimate-wordpress-development-environment/">The
+         ultimate WordPress development environment</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/matt-geri/">Matt Geri</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1300 global-session lunch">
+      <td class="wcpt-time">13:00</td>
+      <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-lunch"
+          data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
+          <span class="wcpt-session-title">Lunch</span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1430">
+      <td class="wcpt-time">14:30</td>
+      <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-1 wcpt-session-type-session wcb-session-matt"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#matt/">Interview and Q&amp;A</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
+         Mullenweg</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming"
+          data-track-title="Track 2 - Halle G, Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#qa-streaming/">Interview and Q&amp;A &ndash;
+         Streaming</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
+         Mullenweg</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming"
+          data-track-title="Track 2 - Halle G, Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#qa-streaming/">Interview and Q&amp;A &ndash;
+         Streaming</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
+         Mullenweg</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1530">
+      <td class="wcpt-time">15:30</td>
+      <td colspan="1" class="wcb-speaker-konstantin-obenland wcb-track-track-1 wcpt-session-type-session wcb-session-the-2016-plugin-directory"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#the-2016-plugin-directory/">The 2016 Plugin
+         Directory</a> <span class="wcpt-session-speakers"><a href="#speaker/konstantin-obenland/">Konstantin
+         Obenland</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-eric-lewis wcb-track-track-2 wcpt-session-type-session wcb-session-editing-text-at-the-new-york-times"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
+         href="#editing-text-at-the-new-york-times/">Editing Text
+         at The New York Times</a> <span class="wcpt-session-speakers"><a href="#speaker/eric-lewis/">Eric Lewis</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-dee-teal wcb-track-track-3 wcpt-session-type-session wcb-session-keys-to-growing-developing-your-wordpress-meetup"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#keys-to-growing-developing-your-wordpress-meetup/">Keys
+         to Growing &amp; Developing your WordPress Meetup</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/dee-teal/">Dee Teal</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1600">
+      <td class="wcpt-time">16:00</td>
+      <td colspan="1" class="wcb-speaker-mika-epstein wcb-track-track-1 wcpt-session-type-session wcb-session-reviews-the-good-the-bad-and-the-stalker"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#reviews-the-good-the-bad-and-the-stalker/">Reviews:
+         The Good, The Bad, and the Stalker</a> <span class="wcpt-session-speakers"><a href="#speaker/mika-epstein/">Mika Epstein</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-peter-wilson wcb-track-track-2 wcpt-session-type-session wcb-session-seven-times-faster-a-study-in-frontend-optimization"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#seven-times-faster-a-study-in-frontend-optimization/">Seven
+         Times Faster : A Study in frontend Optimization</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/peter-wilson/">Peter Wilson</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-kel-santiago wcb-track-track-3 wcpt-session-type-session wcb-session-contributing-to-wordpress-for-business-profession-the-community"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#contributing-to-wordpress-for-business-profession-the-community/">
+      Contributing to WordPress for Business, Profession &amp;
+      the Community</a> <span class="wcpt-session-speakers"><a href="#speaker/kel-santiago/">Kel
+      Santiago-Pilarski</a></span>
+  </td>
+    </tr>
+    <tr class="wcpt-time-1630 global-session afternoon-break">
+      <td class="wcpt-time">16:30</td>
+      <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-afternoon-break"
+          data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
+          <span class="wcpt-session-title">Afternoon
+          Break</span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1700">
+      <td class="wcpt-time">17:00</td>
+      <td colspan="1" class="wcb-speaker-matias-ventura wcb-track-track-1 wcpt-session-type-session wcb-session-a-look-into-calypso"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#a-look-into-calypso/">A look into Calypso</a>
+         <span class="wcpt-session-speakers"><a href="#speaker/matias-ventura/">Mat&iacute;as
+         Ventura</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-caspar-hubinger wcb-track-track-2 wcpt-session-type-session wcb-session-caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui/">
+      &ldquo;Caring is the coolest thing I&rsquo;ve ever seen
+      anyone do.&rdquo;&mdash;Thoughts on WordPress Plugin UI</a>
+      <span class="wcpt-session-speakers"><a href="#speaker/caspar-hubinger/">Caspar
+      H&uuml;binger</a></span>
+  </td>
+      <td colspan="1" class="wcb-speaker-sergey-biryukov wcb-track-track-3 wcpt-session-type-session wcb-session-managing-a-local-wordpress-community"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#managing-a-local-wordpress-community/">Managing a
+         local WordPress community</a> <span class="wcpt-session-speakers"><a href="#speaker/sergey-biryukov/">Sergey
+         Biryukov</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1730">
+      <td class="wcpt-time">17:30</td>
+      <td colspan="1" class="wcb-speaker-marieke-van-de-rakt wcb-speaker-joost-de-valk wcb-track-track-1 wcpt-session-type-session wcb-session-beyond-seo-copywriting-for-professionals"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#beyond-seo-copywriting-for-professionals/">Beyond
+         SEO: copywriting for professionals</a> <span class="wcpt-session-speakers"><a href="#speaker/marieke-van-de-rakt/">Marieke van de Rakt</a>,
+         <a href="#speaker/joost-de-valk/">Joost de
+         Valk</a></span>
+      </td>
+      <td colspan="1" class="wcb-speaker-erica-varlese wcb-speaker-pam-kocke wcb-track-track-2 wcpt-session-type-session wcb-session-closing-the-gap-developing-your-support-philosophy"
+          data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#closing-the-gap-developing-your-support-philosophy/">Closing
+         the gap: Developing your support philosophy</a> <span class="wcpt-session-speakers"><a href="#speaker/erica-varlese/">Erica Varlese</a>, <a href=
+      </td>
+      <td colspan="1" class="wcb-speaker-naoko-takano wcb-track-track-3 wcpt-session-type-session wcb-session-japanese-wordpress-community"
+          data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
+         href="#japanese-wordpress-community/">Stories From the
+         Japanese WordPress Community</a> <span class="wcpt-session-speakers"><a href="#speaker/naoko-takano/">Naoko Takano</a></span>
+      </td>
+    </tr>
+    <tr class="wcpt-time-1800">
+      <td class="wcpt-time">18:00</td>
+      <td colspan="1" class="wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-closing-remarks"
+          data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
+         href="#closing-remarks/">Closing Remarks</a> <span class="wcpt-session-speakers"><a href="#speaker/petya-raykovska/">Petya
+         Raykovska</a></span>
+      </td>
+      <td class="wcpt-session-empty"></td>
+      <td class="wcpt-session-empty"></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;table class=&quot;wcpt-schedule&quot; border=&quot;0&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;wcpt-col-time&quot;&gt;Time&lt;/th&gt;
+      &lt;th class=&quot;wcpt-col-track&quot;&gt;&lt;span class=&quot;wcpt-track-name&quot;&gt;Track 1 - Halle E&lt;/span&gt;&lt;/th&gt;
+      &lt;th class=&quot;wcpt-col-track&quot;&gt;&lt;span class=&quot;wcpt-track-name&quot;&gt;Track 2 - Halle G&lt;/span&gt;&lt;/th&gt;
+      &lt;th class=&quot;wcpt-col-track&quot;&gt;&lt;span class=&quot;wcpt-track-name&quot;&gt;Track 3 - Leopold&lt;/span&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&quot;wcpt-time-0800 global-session registration&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;08:00&lt;/td&gt;
+      &lt;td colspan=&quot;3&quot; class=&quot;wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-registration&quot;
+          data-track-title=&quot;Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold&quot;&gt;
+          &lt;span class=&quot;wcpt-session-title&quot;&gt;Registration&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-0915&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;09:15&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-opening-remarks&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#opening-remarks/&quot;&gt;Opening Remarks&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/petya-raykovska/&quot;&gt;Petya
+         Raykovska&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;wcpt-session-empty&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;wcpt-session-empty&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-0930&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;09:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-mike-little wcb-track-track-1 wcpt-session-type-session wcb-session-tbd&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#tbd/&quot;&gt;WordPress: the early years. A
+         co-founder&amp;rsquo;s view&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/mike-little/&quot;&gt;Mike Little&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-gary-pendergast wcb-track-track-2 wcpt-session-type-session wcb-session-connected-wordpress&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#connected-wordpress/&quot;&gt;Connected WordPress&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/gary-pendergast/&quot;&gt;Gary
+         Pendergast&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-marcos-schratzenstaller wcb-track-track-3 wcpt-session-type-session wcb-session-wp-cli-for-beginners&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#wp-cli-for-beginners/&quot;&gt;WP-CLI for beginners&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/marcos-schratzenstaller/&quot;&gt;Marcos
+         Schratzenstaller&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1000&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;10:00&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-john-blackbourn wcb-track-track-1 wcpt-session-type-session wcb-session-moving-forward-with-a-mature-platform&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#moving-forward-with-a-mature-platform/&quot;&gt;Moving
+         forward with a mature platform&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/john-blackbourn/&quot;&gt;John
+         Blackbourn&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-adam-silverstein wcb-track-track-2 wcpt-session-type-session wcb-session-making-ads-great-again&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#making-ads-great-again/&quot;&gt;Making Ads Great
+         Again&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/adam-silverstein/&quot;&gt;Adam
+         Silverstein&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-jeremy-felt wcb-track-track-3 wcpt-session-type-session wcb-session-multisite&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#multisite/&quot;&gt;Multisite!&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/jeremy-felt/&quot;&gt;Jeremy Felt&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1030&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;10:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-magne-ilsaas wcb-speaker-brian-krogsgard wcb-speaker-alexander-frison wcb-speaker-matt-johnson wcb-speaker-ilona-filipi wcb-track-track-1 wcpt-session-type-session wcb-session-cultivating-happy-teams-for-better-business-panel&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#cultivating-happy-teams-for-better-business-panel/&quot;&gt;Cultivating happy teams, for better business (panel)&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/magne-ilsaas/&quot;&gt;Magne Ilsaas&lt;/a&gt;, &lt;a href=
+         &lt;a href=&quot;#speaker/matt-johnson/&quot;&gt;Matt Johnson&lt;/a&gt;,
+         &lt;a href=&quot;#speaker/ilona-filipi/&quot;&gt;Ilona
+         Filipi&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-dan-blows wcb-speaker-maurizio-pelizzone wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-01&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#short-talks-01/&quot;&gt;Short Talks: WordPress Hardening
+         &amp;ndash; Ten tips in ten minutes, What&amp;rsquo;s New in PHP7 and what to expect in PHP7.1&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/dan-blows/&quot;&gt;Dan Blows&lt;/a&gt;, &lt;a href=
+         Pelizzone&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-edmund-turbin wcb-track-track-3 wcpt-session-type-session wcb-session-theming-in-wordpress-where-do-i-start&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#theming-in-wordpress-where-do-i-start/&quot;&gt;Theming
+         in WordPress: Where do I start?&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/edmund-turbin/&quot;&gt;Edmund Turbin&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1100 global-session morning-break&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;11:00&lt;/td&gt;
+      &lt;td colspan=&quot;3&quot; class=&quot;wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-morning-break&quot;
+          data-track-title=&quot;Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold&quot;&gt;
+          &lt;span class=&quot;wcpt-session-title&quot;&gt;Morning
+          Break&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1130&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;11:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-morten-rand-hendriksen wcb-track-track-1 wcpt-session-type-session wcb-session-empathy-and-acceptance-in-design-and-community&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#empathy-and-acceptance-in-design-and-community/&quot;&gt;Empathy
+         and Acceptance in Design and Community&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/morten-rand-hendriksen/&quot;&gt;Morten
+         Rand-Hendriksen&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-luc-princen wcb-track-track-2 wcpt-session-type-session wcb-session-thinking-outside-the-boxmodel-an-introduction-to-flexbox&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#thinking-outside-the-boxmodel-an-introduction-to-flexbox/&quot;&gt;
+      Thinking outside the box(model) &amp;ndash; An introduction to
+      Flexbox&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=
+      &quot;#speaker/luc-princen/&quot;&gt;Luc Princen&lt;/a&gt;&lt;/span&gt;
+  &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-aaron-campbell wcb-track-track-3 wcpt-session-type-session wcb-session-website-security-the-big-picture-w-simple-steps-to-take&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#website-security-the-big-picture-w-simple-steps-to-take/&quot;&gt;
+      Website Security &amp;ndash; The Big Picture w/ Simple Steps to
+      Take&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=
+      &quot;#speaker/aaron-campbell/&quot;&gt;Aaron Campbell&lt;/a&gt;&lt;/span&gt;
+  &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1200&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;12:00&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-juan-zapata wcb-speaker-dion-beetson wcb-track-track-1 wcpt-session-type-session wcb-session-how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip/&quot;&gt;
+      How NewsCorp Australia scaled WordPress to host Australias
+      largest &amp;lsquo;news&amp;rsquo; websites on WordPress VIP&lt;/a&gt;
+      &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/juan-zapata/&quot;&gt;Juan Zapata&lt;/a&gt;, &lt;a href=&quot;#speaker/dion-beetson/&quot;&gt;Dion Beetson&lt;/a&gt;&lt;/span&gt;
+  &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-graham-armfield wcb-track-track-2 wcpt-session-type-session wcb-session-assistive-technology-demo&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#assistive-technology-demo/&quot;&gt;Assistive Technology
+         Demo&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/graham-armfield/&quot;&gt;Graham
+         Armfield&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-ulrich-pogson wcb-track-track-3 wcpt-session-type-session wcb-session-themes-plugins-in-harmony&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#themes-plugins-in-harmony/&quot;&gt;Themes &amp;amp; Plugins
+         in harmony&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/ulrich-pogson/&quot;&gt;Ulrich Pogson&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1230&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;12:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-mike-schroder wcb-track-track-1 wcpt-session-type-session wcb-session-tbd-2&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#tbd-2/&quot;&gt;Decision-making in WordPress core
+         development&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/mike-schroder/&quot;&gt;Mike Schroder&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-thomas-kraftner wcb-speaker-andrea-badgley wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-02&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#short-talks-02/&quot;&gt;Short Talks: Your content is
+         trapped &amp;ndash; How a proper content architecture can
+         save it, Publish in 10 Minutes Per Day&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/thomas-kraftner/&quot;&gt;Thomas Kr&amp;auml;ftner&lt;/a&gt;,
+         &lt;a href=&quot;#speaker/andrea-badgley/&quot;&gt;Andrea
+         Badgley&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-matt-geri wcb-track-track-3 wcpt-session-type-session wcb-session-the-ultimate-wordpress-development-environment&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#the-ultimate-wordpress-development-environment/&quot;&gt;The
+         ultimate WordPress development environment&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/matt-geri/&quot;&gt;Matt Geri&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1300 global-session lunch&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;13:00&lt;/td&gt;
+      &lt;td colspan=&quot;3&quot; class=&quot;wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-lunch&quot;
+          data-track-title=&quot;Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold&quot;&gt;
+          &lt;span class=&quot;wcpt-session-title&quot;&gt;Lunch&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1430&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;14:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-matt-mullenweg wcb-track-track-1 wcpt-session-type-session wcb-session-matt&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#matt/&quot;&gt;Interview and Q&amp;amp;A&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/matt-mullenweg/&quot;&gt;Matt
+         Mullenweg&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming&quot;
+          data-track-title=&quot;Track 2 - Halle G, Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#qa-streaming/&quot;&gt;Interview and Q&amp;amp;A &amp;ndash;
+         Streaming&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/matt-mullenweg/&quot;&gt;Matt
+         Mullenweg&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming&quot;
+          data-track-title=&quot;Track 2 - Halle G, Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#qa-streaming/&quot;&gt;Interview and Q&amp;amp;A &amp;ndash;
+         Streaming&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/matt-mullenweg/&quot;&gt;Matt
+         Mullenweg&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1530&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;15:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-konstantin-obenland wcb-track-track-1 wcpt-session-type-session wcb-session-the-2016-plugin-directory&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#the-2016-plugin-directory/&quot;&gt;The 2016 Plugin
+         Directory&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/konstantin-obenland/&quot;&gt;Konstantin
+         Obenland&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-eric-lewis wcb-track-track-2 wcpt-session-type-session wcb-session-editing-text-at-the-new-york-times&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#editing-text-at-the-new-york-times/&quot;&gt;Editing Text
+         at The New York Times&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/eric-lewis/&quot;&gt;Eric Lewis&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-dee-teal wcb-track-track-3 wcpt-session-type-session wcb-session-keys-to-growing-developing-your-wordpress-meetup&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#keys-to-growing-developing-your-wordpress-meetup/&quot;&gt;Keys
+         to Growing &amp;amp; Developing your WordPress Meetup&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/dee-teal/&quot;&gt;Dee Teal&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1600&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;16:00&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-mika-epstein wcb-track-track-1 wcpt-session-type-session wcb-session-reviews-the-good-the-bad-and-the-stalker&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#reviews-the-good-the-bad-and-the-stalker/&quot;&gt;Reviews:
+         The Good, The Bad, and the Stalker&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/mika-epstein/&quot;&gt;Mika Epstein&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-peter-wilson wcb-track-track-2 wcpt-session-type-session wcb-session-seven-times-faster-a-study-in-frontend-optimization&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#seven-times-faster-a-study-in-frontend-optimization/&quot;&gt;Seven
+         Times Faster : A Study in frontend Optimization&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/peter-wilson/&quot;&gt;Peter Wilson&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-kel-santiago wcb-track-track-3 wcpt-session-type-session wcb-session-contributing-to-wordpress-for-business-profession-the-community&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#contributing-to-wordpress-for-business-profession-the-community/&quot;&gt;
+      Contributing to WordPress for Business, Profession &amp;amp;
+      the Community&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/kel-santiago/&quot;&gt;Kel
+      Santiago-Pilarski&lt;/a&gt;&lt;/span&gt;
+  &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1630 global-session afternoon-break&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;16:30&lt;/td&gt;
+      &lt;td colspan=&quot;3&quot; class=&quot;wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-afternoon-break&quot;
+          data-track-title=&quot;Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold&quot;&gt;
+          &lt;span class=&quot;wcpt-session-title&quot;&gt;Afternoon
+          Break&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1700&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;17:00&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-matias-ventura wcb-track-track-1 wcpt-session-type-session wcb-session-a-look-into-calypso&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#a-look-into-calypso/&quot;&gt;A look into Calypso&lt;/a&gt;
+         &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/matias-ventura/&quot;&gt;Mat&amp;iacute;as
+         Ventura&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-caspar-hubinger wcb-track-track-2 wcpt-session-type-session wcb-session-caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui/&quot;&gt;
+      &amp;ldquo;Caring is the coolest thing I&amp;rsquo;ve ever seen
+      anyone do.&amp;rdquo;&amp;mdash;Thoughts on WordPress Plugin UI&lt;/a&gt;
+      &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/caspar-hubinger/&quot;&gt;Caspar
+      H&amp;uuml;binger&lt;/a&gt;&lt;/span&gt;
+  &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-sergey-biryukov wcb-track-track-3 wcpt-session-type-session wcb-session-managing-a-local-wordpress-community&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#managing-a-local-wordpress-community/&quot;&gt;Managing a
+         local WordPress community&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/sergey-biryukov/&quot;&gt;Sergey
+         Biryukov&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1730&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;17:30&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-marieke-van-de-rakt wcb-speaker-joost-de-valk wcb-track-track-1 wcpt-session-type-session wcb-session-beyond-seo-copywriting-for-professionals&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#beyond-seo-copywriting-for-professionals/&quot;&gt;Beyond
+         SEO: copywriting for professionals&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/marieke-van-de-rakt/&quot;&gt;Marieke van de Rakt&lt;/a&gt;,
+         &lt;a href=&quot;#speaker/joost-de-valk/&quot;&gt;Joost de
+         Valk&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-erica-varlese wcb-speaker-pam-kocke wcb-track-track-2 wcpt-session-type-session wcb-session-closing-the-gap-developing-your-support-philosophy&quot;
+          data-track-title=&quot;Track 2 - Halle G&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot; href=&quot;#closing-the-gap-developing-your-support-philosophy/&quot;&gt;Closing
+         the gap: Developing your support philosophy&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/erica-varlese/&quot;&gt;Erica Varlese&lt;/a&gt;, &lt;a href=
+      &lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-naoko-takano wcb-track-track-3 wcpt-session-type-session wcb-session-japanese-wordpress-community&quot;
+          data-track-title=&quot;Track 3 - Leopold&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#japanese-wordpress-community/&quot;&gt;Stories From the
+         Japanese WordPress Community&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/naoko-takano/&quot;&gt;Naoko Takano&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;wcpt-time-1800&quot;&gt;
+      &lt;td class=&quot;wcpt-time&quot;&gt;18:00&lt;/td&gt;
+      &lt;td colspan=&quot;1&quot; class=&quot;wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-closing-remarks&quot;
+          data-track-title=&quot;Track 1 - Halle E&quot;&gt;&lt;a class=&quot;wcpt-session-title&quot;
+         href=&quot;#closing-remarks/&quot;&gt;Closing Remarks&lt;/a&gt; &lt;span class=&quot;wcpt-session-speakers&quot;&gt;&lt;a href=&quot;#speaker/petya-raykovska/&quot;&gt;Petya
+         Raykovska&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;wcpt-session-empty&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;wcpt-session-empty&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-sessions" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-sessions">
+          <span class="kss-title__ref">
+              6.14
+            <span class="kss-title__permalink-hash">
+                #6.sessions
+            </span>
+          </span>
+          Sessions
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Sessions list</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="wcorg-sessions">
+ <div id="wcorg-session-4042" class="wcorg-session">
+   <h2>Accessibility in the age of the headless CMS</h2>
+   <div class="wcorg-session-description">
+     <p class="wcpt-session-meta">Presented by <a href="#">Rian Rietveld</a>.</p>
+     <img alt="" src="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-3f9ae6766cc6ed1a6e549fad70e96b46-0">
+     <p>With the REST API now in WordPress core the sky is the limit. The way we developers work will change: how we build themes, how we interact with the database, how we setup plugins.&nbsp;This will effect the way users experience a website. What about accessibility? How to make dynamic and Javascript driven content available for everyone? Let me give you an overview of the pitfalls and give you workarounds and some possible solutions.&nbsp;This talk will be for developers and will include screen reader demos and code examples.</p>
+   </div>
+ </div>
+ <div id="wcorg-session-4093" class="wcorg-session">
+   <h2>Is your code ready for PHP7?</h2>
+   <div class="wcorg-session-description">
+     <p class="wcpt-session-meta">Presented by <a href="#">Julka Grodel</a>.</p>
+     <img alt="" src="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-5fe06444777fda6da69ba4b14621da18-0">
+     <p>Recently the recommended version of PHP for WordPress increased to PHP7, while still supporting PHP 5.2.4. That’s over 9 years of PHP! PHP7 is the first major release since PHP5 and includes backward incompatible changes that may change the way your code works or throw errors on your customer’s site where you’ve never seen them before. Let’s talk about important changes in variable handing, error handling, changed functions, removed functions and their alternatives, and more. We’ll also talk about resources for more details on PHP7 changes to get your themes and plugins ready to run in the newest WordPress environments.</p>
+   </div>
+ </div>
+ <div id="wcorg-session-4298" class="wcorg-session">
+   <h2>Reacting natively with WordPress</h2>
+   <div class="wcorg-session-description">
+     <p class="wcpt-session-meta">Presented by <a href="#">Pirate Dunbar</a>.</p>
+     <img alt="" src="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-55858e8107fd45c5508bb4f8db815d4f-0">
+     <p>As apart of Matt Mullenweg’s decree to Learn JavaScript Deeply, this is a technical talk that will dive into what it takes to build a custom react native mobile app that connects to a WordPress powered backend via the REST API. We will walk through an example mobile app that allows conference attendees to view and rate sessions and leave optional feedback for speakers.</p>
+   </div>
+ </div>
+ <div id="wcorg-session-4312" class="wcorg-session">
+   <h2>Right to left languages support – the right way!</h2>
+   <div class="wcorg-session-description">
+     <p class="wcpt-session-meta">Presented by <a href="#">Yoav Farhi</a>.</p>
+     <img alt="" src="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-ae98ec38ec28f129a33a424e5eba5769-0">
+     <p>Adding Right to left (RTL) languages support to your themes and plugins doesn’t have to be a chore.&nbsp;This short talk will introduce the basics of RTL support and demonstrate how to use automated tools to simplify the process.</p>
+   </div>
+ </div>
+ <div id="wcorg-session-4016" class="wcorg-session">
+   <h2>Selfish Accessibility</h2>
+   <div class="wcorg-session-description">
+     <p class="wcpt-session-meta">Presented by <a href="#">Adrian Roselli</a>.</p>
+     <img alt="" src="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-827aaee5d1086eef593e63feccb16bc6-0">
+     <p>We can all pretend that we’re helping others by making web sites and software accessible, but we are really making them better for our future selves. Learn some fundamentals of accessibility and how it can benefit you (whether future you from aging or you after something else limits your abilities). We’ll review simple testing techniques, basic features and enhancements, coming trends, and where to get help. This isn’t intended to be a deep dive, but more of an overall primer for those who aren’t sure where to start nor how it helps them.</p>
+     <h3>Key takeaways</h3>
+     <ul>
+       <li>Broader context for how all users are or will be disabled, whether temporarily or permanently.</li>
+       <li>Basic tests and best practices that can be integrated into development team workflows to make interfaces accessible.</li>
+       <li>Introduction to standards and tools already available.</li>
+     </ul>
+   </div>
+ </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;wcorg-sessions&quot;&gt;
+ &lt;div id=&quot;wcorg-session-4042&quot; class=&quot;wcorg-session&quot;&gt;
+   &lt;h2&gt;Accessibility in the age of the headless CMS&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-session-description&quot;&gt;
+     &lt;p class=&quot;wcpt-session-meta&quot;&gt;Presented by &lt;a href=&quot;#&quot;&gt;Rian Rietveld&lt;/a&gt;.&lt;/p&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-3f9ae6766cc6ed1a6e549fad70e96b46-0&quot;&gt;
+     &lt;p&gt;With the REST API now in WordPress core the sky is the limit. The way we developers work will change: how we build themes, how we interact with the database, how we setup plugins.&amp;nbsp;This will effect the way users experience a website. What about accessibility? How to make dynamic and Javascript driven content available for everyone? Let me give you an overview of the pitfalls and give you workarounds and some possible solutions.&amp;nbsp;This talk will be for developers and will include screen reader demos and code examples.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div id=&quot;wcorg-session-4093&quot; class=&quot;wcorg-session&quot;&gt;
+   &lt;h2&gt;Is your code ready for PHP7?&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-session-description&quot;&gt;
+     &lt;p class=&quot;wcpt-session-meta&quot;&gt;Presented by &lt;a href=&quot;#&quot;&gt;Julka Grodel&lt;/a&gt;.&lt;/p&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-5fe06444777fda6da69ba4b14621da18-0&quot;&gt;
+     &lt;p&gt;Recently the recommended version of PHP for WordPress increased to PHP7, while still supporting PHP 5.2.4. That’s over 9 years of PHP! PHP7 is the first major release since PHP5 and includes backward incompatible changes that may change the way your code works or throw errors on your customer’s site where you’ve never seen them before. Let’s talk about important changes in variable handing, error handling, changed functions, removed functions and their alternatives, and more. We’ll also talk about resources for more details on PHP7 changes to get your themes and plugins ready to run in the newest WordPress environments.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div id=&quot;wcorg-session-4298&quot; class=&quot;wcorg-session&quot;&gt;
+   &lt;h2&gt;Reacting natively with WordPress&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-session-description&quot;&gt;
+     &lt;p class=&quot;wcpt-session-meta&quot;&gt;Presented by &lt;a href=&quot;#&quot;&gt;Pirate Dunbar&lt;/a&gt;.&lt;/p&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-55858e8107fd45c5508bb4f8db815d4f-0&quot;&gt;
+     &lt;p&gt;As apart of Matt Mullenweg’s decree to Learn JavaScript Deeply, this is a technical talk that will dive into what it takes to build a custom react native mobile app that connects to a WordPress powered backend via the REST API. We will walk through an example mobile app that allows conference attendees to view and rate sessions and leave optional feedback for speakers.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div id=&quot;wcorg-session-4312&quot; class=&quot;wcorg-session&quot;&gt;
+   &lt;h2&gt;Right to left languages support – the right way!&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-session-description&quot;&gt;
+     &lt;p class=&quot;wcpt-session-meta&quot;&gt;Presented by &lt;a href=&quot;#&quot;&gt;Yoav Farhi&lt;/a&gt;.&lt;/p&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-ae98ec38ec28f129a33a424e5eba5769-0&quot;&gt;
+     &lt;p&gt;Adding Right to left (RTL) languages support to your themes and plugins doesn’t have to be a chore.&amp;nbsp;This short talk will introduce the basics of RTL support and demonstrate how to use automated tools to simplify the process.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div id=&quot;wcorg-session-4016&quot; class=&quot;wcorg-session&quot;&gt;
+   &lt;h2&gt;Selfish Accessibility&lt;/h2&gt;
+   &lt;div class=&quot;wcorg-session-description&quot;&gt;
+     &lt;p class=&quot;wcpt-session-meta&quot;&gt;Presented by &lt;a href=&quot;#&quot;&gt;Adrian Roselli&lt;/a&gt;.&lt;/p&gt;
+     &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-827aaee5d1086eef593e63feccb16bc6-0&quot;&gt;
+     &lt;p&gt;We can all pretend that we’re helping others by making web sites and software accessible, but we are really making them better for our future selves. Learn some fundamentals of accessibility and how it can benefit you (whether future you from aging or you after something else limits your abilities). We’ll review simple testing techniques, basic features and enhancements, coming trends, and where to get help. This isn’t intended to be a deep dive, but more of an overall primer for those who aren’t sure where to start nor how it helps them.&lt;/p&gt;
+     &lt;h3&gt;Key takeaways&lt;/h3&gt;
+     &lt;ul&gt;
+       &lt;li&gt;Broader context for how all users are or will be disabled, whether temporarily or permanently.&lt;/li&gt;
+       &lt;li&gt;Basic tests and best practices that can be integrated into development team workflows to make interfaces accessible.&lt;/li&gt;
+       &lt;li&gt;Introduction to standards and tools already available.&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-speakers" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-speakers">
+          <span class="kss-title__ref">
+              6.15
+            <span class="kss-title__permalink-hash">
+                #6.speakers
+            </span>
+          </span>
+          Speakers
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Speakers list</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="wcorg-speakers">
+  <div id="wcorg-speaker-adrian-roselli" class="wcorg-speaker wcorg-speaker-adrian-roselli">
+    <h2><a href="#">Adrian Rosell</a></h2>
+    <div class="wcorg-speaker-description">
+      <img alt="" src="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-827aaee5d1086eef593e63feccb16bc6-0">            <p>Adrian is a member of the W3C Web Platform Working Group, W3C Accessible Rich Internet Applications Working Group, and W3C Accessibility Task Force. He has written articles for trade journals, web sites, and participated as an author and editor on five web-related books. Back in 1998 he co-founded a software development consulting firm before leaving at the start of 2016 to start all over. Some may recognize Adrian from his days helping to run evolt.org, one of the first communities for web developers. Adrian has been developing for the Web since 1993.</p>
+    </div>
+  </div><!-- .wcorg-speaker -->
+  <div id="wcorg-speaker-julka-grodel" class="wcorg-speaker wcorg-speaker-julka-grodel">
+    <h2><a href="#">Julka Grodel</a></h2>
+    <div class="wcorg-speaker-description">
+      <img alt="" src="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-5fe06444777fda6da69ba4b14621da18-0">            <p>Julka Grodel is a Senior Software Engineer at AddThis and has been working with CMSs for over 10 years. She is passionate about writing easily maintainable and extendable code and is on a mission to make it simple to use AddThis’ social tools on single page apps and within a dynamic DOM. Julka spends most of her time on open source projects that integrate AddThis tools for various CMSs and JavaScript frameworks and is the primary developer on AddThis’s WordPress plugins. When not working, she spends her time volunteering with the Junior League, in a pilates studio, or doting over her blind cat Batman and his BFF Robin.</p>
+    </div>
+  </div><!-- .wcorg-speaker -->
+  <div id="wcorg-speaker-pirate-dunbar" class="wcorg-speaker wcorg-speaker-pirate-dunbar">
+    <h2><a href="#">Pirate Dunbar</a></h2>
+    <div class="wcorg-speaker-description">
+      <img alt="" src="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-55858e8107fd45c5508bb4f8db815d4f-0">            <p>Ptah Dunbar is a self-taught digital architect, internationally renowned speaker, educator and serial entrepreneur with over a decade experience creating software and contributing to open source. Ptah speaks 10 languages, teaches students how to code, and is on a mission to create software that empowers a trillion people over the next decade.</p>
+    </div>
+  </div><!-- .wcorg-speaker -->
+  <div id="wcorg-speaker-rian-rietveld" class="wcorg-speaker wcorg-speaker-rian-rietveld">
+    <h2><a href="#">Rian Rietveld</a></h2>
+    <div class="wcorg-speaker-description">
+      <img alt="" src="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-3f9ae6766cc6ed1a6e549fad70e96b46-0">            <p>Rian is a WordPress engineer, specialised in web accessibility. She works for the WordPress agency <a href="https://hmn.md">Human Made</a> and is part of the <a href="https://make.wordpress.org/accessibility/">WordPress Accessibility Team</a>. If she’s not coding, you can find her working in her garden.</p>
+    </div>
+  </div><!-- .wcorg-speaker -->
+  <div id="wcorg-speaker-yoav-farhi" class="wcorg-speaker wcorg-speaker-yoav-farhi">
+    <h2><a href="#">Yoav Farhi</a></h2>
+    <div class="wcorg-speaker-description">
+      <img alt="" src="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-ae98ec38ec28f129a33a424e5eba5769-0">            <p>Yoav Farhi is an Iñtërnâtiônàlizætiønër at Automattic, who works on everything related i18n (that’s internationalization) and l10n (localization) and of course, translation. A core contributor to WordPress for 8 years now, he works hard to make the web a better place.</p>
+    </div>
+  </div><!-- .wcorg-speaker -->
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;wcorg-speakers&quot;&gt;
+  &lt;div id=&quot;wcorg-speaker-adrian-roselli&quot; class=&quot;wcorg-speaker wcorg-speaker-adrian-roselli&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Adrian Rosell&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;wcorg-speaker-description&quot;&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-827aaee5d1086eef593e63feccb16bc6-0&quot;&gt;            &lt;p&gt;Adrian is a member of the W3C Web Platform Working Group, W3C Accessible Rich Internet Applications Working Group, and W3C Accessibility Task Force. He has written articles for trade journals, web sites, and participated as an author and editor on five web-related books. Back in 1998 he co-founded a software development consulting firm before leaving at the start of 2016 to start all over. Some may recognize Adrian from his days helping to run evolt.org, one of the first communities for web developers. Adrian has been developing for the Web since 1993.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .wcorg-speaker --&gt;
+  &lt;div id=&quot;wcorg-speaker-julka-grodel&quot; class=&quot;wcorg-speaker wcorg-speaker-julka-grodel&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Julka Grodel&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;wcorg-speaker-description&quot;&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-5fe06444777fda6da69ba4b14621da18-0&quot;&gt;            &lt;p&gt;Julka Grodel is a Senior Software Engineer at AddThis and has been working with CMSs for over 10 years. She is passionate about writing easily maintainable and extendable code and is on a mission to make it simple to use AddThis’ social tools on single page apps and within a dynamic DOM. Julka spends most of her time on open source projects that integrate AddThis tools for various CMSs and JavaScript frameworks and is the primary developer on AddThis’s WordPress plugins. When not working, she spends her time volunteering with the Junior League, in a pilates studio, or doting over her blind cat Batman and his BFF Robin.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .wcorg-speaker --&gt;
+  &lt;div id=&quot;wcorg-speaker-pirate-dunbar&quot; class=&quot;wcorg-speaker wcorg-speaker-pirate-dunbar&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Pirate Dunbar&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;wcorg-speaker-description&quot;&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-55858e8107fd45c5508bb4f8db815d4f-0&quot;&gt;            &lt;p&gt;Ptah Dunbar is a self-taught digital architect, internationally renowned speaker, educator and serial entrepreneur with over a decade experience creating software and contributing to open source. Ptah speaks 10 languages, teaches students how to code, and is on a mission to create software that empowers a trillion people over the next decade.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .wcorg-speaker --&gt;
+  &lt;div id=&quot;wcorg-speaker-rian-rietveld&quot; class=&quot;wcorg-speaker wcorg-speaker-rian-rietveld&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Rian Rietveld&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;wcorg-speaker-description&quot;&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-3f9ae6766cc6ed1a6e549fad70e96b46-0&quot;&gt;            &lt;p&gt;Rian is a WordPress engineer, specialised in web accessibility. She works for the WordPress agency &lt;a href=&quot;https://hmn.md&quot;&gt;Human Made&lt;/a&gt; and is part of the &lt;a href=&quot;https://make.wordpress.org/accessibility/&quot;&gt;WordPress Accessibility Team&lt;/a&gt;. If she’s not coding, you can find her working in her garden.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .wcorg-speaker --&gt;
+  &lt;div id=&quot;wcorg-speaker-yoav-farhi&quot; class=&quot;wcorg-speaker wcorg-speaker-yoav-farhi&quot;&gt;
+    &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Yoav Farhi&lt;/a&gt;&lt;/h2&gt;
+    &lt;div class=&quot;wcorg-speaker-description&quot;&gt;
+      &lt;img alt=&quot;&quot; src=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;amp;d=mm&amp;amp;r=g&quot; srcset=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;amp;d=mm&amp;amp;r=g 2x&quot; class=&quot;avatar avatar-100 photo grav-hashed grav-hijack&quot; height=&quot;100&quot; width=&quot;100&quot; originals=&quot;100&quot; src-orig=&quot;https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;amp;d=mm&amp;amp;r=g&quot; scale=&quot;2&quot; id=&quot;grav-ae98ec38ec28f129a33a424e5eba5769-0&quot;&gt;            &lt;p&gt;Yoav Farhi is an Iñtërnâtiônàlizætiønër at Automattic, who works on everything related i18n (that’s internationalization) and l10n (localization) and of course, translation. A core contributor to WordPress for 8 years now, he works hard to make the web a better place.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .wcorg-speaker --&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-tickets" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-tickets">
+          <span class="kss-title__ref">
+              6.16
+            <span class="kss-title__permalink-hash">
+                #6.tickets
+            </span>
+          </span>
+          Tickets
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Table for buying tickets</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="tix" class="tix-js">
+ <form action="#" method="POST">
+   <table class="tix_tickets_table">
+     <thead>
+       <tr>
+         <th class="tix-column-description">Description</th>
+         <th class="tix-column-price">Price</th>
+         <th class="tix-column-remaining">Remaining</th>
+         <th class="tix-column-quantity">Quantity</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr class="tix-ticket-13">
+         <td class="tix-column-description">
+           <strong class="tix-ticket-title">WordCamp Europe - June 15-17, 2017</strong>
+           <br><span class="tix-ticket-excerpt">Your WordCamp Europe ticket covers both days of the conference - June 16, 17th and contributor day on Thursday, June 15th. It grants you access to all sessions, lunch, coffee breaks, and the after party. It includes an exclusive #WCEU 2017 t-shirt, stickers, and other great swag. </span>
+         </td>
+         <td class="tix-column-price" style="vertical-align: middle;">€&nbsp;40.00</td>
+         <td class="tix-column-remaining" style="vertical-align: middle;">488</td>
+         <td class="tix-column-quantity" style="vertical-align: middle;">
+           <select name="tix_tickets_selected[13]">
+             <option value="0">0</option>
+             <option selected="selected" value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+             <option value="9">9</option>
+             <option value="10">10</option>
+           </select>
+         </td>
+       </tr>
+       <tr class="tix-row-coupon">
+         <td colspan="4" style="text-align: right;">
+           <a href="#" id="tix-coupon-link" class="">Click here to enter a coupon code</a>
+           <div id="tix-coupon-container" style="display: none;">
+             <input type="text" id="tix-coupon-input" name="tix_coupon" value="">
+             <input type="submit" name="tix_coupon_submit" value="Apply Coupon">
+           </div>
+           <script>
+             // Hide the link and show the coupon form on click.
+             var link_el = document.getElementById( 'tix-coupon-link' );
+             link_el.onclick = function() {
+               this.style.display = 'none';
+               document.getElementById( 'tix-coupon-container' ).style.display = 'block';
+               document.getElementById( 'tix-coupon-input' ).focus();
+               return false;
+             };
+           </script>
+         </td>
+       </tr>
+     </tbody>
+   </table>
+   <p>
+     <input type="submit" value="Register →" style="float: right; cursor: pointer;" class="">
+     <br class="tix-clear">
+   </p>
+ </form>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;tix&quot; class=&quot;tix-js&quot;&gt;
+ &lt;form action=&quot;#&quot; method=&quot;POST&quot;&gt;
+   &lt;table class=&quot;tix_tickets_table&quot;&gt;
+     &lt;thead&gt;
+       &lt;tr&gt;
+         &lt;th class=&quot;tix-column-description&quot;&gt;Description&lt;/th&gt;
+         &lt;th class=&quot;tix-column-price&quot;&gt;Price&lt;/th&gt;
+         &lt;th class=&quot;tix-column-remaining&quot;&gt;Remaining&lt;/th&gt;
+         &lt;th class=&quot;tix-column-quantity&quot;&gt;Quantity&lt;/th&gt;
+       &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+       &lt;tr class=&quot;tix-ticket-13&quot;&gt;
+         &lt;td class=&quot;tix-column-description&quot;&gt;
+           &lt;strong class=&quot;tix-ticket-title&quot;&gt;WordCamp Europe - June 15-17, 2017&lt;/strong&gt;
+           &lt;br&gt;&lt;span class=&quot;tix-ticket-excerpt&quot;&gt;Your WordCamp Europe ticket covers both days of the conference - June 16, 17th and contributor day on Thursday, June 15th. It grants you access to all sessions, lunch, coffee breaks, and the after party. It includes an exclusive #WCEU 2017 t-shirt, stickers, and other great swag. &lt;/span&gt;
+         &lt;/td&gt;
+         &lt;td class=&quot;tix-column-price&quot; style=&quot;vertical-align: middle;&quot;&gt;€&amp;nbsp;40.00&lt;/td&gt;
+         &lt;td class=&quot;tix-column-remaining&quot; style=&quot;vertical-align: middle;&quot;&gt;488&lt;/td&gt;
+         &lt;td class=&quot;tix-column-quantity&quot; style=&quot;vertical-align: middle;&quot;&gt;
+           &lt;select name=&quot;tix_tickets_selected[13]&quot;&gt;
+             &lt;option value=&quot;0&quot;&gt;0&lt;/option&gt;
+             &lt;option selected=&quot;selected&quot; value=&quot;1&quot;&gt;1&lt;/option&gt;
+             &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+             &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+             &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+             &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+             &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+             &lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+             &lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+             &lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+             &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+           &lt;/select&gt;
+         &lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr class=&quot;tix-row-coupon&quot;&gt;
+         &lt;td colspan=&quot;4&quot; style=&quot;text-align: right;&quot;&gt;
+           &lt;a href=&quot;#&quot; id=&quot;tix-coupon-link&quot; class=&quot;&quot;&gt;Click here to enter a coupon code&lt;/a&gt;
+           &lt;div id=&quot;tix-coupon-container&quot; style=&quot;display: none;&quot;&gt;
+             &lt;input type=&quot;text&quot; id=&quot;tix-coupon-input&quot; name=&quot;tix_coupon&quot; value=&quot;&quot;&gt;
+             &lt;input type=&quot;submit&quot; name=&quot;tix_coupon_submit&quot; value=&quot;Apply Coupon&quot;&gt;
+           &lt;/div&gt;
+           &lt;script&gt;
+             // Hide the link and show the coupon form on click.
+             var link_el = document.getElementById( &#x27;tix-coupon-link&#x27; );
+             link_el.onclick = function() {
+               this.style.display = &#x27;none&#x27;;
+               document.getElementById( &#x27;tix-coupon-container&#x27; ).style.display = &#x27;block&#x27;;
+               document.getElementById( &#x27;tix-coupon-input&#x27; ).focus();
+               return false;
+             };
+           &lt;/script&gt;
+         &lt;/td&gt;
+       &lt;/tr&gt;
+     &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;p&gt;
+     &lt;input type=&quot;submit&quot; value=&quot;Register →&quot; style=&quot;float: right; cursor: pointer;&quot; class=&quot;&quot;&gt;
+     &lt;br class=&quot;tix-clear&quot;&gt;
+   &lt;/p&gt;
+ &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-widget-subscribe" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-6-widget-subscribe">
+          <span class="kss-title__ref">
+              6.17.1
+            <span class="kss-title__permalink-hash">
+                #6.widget.subscribe
+            </span>
+          </span>
+          Subscribe
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Subscribe jetpack widget</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="secondary">
+  <aside id="" class="widget jetpack_subscription_widget">
+   <h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
+   <form action="#" method="post" accept-charset="utf-8" id="">
+     <div id="subscribe-text">
+       <p>Enter your email address to subscribe to this site and receive news by email.</p>
+     </div>
+     <p id="subscribe-email">
+       <label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">Email Address</label>
+       <input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address">
+     </p>
+     <p id="subscribe-submit">
+       <input type="submit" value="Sign me up!" name="jetpack_subscriptions_widget">
+     </p>
+   </form>
+  </aside>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
+  &lt;aside id=&quot;&quot; class=&quot;widget jetpack_subscription_widget&quot;&gt;
+   &lt;h1 class=&quot;widget-title&quot;&gt;Subscribe to WordCamp Europe 2017 News by email&lt;/h1&gt;
+   &lt;form action=&quot;#&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot; id=&quot;&quot;&gt;
+     &lt;div id=&quot;subscribe-text&quot;&gt;
+       &lt;p&gt;Enter your email address to subscribe to this site and receive news by email.&lt;/p&gt;
+     &lt;/div&gt;
+     &lt;p id=&quot;subscribe-email&quot;&gt;
+       &lt;label id=&quot;jetpack-subscribe-label&quot; for=&quot;subscribe-field-blog_subscription-3&quot; style=&quot;clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;&quot;&gt;Email Address&lt;/label&gt;
+       &lt;input type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; class=&quot;required&quot; value=&quot;&quot; id=&quot;subscribe-field-blog_subscription-3&quot; placeholder=&quot;Email Address&quot;&gt;
+     &lt;/p&gt;
+     &lt;p id=&quot;subscribe-submit&quot;&gt;
+       &lt;input type=&quot;submit&quot; value=&quot;Sign me up!&quot; name=&quot;jetpack_subscriptions_widget&quot;&gt;
+     &lt;/p&gt;
+   &lt;/form&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-widget-text-social" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-6-widget-text-social">
+          <span class="kss-title__ref">
+              6.17.2
+            <span class="kss-title__permalink-hash">
+                #6.widget.text-social
+            </span>
+          </span>
+          Social
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Custom social widget</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="secondary">
+  <aside class="widget widget_text" id="text-2">
+    <h1 class="widget-title">Follow WordCamp Name</h1>
+    <div class="textwidget">
+      <ul class="list-social">
+        <li class="social-twitter" id="twitter">
+          <a href="#"><strong>@WordCampName</strong> on Twitter</a>
+        </li>
+        <li class="social-facebook" id="facebook">
+          <a href="#"><strong>WordCamp Name</strong> on Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
+  &lt;aside class=&quot;widget widget_text&quot; id=&quot;text-2&quot;&gt;
+    &lt;h1 class=&quot;widget-title&quot;&gt;Follow WordCamp Name&lt;/h1&gt;
+    &lt;div class=&quot;textwidget&quot;&gt;
+      &lt;ul class=&quot;list-social&quot;&gt;
+        &lt;li class=&quot;social-twitter&quot; id=&quot;twitter&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;strong&gt;@WordCampName&lt;/strong&gt; on Twitter&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;social-facebook&quot; id=&quot;facebook&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;strong&gt;WordCamp Name&lt;/strong&gt; on Facebook&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prism.js"></script>
+
+<!-- Typekit -->
+<script src="https://use.typekit.net/prq0thw.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+
+</body>
+</html>

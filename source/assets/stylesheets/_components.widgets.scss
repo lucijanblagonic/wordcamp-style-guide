@@ -1,0 +1,75 @@
+/*
+ * Widgets
+ */
+
+.widget {
+
+  @include container-padding(1.5);
+  position: relative;
+  max-width: $container-max-width;
+
+}
+
+.widget-title {
+
+  font-size: ms(1);
+  line-height: ms(1);
+
+}
+
+
+/*
+ * Secondary Widgets
+ *
+ * Full width widgets after the content
+ */
+
+#after-header-widgets .widget,
+#before-content-widgets .widget,
+#secondary .widget {
+
+  // padding-left: 0;
+  // padding-right: 0;
+  text-align: center;
+
+  > * {
+
+    position: relative;
+
+  }
+
+  &:before {
+
+    position: absolute;
+    // z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    background-color: $color-brand-quaternary;
+
+    content: "";
+
+  }
+
+}
+
+
+/*
+ * Widget text
+ *
+ * Default text widget styles
+ */
+
+.widget_text {
+
+  background-color: $color-grey-10;
+
+  &:before {
+
+    background-color: $color-grey-10!important;
+
+  }
+
+}

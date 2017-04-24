@@ -1,0 +1,106 @@
+/* =Organizers
+===================================================== */
+
+// Organizers
+//
+// Organizer listing
+//
+// Markup:
+// <div class="wcorg-organizers">
+//  <div class="wcorg-organizer">
+//    <h2>Phillip Roth</h2>
+//    <div class="wcorg-organizer-description">
+//      <img alt="" src="https://secure.gravatar.com/avatar/?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo avatar-default" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g" scale="2">
+//      <p>I’m keeping my customers satisfied as a web and graphic designer in Cologne. Co-organizer @WordCampCGN, WordPress Meetup Cologne @WPcgn, Speaker and WordPress enthusiast.</p>
+//    </div>
+//  </div>
+//  <div class="wcorg-organizer">
+//    <h2>Siobhan Bamber</h2>
+//    <div class="wcorg-organizer-description">
+//      <img alt="" src="https://secure.gravatar.com/avatar/?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo avatar-default" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g" scale="2">
+//      <p>WordPresser. Automattician. Hails from Wales. Loves to explore. Keeps busy through books, travel plans, and endless day dreaming.</p>
+//      <p><a href="#">Link</a></p>
+//    </div>
+//  </div>
+//  <div class="wcorg-organizer">
+//    <h2>Emanuel Blagonic</h2>
+//    <div class="wcorg-organizer-description">
+//      <img alt="" src="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=160&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ab1837782bc07b80199a2290c6372643?s=100&amp;d=mm&amp;r=g" scale="2">
+//      <p>Father. Designer. WordPresser. Activist. Problem solver. Wants to change the world. Doesn’t accept no as an answer. Always in a hurry. #wpmeetupzg &amp; #wchr co-organizer. Doesn’t have superpowers. Yet.</p>
+//      <p><a href="#">Link</a></p>
+//    </div>
+//  </div>
+// </div>
+//
+// Style guide: 6.organizers
+
+.wcorg-organizers {
+
+  padding-bottom: $unit-default;
+  margin-bottom: $unit-default;
+  border-bottom: 6px double $color-border-weak;
+
+}
+
+.wcorg-organizer {
+
+  max-width: 40em;
+  margin-bottom: $unit-l;
+
+  &:last-child {
+
+    margin-bottom: 0;
+
+  }
+
+  h2 {
+
+    margin-bottom: $unit-s;
+    font-size: ms(1);
+    font-family: $font-headline;
+
+  }
+
+  .wcorg-organizer-description {
+
+    padding-left: rem(64);
+    min-height: rem(48);
+
+    @include breakpoint(small) {
+
+      padding-left: rem(96);
+      min-height: rem(80);
+
+    }
+
+  }
+
+  p {
+
+    margin: 0;
+
+    font-size: ms(0, 16px);
+
+  }
+
+  .avatar {
+
+    float: left;
+    margin-left: -(rem(64));
+    width: rem(48);
+
+    // clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
+    @include breakpoint(small) {
+
+      margin-left: -(rem(96));
+      width: rem(80);
+
+    }
+
+  }
+
+
+  a {}
+
+}

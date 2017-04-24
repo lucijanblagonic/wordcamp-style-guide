@@ -1,0 +1,38 @@
+/* =Quotes
+===================================================== */
+
+// Blockquote
+//
+// Markup:
+// <blockquote>
+//   <p><strong>Good Design Is Innovative:</strong> The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself.</p>
+//   <cite>— Dieter Rams, <a href="#article-name">August 31, 2016</a></cite>
+// </blockquote>
+//
+// Style guide: 4.quote
+
+blockquote {
+
+  margin: 0;
+  margin-bottom: rem(24);
+
+}
+
+blockquote {
+
+  padding: 2em;
+  background-color: $color-grey-10;
+
+  p {
+
+    font-style: italic;
+
+  }
+
+  p:last-child {
+
+    margin-bottom: 0;
+
+  }
+
+}

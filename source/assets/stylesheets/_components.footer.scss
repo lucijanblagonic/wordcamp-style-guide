@@ -1,0 +1,99 @@
+/* =Footer
+===================================================== */
+
+// Footer
+//
+// Footer of the site (includes site info and widgets)
+//
+// Markup:
+// <footer id="colophon" class="site-footer" role="contentinfo">
+//  <div id="footer-widgets"></div><!-- #footer-widgets -->
+//  <div class="site-info">
+//    <a class="site-info-generator" href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+//    <a class="site-info-network" href="http://central.wordcamp.org/" title="Return to WordCamp Central">Go to WordCamp Central</a>
+//  </div>
+// </footer>
+//
+// Style guide: 6.footer
+
+/*
+ * Footer
+ *
+ * Footer container
+ * <footer id="colophon" class="site-footer" role="contentinfo"> ... </footer>
+ */
+
+#colophon {
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $unit-xl;
+
+  text-align: center;
+
+}
+
+.site-info-generator {
+
+  @include visually-hidden();
+
+}
+
+.site-info-network {
+
+  // @include hide-text();
+
+  position: relative;
+
+  display: block;
+  width: rem(60);
+  height: rem(60);
+  margin: 0 auto;
+  margin-bottom: $unit-m;
+
+  color: #fff;
+  text-indent: -9999px;
+
+  background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $color-link;
+  background-size: 40px;
+  border-radius: 50%;
+
+  transition: all .1s ease;
+
+  &:after {
+
+    position: absolute;
+    left: 50%;
+    top: rem(30);
+    z-index: -1;
+
+    margin-left: -(rem(15));
+    margin-bottom: -(rem(30));
+    width: rem(30);
+    height: rem(100);
+
+    background: $color-link;
+    transition: all .1s ease;
+
+    content: "";
+
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    background-color: $color-link-hover;
+
+    &:after {
+
+      background-color: $color-link-hover;
+    }
+
+  }
+
+}

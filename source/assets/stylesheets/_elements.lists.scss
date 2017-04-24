@@ -1,0 +1,78 @@
+/* =Lists
+===================================================== */
+
+// Lists
+//
+// Style guide: 4.lists
+
+ul,
+ol,
+dl {
+
+	margin-bottom: $unit-default;
+
+	ul,
+	ol,
+	dl {
+
+		margin-bottom: 0;
+
+	}
+
+}
+
+// Ordered
+//
+// List examples
+//
+// Markup:
+// <ol>
+//   <li>List item</li>
+//   <li>List item</li>
+//   <li>List item</li>
+//   <li>List item</li>
+// </ol>
+//
+// Style guide: 4.lists.ordered
+
+ol {
+
+}
+
+// Unordered
+//
+// List examples
+//
+// Markup:
+// <ul>
+//   <li>List item</li>
+//   <li>List item</li>
+//   <li>List item</li>
+//   <li>List item</li>
+// </ul>
+//
+// Style guide: 4.lists.unordered
+
+ul {
+
+
+}
+
+/*
+ * List items
+ */
+
+li {
+
+	// @extend p;
+
+  margin-top: rem(4);
+  margin-bottom: 0;
+
+  &:first-child {
+
+    margin-top: 0;
+
+  }
+
+}

@@ -1,0 +1,48 @@
+/* =Pagination
+===================================================== */
+
+// Pagination
+//
+// Bottom navigation for previous/next page of listing
+//
+// Markup:
+// <nav role="navigation" id="nav-bottom" class="site-navigation paging-navigation">
+// <h1 class="assistive-text">Post navigation</h1>
+//  <div class="nav-previous">
+//    <a href="#"><span class="meta-nav">←</span> Older posts</a>
+//  </div>
+//  <div class="nav-next">
+//    <a href="#">Newer posts <span class="meta-nav">→</span></a>
+//  </div>
+// </nav>
+//
+// Style guide: 6.pagination
+
+.paging-navigation {
+
+  @include clearfix();
+
+  a {
+
+    display: block;
+
+  }
+
+  .nav-previous {
+
+    float: left;
+    text-align: left;
+
+  }
+
+  .nav-next {
+
+    float: right;
+    text-align: right;
+
+  }
+
+  /* Arrows */
+  .meta-nav {}
+
+}

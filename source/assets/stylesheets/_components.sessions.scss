@@ -1,0 +1,112 @@
+/* =Sessions
+===================================================== */
+
+// Sessions
+//
+// Sessions list
+//
+// Markup:
+// <div class="wcorg-sessions">
+//  <div id="wcorg-session-4042" class="wcorg-session">
+//    <h2>Accessibility in the age of the headless CMS</h2>
+//    <div class="wcorg-session-description">
+//      <p class="wcpt-session-meta">Presented by <a href="#">Rian Rietveld</a>.</p>
+//      <img alt="" src="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/3f9ae6766cc6ed1a6e549fad70e96b46?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-3f9ae6766cc6ed1a6e549fad70e96b46-0">
+//      <p>With the REST API now in WordPress core the sky is the limit. The way we developers work will change: how we build themes, how we interact with the database, how we setup plugins.&nbsp;This will effect the way users experience a website. What about accessibility? How to make dynamic and Javascript driven content available for everyone? Let me give you an overview of the pitfalls and give you workarounds and some possible solutions.&nbsp;This talk will be for developers and will include screen reader demos and code examples.</p>
+//    </div>
+//  </div>
+//  <div id="wcorg-session-4093" class="wcorg-session">
+//    <h2>Is your code ready for PHP7?</h2>
+//    <div class="wcorg-session-description">
+//      <p class="wcpt-session-meta">Presented by <a href="#">Julka Grodel</a>.</p>
+//      <img alt="" src="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/5fe06444777fda6da69ba4b14621da18?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-5fe06444777fda6da69ba4b14621da18-0">
+//      <p>Recently the recommended version of PHP for WordPress increased to PHP7, while still supporting PHP 5.2.4. That’s over 9 years of PHP! PHP7 is the first major release since PHP5 and includes backward incompatible changes that may change the way your code works or throw errors on your customer’s site where you’ve never seen them before. Let’s talk about important changes in variable handing, error handling, changed functions, removed functions and their alternatives, and more. We’ll also talk about resources for more details on PHP7 changes to get your themes and plugins ready to run in the newest WordPress environments.</p>
+//    </div>
+//  </div>
+//  <div id="wcorg-session-4298" class="wcorg-session">
+//    <h2>Reacting natively with WordPress</h2>
+//    <div class="wcorg-session-description">
+//      <p class="wcpt-session-meta">Presented by <a href="#">Pirate Dunbar</a>.</p>
+//      <img alt="" src="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/55858e8107fd45c5508bb4f8db815d4f?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-55858e8107fd45c5508bb4f8db815d4f-0">
+//      <p>As apart of Matt Mullenweg’s decree to Learn JavaScript Deeply, this is a technical talk that will dive into what it takes to build a custom react native mobile app that connects to a WordPress powered backend via the REST API. We will walk through an example mobile app that allows conference attendees to view and rate sessions and leave optional feedback for speakers.</p>
+//    </div>
+//  </div>
+//  <div id="wcorg-session-4312" class="wcorg-session">
+//    <h2>Right to left languages support – the right way!</h2>
+//    <div class="wcorg-session-description">
+//      <p class="wcpt-session-meta">Presented by <a href="#">Yoav Farhi</a>.</p>
+//      <img alt="" src="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/ae98ec38ec28f129a33a424e5eba5769?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-ae98ec38ec28f129a33a424e5eba5769-0">
+//      <p>Adding Right to left (RTL) languages support to your themes and plugins doesn’t have to be a chore.&nbsp;This short talk will introduce the basics of RTL support and demonstrate how to use automated tools to simplify the process.</p>
+//    </div>
+//  </div>
+//  <div id="wcorg-session-4016" class="wcorg-session">
+//    <h2>Selfish Accessibility</h2>
+//    <div class="wcorg-session-description">
+//      <p class="wcpt-session-meta">Presented by <a href="#">Adrian Roselli</a>.</p>
+//      <img alt="" src="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo grav-hashed grav-hijack" height="100" width="100" originals="100" src-orig="https://secure.gravatar.com/avatar/827aaee5d1086eef593e63feccb16bc6?s=100&amp;d=mm&amp;r=g" scale="2" id="grav-827aaee5d1086eef593e63feccb16bc6-0">
+//      <p>We can all pretend that we’re helping others by making web sites and software accessible, but we are really making them better for our future selves. Learn some fundamentals of accessibility and how it can benefit you (whether future you from aging or you after something else limits your abilities). We’ll review simple testing techniques, basic features and enhancements, coming trends, and where to get help. This isn’t intended to be a deep dive, but more of an overall primer for those who aren’t sure where to start nor how it helps them.</p>
+//      <h3>Key takeaways</h3>
+//      <ul>
+//        <li>Broader context for how all users are or will be disabled, whether temporarily or permanently.</li>
+//        <li>Basic tests and best practices that can be integrated into development team workflows to make interfaces accessible.</li>
+//        <li>Introduction to standards and tools already available.</li>
+//      </ul>
+//    </div>
+//  </div>
+// </div>
+//
+// Style guide: 6.sessions
+
+.wcorg-sessions {
+
+
+}
+
+.wcorg-session {
+
+  border-top: 6px double $color-border-weak;
+  padding: $unit-default 0;
+
+  .wcorg-session-description {
+
+    @include clearfix();
+
+  }
+
+  .wcpt-session-meta {
+
+
+  }
+
+  .avatar {
+
+    float: left;
+    margin: $unit-xs $unit-s $unit-xs 0;
+
+  }
+
+  p {
+
+    margin-bottom: $unit-xs;
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  h3 {
+
+    text-transform: none;
+
+  }
+
+  ul {}
+  li {}
+
+}
+
+
+
