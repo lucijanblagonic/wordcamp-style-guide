@@ -2,7 +2,9 @@
 
 **Work in progress.** See the current version of the generated [style guide](https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/).
 
-![Style guide created with KSS methodology](screenshot.png)
+![Style guide created with KSS methodology](screenshot-style-guide.png)
+![Style guide created with KSS methodology](screenshot-style-guide-colors.png)
+![Style guide created with KSS methodology](screenshot-style-guide-heading.png)
 
 This blank style guide originated from the WordCamp Europe 2017 design team. Read the **article about the style guide** on the blog.
 
