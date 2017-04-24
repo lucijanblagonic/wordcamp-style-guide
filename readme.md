@@ -1,6 +1,6 @@
 # WordCamp Style Guide
 
-**Work in progress.** See the current version of the generated [style guide](https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/).
+See the current version of the generated [style guide](https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/).
 
 ![Style guide created with KSS methodology](screenshot-style-guide.png)
 ![Style guide created with KSS methodology: Color panel](screenshot-style-guide-colors.png)
@@ -59,3 +59,9 @@ Articles and tools to start documenting interfaces and build style guides:
 * [Documenting interfaces](http://polarnorth.org/blog/documenting-interfaces/)
 * [Interface inventory](https://github.com/lucijanblagonic/interface-inventory/)
 * [Moving the design process to the browser](http://polarnorth.org/blog/moving-the-design-process-to-the-browser/)
+
+---
+
+## Other Style Guides
+
+* [WordCamp Europe 2017](https://lucijanblagonic.github.io/wceu-2017/styleguide)
