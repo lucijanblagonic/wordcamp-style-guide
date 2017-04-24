@@ -8,6 +8,8 @@ See the current version of the generated [style guide](https://lucijanblagonic.g
 
 This blank style guide originated from the WordCamp Europe 2017 design team. Read the **article about the style guide** on the blog.
 
+The main elements are based on the wordcamp-base-redux-2
+
 ---
 
 ## Getting Started

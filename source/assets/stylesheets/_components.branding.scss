@@ -31,8 +31,6 @@
 
 .site-header hgroup {
 
-  overflow: hidden; // Add overflow hidden to keep light beams from leaking out
-
   @include container-padding(1.5);
 
   text-align: center;
