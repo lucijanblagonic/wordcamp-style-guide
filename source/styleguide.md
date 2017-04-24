@@ -15,7 +15,7 @@ Style guide is broken down into several specific groups:
 * [Components](section-6.html) — Designed components and other UI elements that are used to build the theme.
 * [Trumps](section-7.html) — Helpers and overrides.
 
-This style guide is based on [KSS](http://warpspire.com/kss/) methodology. If you want to test it for yourself, you can use [this project as a starting point](https://github.com/lucijanblagonic/wceu-2017).
+This style guide is based on [KSS](http://warpspire.com/kss/) methodology.
 
 ## Branding
 
