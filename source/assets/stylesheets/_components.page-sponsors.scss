@@ -1,0 +1,45 @@
+/*
+ * Sponsors page
+ *
+ * Experimenting with global style overrides
+ */
+
+.page-slug-sponsors {
+
+  #content {
+
+    max-width: rem(1200);
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .entry-title {
+
+    position: relative;
+
+    margin-bottom: $unit-l;
+    margin-bottom: rem(64);
+    padding-bottom: rem(64);
+
+    text-align: center;
+
+    &:before {
+
+      width: rem(160);
+      height: rem(2);
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-color: $color-brand-secondary;
+
+      content: "";
+
+    }
+
+  }
+
+}

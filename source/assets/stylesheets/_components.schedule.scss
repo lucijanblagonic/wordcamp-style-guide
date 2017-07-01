@@ -5,293 +5,15 @@
 //
 // Schedule table
 //
-// Markup:
-// <table class="wcpt-schedule" border="0">
-//   <thead>
-//     <tr>
-//       <th class="wcpt-col-time">Time</th>
-//       <th class="wcpt-col-track"><span class="wcpt-track-name">Track 1 - Halle E</span></th>
-//       <th class="wcpt-col-track"><span class="wcpt-track-name">Track 2 - Halle G</span></th>
-//       <th class="wcpt-col-track"><span class="wcpt-track-name">Track 3 - Leopold</span></th>
-//     </tr>
-//   </thead>
-//   <tbody>
-//     <tr class="wcpt-time-0800 global-session registration">
-//       <td class="wcpt-time">08:00</td>
-//       <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-registration"
-//           data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
-//           <span class="wcpt-session-title">Registration</span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-0915">
-//       <td class="wcpt-time">09:15</td>
-//       <td colspan="1" class="wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-opening-remarks"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#opening-remarks/">Opening Remarks</a> <span class="wcpt-session-speakers"><a href="#speaker/petya-raykovska/">Petya
-//          Raykovska</a></span>
-//       </td>
-//       <td class="wcpt-session-empty"></td>
-//       <td class="wcpt-session-empty"></td>
-//     </tr>
-//     <tr class="wcpt-time-0930">
-//       <td class="wcpt-time">09:30</td>
-//       <td colspan="1" class="wcb-speaker-mike-little wcb-track-track-1 wcpt-session-type-session wcb-session-tbd"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#tbd/">WordPress: the early years. A
-//          co-founder&rsquo;s view</a> <span class="wcpt-session-speakers"><a href="#speaker/mike-little/">Mike Little</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-gary-pendergast wcb-track-track-2 wcpt-session-type-session wcb-session-connected-wordpress"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#connected-wordpress/">Connected WordPress</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/gary-pendergast/">Gary
-//          Pendergast</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-marcos-schratzenstaller wcb-track-track-3 wcpt-session-type-session wcb-session-wp-cli-for-beginners"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#wp-cli-for-beginners/">WP-CLI for beginners</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/marcos-schratzenstaller/">Marcos
-//          Schratzenstaller</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1000">
-//       <td class="wcpt-time">10:00</td>
-//       <td colspan="1" class="wcb-speaker-john-blackbourn wcb-track-track-1 wcpt-session-type-session wcb-session-moving-forward-with-a-mature-platform"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#moving-forward-with-a-mature-platform/">Moving
-//          forward with a mature platform</a> <span class="wcpt-session-speakers"><a href="#speaker/john-blackbourn/">John
-//          Blackbourn</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-adam-silverstein wcb-track-track-2 wcpt-session-type-session wcb-session-making-ads-great-again"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#making-ads-great-again/">Making Ads Great
-//          Again</a> <span class="wcpt-session-speakers"><a href="#speaker/adam-silverstein/">Adam
-//          Silverstein</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-jeremy-felt wcb-track-track-3 wcpt-session-type-session wcb-session-multisite"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#multisite/">Multisite!</a> <span class="wcpt-session-speakers"><a href="#speaker/jeremy-felt/">Jeremy Felt</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1030">
-//       <td class="wcpt-time">10:30</td>
-//       <td colspan="1" class="wcb-speaker-magne-ilsaas wcb-speaker-brian-krogsgard wcb-speaker-alexander-frison wcb-speaker-matt-johnson wcb-speaker-ilona-filipi wcb-track-track-1 wcpt-session-type-session wcb-session-cultivating-happy-teams-for-better-business-panel"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#cultivating-happy-teams-for-better-business-panel/">Cultivating happy teams, for better business (panel)</a> <span class="wcpt-session-speakers"><a href="#speaker/magne-ilsaas/">Magne Ilsaas</a>, <a href=
-//          <a href="#speaker/matt-johnson/">Matt Johnson</a>,
-//          <a href="#speaker/ilona-filipi/">Ilona
-//          Filipi</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-dan-blows wcb-speaker-maurizio-pelizzone wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-01"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#short-talks-01/">Short Talks: WordPress Hardening
-//          &ndash; Ten tips in ten minutes, What&rsquo;s New in PHP7 and what to expect in PHP7.1</a> <span class="wcpt-session-speakers"><a href="#speaker/dan-blows/">Dan Blows</a>, <a href=
-//          Pelizzone</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-edmund-turbin wcb-track-track-3 wcpt-session-type-session wcb-session-theming-in-wordpress-where-do-i-start"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#theming-in-wordpress-where-do-i-start/">Theming
-//          in WordPress: Where do I start?</a> <span class="wcpt-session-speakers"><a href="#speaker/edmund-turbin/">Edmund Turbin</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1100 global-session morning-break">
-//       <td class="wcpt-time">11:00</td>
-//       <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-morning-break"
-//           data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
-//           <span class="wcpt-session-title">Morning
-//           Break</span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1130">
-//       <td class="wcpt-time">11:30</td>
-//       <td colspan="1" class="wcb-speaker-morten-rand-hendriksen wcb-track-track-1 wcpt-session-type-session wcb-session-empathy-and-acceptance-in-design-and-community"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#empathy-and-acceptance-in-design-and-community/">Empathy
-//          and Acceptance in Design and Community</a> <span class="wcpt-session-speakers"><a href="#speaker/morten-rand-hendriksen/">Morten
-//          Rand-Hendriksen</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-luc-princen wcb-track-track-2 wcpt-session-type-session wcb-session-thinking-outside-the-boxmodel-an-introduction-to-flexbox"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#thinking-outside-the-boxmodel-an-introduction-to-flexbox/">
-//       Thinking outside the box(model) &ndash; An introduction to
-//       Flexbox</a> <span class="wcpt-session-speakers"><a href=
-//       "#speaker/luc-princen/">Luc Princen</a></span>
-//   </td>
-//       <td colspan="1" class="wcb-speaker-aaron-campbell wcb-track-track-3 wcpt-session-type-session wcb-session-website-security-the-big-picture-w-simple-steps-to-take"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#website-security-the-big-picture-w-simple-steps-to-take/">
-//       Website Security &ndash; The Big Picture w/ Simple Steps to
-//       Take</a> <span class="wcpt-session-speakers"><a href=
-//       "#speaker/aaron-campbell/">Aaron Campbell</a></span>
-//   </td>
-//     </tr>
-//     <tr class="wcpt-time-1200">
-//       <td class="wcpt-time">12:00</td>
-//       <td colspan="1" class="wcb-speaker-juan-zapata wcb-speaker-dion-beetson wcb-track-track-1 wcpt-session-type-session wcb-session-how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip/">
-//       How NewsCorp Australia scaled WordPress to host Australias
-//       largest &lsquo;news&rsquo; websites on WordPress VIP</a>
-//       <span class="wcpt-session-speakers"><a href="#speaker/juan-zapata/">Juan Zapata</a>, <a href="#speaker/dion-beetson/">Dion Beetson</a></span>
-//   </td>
-//       <td colspan="1" class="wcb-speaker-graham-armfield wcb-track-track-2 wcpt-session-type-session wcb-session-assistive-technology-demo"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#assistive-technology-demo/">Assistive Technology
-//          Demo</a> <span class="wcpt-session-speakers"><a href="#speaker/graham-armfield/">Graham
-//          Armfield</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-ulrich-pogson wcb-track-track-3 wcpt-session-type-session wcb-session-themes-plugins-in-harmony"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#themes-plugins-in-harmony/">Themes &amp; Plugins
-//          in harmony</a> <span class="wcpt-session-speakers"><a href="#speaker/ulrich-pogson/">Ulrich Pogson</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1230">
-//       <td class="wcpt-time">12:30</td>
-//       <td colspan="1" class="wcb-speaker-mike-schroder wcb-track-track-1 wcpt-session-type-session wcb-session-tbd-2"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#tbd-2/">Decision-making in WordPress core
-//          development</a> <span class="wcpt-session-speakers"><a href="#speaker/mike-schroder/">Mike Schroder</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-thomas-kraftner wcb-speaker-andrea-badgley wcb-track-track-2 wcpt-session-type-session wcb-session-short-talks-02"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#short-talks-02/">Short Talks: Your content is
-//          trapped &ndash; How a proper content architecture can
-//          save it, Publish in 10 Minutes Per Day</a> <span class="wcpt-session-speakers"><a href="#speaker/thomas-kraftner/">Thomas Kr&auml;ftner</a>,
-//          <a href="#speaker/andrea-badgley/">Andrea
-//          Badgley</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-matt-geri wcb-track-track-3 wcpt-session-type-session wcb-session-the-ultimate-wordpress-development-environment"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#the-ultimate-wordpress-development-environment/">The
-//          ultimate WordPress development environment</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/matt-geri/">Matt Geri</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1300 global-session lunch">
-//       <td class="wcpt-time">13:00</td>
-//       <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-lunch"
-//           data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
-//           <span class="wcpt-session-title">Lunch</span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1430">
-//       <td class="wcpt-time">14:30</td>
-//       <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-1 wcpt-session-type-session wcb-session-matt"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#matt/">Interview and Q&amp;A</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
-//          Mullenweg</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming"
-//           data-track-title="Track 2 - Halle G, Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#qa-streaming/">Interview and Q&amp;A &ndash;
-//          Streaming</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
-//          Mullenweg</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-matt-mullenweg wcb-track-track-2 wcb-track-track-3 wcpt-session-type-session wcb-session-qa-streaming"
-//           data-track-title="Track 2 - Halle G, Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#qa-streaming/">Interview and Q&amp;A &ndash;
-//          Streaming</a> <span class="wcpt-session-speakers"><a href="#speaker/matt-mullenweg/">Matt
-//          Mullenweg</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1530">
-//       <td class="wcpt-time">15:30</td>
-//       <td colspan="1" class="wcb-speaker-konstantin-obenland wcb-track-track-1 wcpt-session-type-session wcb-session-the-2016-plugin-directory"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#the-2016-plugin-directory/">The 2016 Plugin
-//          Directory</a> <span class="wcpt-session-speakers"><a href="#speaker/konstantin-obenland/">Konstantin
-//          Obenland</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-eric-lewis wcb-track-track-2 wcpt-session-type-session wcb-session-editing-text-at-the-new-york-times"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title"
-//          href="#editing-text-at-the-new-york-times/">Editing Text
-//          at The New York Times</a> <span class="wcpt-session-speakers"><a href="#speaker/eric-lewis/">Eric Lewis</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-dee-teal wcb-track-track-3 wcpt-session-type-session wcb-session-keys-to-growing-developing-your-wordpress-meetup"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#keys-to-growing-developing-your-wordpress-meetup/">Keys
-//          to Growing &amp; Developing your WordPress Meetup</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/dee-teal/">Dee Teal</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1600">
-//       <td class="wcpt-time">16:00</td>
-//       <td colspan="1" class="wcb-speaker-mika-epstein wcb-track-track-1 wcpt-session-type-session wcb-session-reviews-the-good-the-bad-and-the-stalker"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title" href="#reviews-the-good-the-bad-and-the-stalker/">Reviews:
-//          The Good, The Bad, and the Stalker</a> <span class="wcpt-session-speakers"><a href="#speaker/mika-epstein/">Mika Epstein</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-peter-wilson wcb-track-track-2 wcpt-session-type-session wcb-session-seven-times-faster-a-study-in-frontend-optimization"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#seven-times-faster-a-study-in-frontend-optimization/">Seven
-//          Times Faster : A Study in frontend Optimization</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/peter-wilson/">Peter Wilson</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-kel-santiago wcb-track-track-3 wcpt-session-type-session wcb-session-contributing-to-wordpress-for-business-profession-the-community"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title" href="#contributing-to-wordpress-for-business-profession-the-community/">
-//       Contributing to WordPress for Business, Profession &amp;
-//       the Community</a> <span class="wcpt-session-speakers"><a href="#speaker/kel-santiago/">Kel
-//       Santiago-Pilarski</a></span>
-//   </td>
-//     </tr>
-//     <tr class="wcpt-time-1630 global-session afternoon-break">
-//       <td class="wcpt-time">16:30</td>
-//       <td colspan="3" class="wcb-track-track-1 wcb-track-track-2 wcb-track-track-3 wcpt-session-type-custom wcb-session-afternoon-break"
-//           data-track-title="Track 1 - Halle E, Track 2 - Halle G, Track 3 - Leopold">
-//           <span class="wcpt-session-title">Afternoon
-//           Break</span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1700">
-//       <td class="wcpt-time">17:00</td>
-//       <td colspan="1" class="wcb-speaker-matias-ventura wcb-track-track-1 wcpt-session-type-session wcb-session-a-look-into-calypso"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#a-look-into-calypso/">A look into Calypso</a>
-//          <span class="wcpt-session-speakers"><a href="#speaker/matias-ventura/">Mat&iacute;as
-//          Ventura</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-caspar-hubinger wcb-track-track-2 wcpt-session-type-session wcb-session-caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui/">
-//       &ldquo;Caring is the coolest thing I&rsquo;ve ever seen
-//       anyone do.&rdquo;&mdash;Thoughts on WordPress Plugin UI</a>
-//       <span class="wcpt-session-speakers"><a href="#speaker/caspar-hubinger/">Caspar
-//       H&uuml;binger</a></span>
-//   </td>
-//       <td colspan="1" class="wcb-speaker-sergey-biryukov wcb-track-track-3 wcpt-session-type-session wcb-session-managing-a-local-wordpress-community"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#managing-a-local-wordpress-community/">Managing a
-//          local WordPress community</a> <span class="wcpt-session-speakers"><a href="#speaker/sergey-biryukov/">Sergey
-//          Biryukov</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1730">
-//       <td class="wcpt-time">17:30</td>
-//       <td colspan="1" class="wcb-speaker-marieke-van-de-rakt wcb-speaker-joost-de-valk wcb-track-track-1 wcpt-session-type-session wcb-session-beyond-seo-copywriting-for-professionals"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#beyond-seo-copywriting-for-professionals/">Beyond
-//          SEO: copywriting for professionals</a> <span class="wcpt-session-speakers"><a href="#speaker/marieke-van-de-rakt/">Marieke van de Rakt</a>,
-//          <a href="#speaker/joost-de-valk/">Joost de
-//          Valk</a></span>
-//       </td>
-//       <td colspan="1" class="wcb-speaker-erica-varlese wcb-speaker-pam-kocke wcb-track-track-2 wcpt-session-type-session wcb-session-closing-the-gap-developing-your-support-philosophy"
-//           data-track-title="Track 2 - Halle G"><a class="wcpt-session-title" href="#closing-the-gap-developing-your-support-philosophy/">Closing
-//          the gap: Developing your support philosophy</a> <span class="wcpt-session-speakers"><a href="#speaker/erica-varlese/">Erica Varlese</a>, <a href=
-//       </td>
-//       <td colspan="1" class="wcb-speaker-naoko-takano wcb-track-track-3 wcpt-session-type-session wcb-session-japanese-wordpress-community"
-//           data-track-title="Track 3 - Leopold"><a class="wcpt-session-title"
-//          href="#japanese-wordpress-community/">Stories From the
-//          Japanese WordPress Community</a> <span class="wcpt-session-speakers"><a href="#speaker/naoko-takano/">Naoko Takano</a></span>
-//       </td>
-//     </tr>
-//     <tr class="wcpt-time-1800">
-//       <td class="wcpt-time">18:00</td>
-//       <td colspan="1" class="wcb-speaker-petya-raykovska wcb-track-track-1 wcpt-session-type-session wcb-session-closing-remarks"
-//           data-track-title="Track 1 - Halle E"><a class="wcpt-session-title"
-//          href="#closing-remarks/">Closing Remarks</a> <span class="wcpt-session-speakers"><a href="#speaker/petya-raykovska/">Petya
-//          Raykovska</a></span>
-//       </td>
-//       <td class="wcpt-session-empty"></td>
-//       <td class="wcpt-session-empty"></td>
-//     </tr>
-//   </tbody>
-// </table>
+// Markup: schedule.html
 //
 // Style guide: 6.schedule
 
 .wcpt-schedule {
 
   border: rem(4) solid $color-brand-secondary;
+  margin-bottom: $unit-default;
+  background-color: #fff;
 
   td,
   th {
@@ -305,7 +27,7 @@
   .wcpt-col-track {
 
     border-top: none;
-    background-color: $color-grey-90;
+    background-color: $color-brand-tertiary;
     color: $color-text-strong-invert;
 
   }
@@ -313,15 +35,15 @@
   .global-session td {
 
     vertical-align: middle;
-    border-top: none;
+    // border-top: none;
 
   }
 
-  .global-session + tr td {
+  // .global-session + tr td {
 
-    border-top: none;
+  //   border-top: none;
 
-  }
+  // }
 
 
   /* Head */
@@ -360,22 +82,36 @@
 
   }
 
-  .global-session .wcpt-session-title {
+  .global-session {
 
-    margin-bottom: 0;
+    &.registration,
+    &.lunch,
+    &.break,
+    &.morning-break,
+    &.afternoon-break {
 
-    font-size: ms(2);
-    line-height: ms(1);
-    font-family: $font-brand-secondary;
-    color: $color-text-strong;
+      .wcpt-session-title {
+
+        margin-bottom: 0;
+
+        font-size: ms(2);
+        line-height: ms(1);
+        font-family: $font-brand-secondary;
+        text-transform: uppercase;
+        color: $color-text-strong;
+
+      }
+
+    }
 
   }
 
   .wcpt-session-speakers {
 
+    display: block;
+
     a {
 
-      // color: $color-link-alt;
       color: $color-text;
 
     }
@@ -386,15 +122,16 @@
 
   .global-session {
 
-    background-color: $color-brand-secondary!important;
-    background-size: 120px;
-    background-position: 50% 0;
-
     /* Target specifically */
-    &.registration {}
-    &.lunch {}
-    &.morning-break {}
-    &.afternoon-break {}
+    &.registration,
+    &.lunch,
+    &.break,
+    &.morning-break,
+    &.afternoon-break {
+
+      background-color: $color-brand-secondary;
+
+    }
 
   }
 
@@ -413,6 +150,7 @@
 
       display: block;
       border-top: none;
+      margin: 0;
 
     }
 
@@ -427,6 +165,7 @@
       margin-bottom: $unit-s;
       display: block;
       border: rem(4) solid $color-brand-secondary;
+      // border: 1px solid $color-border-normal;
 
     }
 
@@ -440,6 +179,7 @@
       margin-left: -($unit-s);
       margin-right: -($unit-s);
       margin-bottom: $unit-xs;
+      border: none;
 
       color: $color-text-strong;
       font-weight: $bold;
@@ -482,8 +222,23 @@
 
     .wcpt-time {
 
+      padding-top: $unit-s;
+      padding-bottom: $unit-s;
+
       color: $color-text-strong-invert;
       background-color: $color-brand-tertiary;
+
+    }
+
+    .wcpt-session-title {
+
+      padding: 0;
+
+    }
+
+    .wcpt-session-speakers {
+
+      padding-left: 0;
 
     }
 
@@ -491,5 +246,220 @@
 
 }
 
+/*
+ * Session labels
+ *
+ * Displaying labels for session groups
+ */
+
+$session-type-color-design:      #E6AA50; // Gold
+$session-type-color-development: #CC9966; // Copper
+$session-type-color-community:   #f5ebe0; // Linnen
+$session-type-color-business:    #575357; // Ash
+
+@mixin session-label($session-label, $session-color) {
+
+  position: relative;
+  padding-bottom: rem(40);
+
+  @include breakpoint(to-medium) {
+
+    padding-bottom: rem(48);
+
+  }
+
+  &:after {
+
+    display: inline-block;
+    padding: rem(1) rem(6);
+
+    border: 2px solid $session-color;
+
+    position: absolute;
+    bottom: $unit-s;
+
+    font-size: ms(-1);
+    line-height: ms(1);
+    color: $color-text-strong;
+    border-radius: $border-radius-large;
+    background: #fff;
+
+    content: "#{$session-label}";
+
+  }
+
+}
 
 
+// Development
+.wcb-session-selfish-accessibility,
+.wcb-session-demystifying-the-wordpress-bootstrap-process,
+.wcb-session-lightning-talks-development,
+.wcb-session-we-are-all-making-this-up-improv-lessons-for-developers,
+.wcb-session-is-your-code-ready-for-php7,
+.wcb-session-data-visualization-with-the-rest-api,
+.wcb-session-security-is-a-process,
+.wcb-session-wordpress-security-for-all-you-wont-believe-how-simple-it-can-be,
+.wcb-session-css-grid-changes-everything-about-web-layouts,
+.wcb-session-improving-wordpress-performance-with-xdebug-and-php-profiling,
+.wcb-session-reacting-natively-with-wordpress,
+.wcb-session-accessibility-in-the-age-of-the-headless-cms {
+
+  @include session-label('Development', $session-type-color-development);
+
+}
+
+// Business
+.wcb-session-3-gifts-my-users-gave-me,
+.wcb-session-lightning-talks-content, //
+.wcb-session-how-to-grow-from-freelancer-to-agency-owner,
+.wcb-session-making-your-voice-heard-how-to-win-friends-and-influence-policy,
+.wcb-session-5-ways-you-may-be-sabotaging-your-business-2-proven-ways-to-succeed,
+.wcb-session-lessons-learnt-marketing-woocommerce-since-july-2014,
+.wcb-session-using-wordpress-for-good {
+
+  @include session-label('Business', $session-type-color-business);
+
+}
+
+// Community
+
+.wcb-session-lightning-talks-inspire, //
+.wcb-session-lightning-talks-contributing-to-wordpress,
+.wcb-session-the-pernicious-myth-of-the-code-poet,
+.wcb-session-big-little-shame-a-tale-of-empowered-user-experience-through-localisation,
+.wcb-session-wordpress-beyond-borders-cross-cultural-communication-and-the-fundamentals-of-caring {
+
+  @include session-label('Community', $session-type-color-community);
+
+}
+
+// Design
+.wcb-session-new-to-theme-design-heres-what-you-should-know,
+.wcb-session-the-three-kinds-of-design,
+.wcb-session-big-design-troubles-in-open-source,
+.wcb-session-night-of-the-living-style-guides {
+
+  @include session-label('Design', $session-type-color-design);
+
+}
+
+
+/*
+ * Old schedule
+ */
+
+
+.wcb-session-empathy-and-acceptance-in-design-and-community,
+.wcb-session-from-blogger-to-wordpress-core-committer,
+.wcb-session-handling-anxiety,
+.wcb-session-my-friend-the-impostor-syndrome,
+.wcb-session-short-talks-03,
+.wcb-session-tbd,
+.wcb-session-the-2016-plugin-directory,
+.wcb-session-the-rebirth-of-the-italian-community,
+.wcb-session-the-science-of-happiness {
+
+  @include session-label('Community', #176799);
+
+}
+
+.wcb-session-a-look-into-calypso,
+.wcb-session-assistive-technology-demo,
+.wcb-session-code-is-poetry-a-musicians-tale,
+.wcb-session-connected-wordpress,
+.wcb-session-editing-text-at-the-new-york-times,
+.wcb-session-internationalizing-the-new-york-times,
+.wcb-session-modernizing-wordpress-search-with-elasticsearch,
+.wcb-session-moving-forward-with-a-mature-platform,
+.wcb-session-my-condolences-youre-now-the-maintainer-of-a-popular-open-source-project,
+.wcb-session-open-source-project-management-at-scale-how-1300-people-improved-drupal-8s-multilingual-features,
+.wcb-session-seven-times-faster-a-study-in-frontend-optimization,
+.wcb-session-short-talks-01,
+.wcb-session-short-talks-02,
+.wcb-session-short-talks-04,
+.wcb-session-tba-2,
+.wcb-session-the-swiss-knife-of-a-wordpress-developer,
+.wcb-session-the-ultimate-rest-api-dev-talk,
+.wcb-session-the-ultimate-rest-api-talk,
+.wcb-session-the-ultimate-rest-api-talk-part-2,
+.wcb-session-thinking-outside-the-boxmodel-an-introduction-to-flexbox,
+.wcb-session-using-composer-to-create-manageable-wordpress-websites,
+.wcb-session-using-the-rest-api-and-javascript-to-create-better-wordpress-interfaces,
+.wcb-session-whats-new-in-php7-and-what-to-expect-in-php7-1,
+.wcb-session-wordpress-hardening-ten-tips-in-ten-minutes,
+.wcb-session-wordpress-state-of-the-accessibility {
+
+  @include session-label('Development', #ebe700);
+
+}
+
+.wcb-session-art-directed-web-typography,
+.wcb-session-caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui,
+.wcb-session-emotional-interfaces,
+.wcb-session-forefront-a-new-front-end-experience,
+.wcb-session-making-ads-great-again,
+.wcb-session-moving-the-design-process-to-the-browser {
+
+  @include session-label('Design', #d95e2b);
+
+}
+
+.wcb-session-closing-the-gap-developing-your-support-philosophy,
+.wcb-session-cultivating-happy-teams-for-better-business-panel,
+.wcb-session-dealing-with-different-client-cultures,
+.wcb-session-how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip,
+.wcb-session-privacy-and-the-web-are-you-doing-what-it-takes,
+.wcb-session-proudly-powered-by-the-wordpress-rest-api,
+.wcb-session-rebuilding-babel-communication-in-a-virtual-world,
+.wcb-session-remote-is-the-new-black-to-be-changed,
+.wcb-session-reviews-the-good-the-bad-and-the-stalker,
+.wcb-session-the-discovery-definition-approach-to-project-planning,
+.wcb-session-the-making-of-calypso-a-team-perspective,
+.wcb-session-unsafe-harbors-data-protection-strikes-back,
+.wcb-session-you-are-too-cheap,
+.wcb-session-you-are-too-cheap-2,
+.wcb-session-zen-and-the-art-of-online-communication {
+
+  @include session-label('Business', #e32d88);
+
+}
+
+.wcb-session-beyond-seo-copywriting-for-professionals,
+.wcb-session-publish-in-10-minutes-per-day,
+.wcb-session-your-content-is-trapped-how-a-proper-content-architecture-can-save-it {
+
+  @include session-label('Content', #e32d88);
+
+}
+
+.wcb-session-lets-write-a-plugin-demystifying-the-art-and-science-of-plugin-development,
+.wcb-session-multisite,
+.wcb-session-the-ultimate-wordpress-development-environment,
+.wcb-session-themes-plugins-in-harmony,
+.wcb-session-theming-in-wordpress-where-do-i-start,
+.wcb-session-website-security-the-big-picture-w-simple-steps-to-take,
+.wcb-session-wp-cli-for-beginners {
+
+  @include session-label('Development for Beginners', #ebe700);
+
+}
+
+.wcb-session-contributing-to-wordpress-for-business-profession-the-community,
+.wcb-session-japanese-wordpress-community,
+.wcb-session-keys-to-growing-developing-your-wordpress-meetup,
+.wcb-session-managing-a-local-wordpress-community {
+
+  @include session-label('Running a local WP community', #176799);
+
+}
+
+.wcb-session-changing-the-world-one-wordpress-site-at-a-time-how-we-built-a-successful-distributed-wordpress-firm-serving-nonprofits,
+.wcb-session-making-the-leap-successful-products-as-a-web-agency,
+.wcb-session-managing-a-remote-wordpress-team,
+.wcb-session-project-management-or-how-to-herd-cats,
+.wcb-session-whats-my-wordpress-sites-email-strategy {
+
+  @include session-label('Running a WordPress agency', #e32d88);
+
+}
