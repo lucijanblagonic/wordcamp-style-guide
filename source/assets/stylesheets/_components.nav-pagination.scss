@@ -5,22 +5,20 @@
 //
 // Bottom navigation for previous/next page of listing
 //
-// Markup:
-// <nav role="navigation" id="nav-bottom" class="site-navigation paging-navigation">
-// <h1 class="assistive-text">Post navigation</h1>
-//  <div class="nav-previous">
-//    <a href="#"><span class="meta-nav">←</span> Older posts</a>
-//  </div>
-//  <div class="nav-next">
-//    <a href="#">Newer posts <span class="meta-nav">→</span></a>
-//  </div>
-// </nav>
+// Markup: post-navigation.html
 //
 // Style guide: 6.pagination
 
-.paging-navigation {
+.posts-navigation,
+.post-navigation {
 
   @include clearfix();
+
+  .screen-reader-text {
+
+    @include visually-hidden();
+
+  }
 
   a {
 
@@ -31,18 +29,35 @@
   .nav-previous {
 
     float: left;
+
     text-align: left;
+
+    a:before {
+
+      margin-right: $unit-xs;
+      display: inline-block;
+
+      content: "\2190";
+
+    }
 
   }
 
   .nav-next {
 
     float: right;
+
     text-align: right;
 
-  }
+    a:after {
 
-  /* Arrows */
-  .meta-nav {}
+      margin-left: $unit-xs;
+      display: inline-block;
+
+      content: "\2192";
+
+    }
+
+  }
 
 }
