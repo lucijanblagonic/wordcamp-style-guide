@@ -5,59 +5,7 @@
 //
 // Attendees listing
 //
-// Markup:
-// <div id="tix-attendees">
-//   <ul class="tix-attendee-list tix-columns-3">
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Bernhard</span>
-//         <span class="tix-last">Kau</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/2ndkauboy">@2ndkauboy</a><a class="tix-field tix-attendee-url" href="https://kau-boys.de">kau-boys.de</a>
-//     </li>
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Dominik</span>
-//         <span class="tix-last">Schilling</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/ocean90">@ocean90</a><a class="tix-field tix-attendee-url" href="https://dominikschilling.de">dominikschilling.de</a>
-//     </li>
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Sonja</span>
-//         <span class="tix-last">Leix</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/sonjaleix">@sonjaleix</a><a class="tix-field tix-attendee-url" href="http://sonjaleix.com">sonjaleix.com</a>
-//     </li>
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/7feecf8df4eeab58bd3dba04b08d63d9?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Bernhard</span>
-//         <span class="tix-last">Kau</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/2ndkauboy">@2ndkauboy</a><a class="tix-field tix-attendee-url" href="https://kau-boys.de">kau-boys.de</a>
-//     </li>
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/3e8e161d97d793bd8fc2dcd62583bb76?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Dominik</span>
-//         <span class="tix-last">Schilling</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/ocean90">@ocean90</a><a class="tix-field tix-attendee-url" href="https://dominikschilling.de">dominikschilling.de</a>
-//     </li>
-//     <li>
-//       <img alt="" src="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=100&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" originals="96" src-orig="https://secure.gravatar.com/avatar/c5283bb85085be8c9ba3a9e865908a62?s=96&amp;d=mm&amp;r=g" scale="2">
-//       <div class="tix-field tix-attendee-name">
-//         <span class="tix-first">Sonja</span>
-//         <span class="tix-last">Leix</span>
-//       </div>
-//       <a class="tix-field tix-attendee-twitter" href="http://twitter.com/sonjaleix">@sonjaleix</a><a class="tix-field tix-attendee-url" href="http://sonjaleix.com">sonjaleix.com</a>
-//     </li>
-//   </ul>
-// </div>
+// Markup: attendees.html
 //
 // Style guide: 6.attendees
 
@@ -160,6 +108,7 @@
 
     font-size: ms(0, 14px);
     line-height: ms(2);
+    vertical-align: middle;
 
   }
 
@@ -192,7 +141,6 @@
 
     @include ellipsis();
     max-width: rem(180);
-    vertical-align: middle;
 
   }
 
@@ -223,7 +171,5 @@
     }
 
   }
-
-
 
 }
