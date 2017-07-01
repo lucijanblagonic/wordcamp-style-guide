@@ -254,7 +254,7 @@ $styleguide-border-radius-small: 3px;
 /* KSS style */
 .kss-style {
 
-  p {
+  > p {
 
       margin-top: 0;
       margin-bottom: rem(24);
@@ -267,8 +267,8 @@ $styleguide-border-radius-small: 3px;
 
   }
 
-  p,
-  li {
+  > p,
+  > ul li {
 
     font-family: $helvetica;
     @include font-size(16);

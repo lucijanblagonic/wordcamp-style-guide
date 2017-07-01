@@ -22,11 +22,12 @@ This style guide is based on [KSS](http://warpspire.com/kss/) methodology.
 WordCamp header. Read more about [colors](section-1.html#kssref-1-colors) and [fonts](section-1.html#kssref-1-typography) used on the site.
 
 <header id="masthead" class="site-header" role="banner">
-  <hgroup>
-   <h1 class="site-title"><a href="#" title="WordCamp Name" rel="home">WordCamp Name</a></h1>
-   <h2 class="site-description">City, Country – Month, Date, Year.</h2>
-  </hgroup>
-</header>
+  <div class="site-branding">
+    <p class="site-title"><a href="#" rel="home">WordCamp Name</a></p>
+    <p class="site-description">City, Country – Month, Date, Year.</p>
+  </div><!-- .site-branding -->
+  <!-- #site-navigation -->
+</header><!-- #masthead -->
 
 ## Code standards
 

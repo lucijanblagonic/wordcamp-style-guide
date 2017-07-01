@@ -5,13 +5,7 @@
 //
 // Site logo, title and description.
 //
-// Markup:
-// <header id="masthead" class="site-header" role="banner">
-//   <hgroup>
-//    <h1 class="site-title"><a href="#" title="WordCamp Name" rel="home">WordCamp Name</a></h1>
-//    <h2 class="site-description">City, Country – Month, Date, Year.</h2>
-//   </hgroup>
-// </header>
+// Markup: branding.html
 //
 // Style guide: 6.branding
 
@@ -20,7 +14,7 @@
  * Header
  *
  * Container for navigation and branding
- * <heaeder id="masthead" class="site-header" role="banner"> ... </header>
+ * <header id="masthead" class="site-header" role="banner"> ... </header>
  */
 
 .site-header {
@@ -29,7 +23,10 @@
 
 }
 
-.site-header hgroup {
+.site-header .site-branding {
+
+  position: relative; // Add position: relative to keep the light beams from leaking out
+  overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
   @include container-padding(1.5);
 
@@ -48,6 +45,7 @@
   margin: 0;
 
   font-size: ms(2);
+  line-height: 1;
   font-family: $font-headline;
   font-weight: $bold;
   color: $color-text-strong;
@@ -55,13 +53,13 @@
   a {
 
     display: block;
-    color: $color-link;
+    color: $color-link-hover;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-link-hover;
+      color: $color-link;
       text-decoration: none;
 
     }
@@ -94,6 +92,7 @@
   margin-top: $unit-xs;
 
   font-size: ms(0);
+  line-height: ms(1);
   font-family: $font-body;
   font-weight: $regular;
   text-transform: none;
