@@ -5,20 +5,7 @@
 //
 // Main navigation of the site
 //
-// Markup:
-// <header id="masthead" class="site-header" role="banner">
-//   <div class="menu-main-navigation-container">
-//    <ul id="menu-main-navigation" class="menu">
-//      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
-//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
-//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
-//    </ul>
-//   </div>
-// </header>
+// Markup: navigation.html
 //
 // Style guide: 6.navigation
 
@@ -33,15 +20,45 @@
   padding: $unit-s $unit-s;
   margin: 0;
 
-  font-size: ms(0);
+  margin-top: rem(2);
+  width: 100%;
+
+  // font-size: ms(0);
+  font-size: 0; /* Hides the default "Primary menu" label */
+  line-height: 24px;
+
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
   color: $color-link;
 
+  border-radius: 0;
   background-color: rgba($color-brand-tertiary, .9);
 
   cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.focus {
+
+    color: $color-link-hover;
+    background-color: rgba($color-brand-tertiary, .9);
+
+  }
+
+  /* Replaces the "Primary menu" label */
+  &:before {
+
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+
+    content: "Menu";
+
+  }
 
   &:after {
 
@@ -60,7 +77,7 @@
 
   }
 
-  &.toggled-on {
+  &[aria-expanded="true"] {
 
     color: $color-link;
 
@@ -70,6 +87,12 @@
       border-bottom-color: $color-link;
 
     }
+
+  }
+
+  @include breakpoint(small) {
+
+    display: none;
 
   }
 
@@ -89,8 +112,6 @@
 
   position: relative;
 
-  background-color: rgba(#000, .2);
-
   &:before {
 
     position: absolute;
@@ -105,11 +126,19 @@
 
   }
 
-}
+  @include breakpoint(to-small) {
 
-.main-small-navigation {
+    background-color: $color-brand-tertiary;
 
-  background-color: $color-brand-tertiary;
+
+
+    &.toggled-on .menu {
+
+      display: block;
+
+    }
+
+  }
 
 }
 
@@ -117,8 +146,6 @@
 
   @include list-reset();
   @include clearfix();
-
-  display: none;
 
   text-align: center;
 
@@ -128,23 +155,17 @@
 
   }
 
-  @include breakpoint(large) {
-
-    // display: table;
-    // width: 100%;
-
-    // > .menu-item {
-
-    //   float: none;
-    //   display: table-cell;
-
-    // }
-
-  }
-
-  .main-small-navigation & {
+  @include breakpoint(to-small) {
 
     border-top: 1px solid rgba(255,255,255,.2);
+
+    display: none;
+
+    .toggled-on & {
+
+      display: block;
+
+    }
 
   }
 
@@ -178,18 +199,19 @@
 .menu-item a {
 
   display: block;
-  color: $color-link-hover;
+  color: $color-link;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
   transition: all .1s ease;
 
   &:hover,
+  &:active,
   &:focus,
-  &:active {
+  &.focus {
 
     color: $color-text-strong;
-    background-color: $color-link;
+    background-color: $color-link-hover;
 
   }
 
@@ -210,7 +232,7 @@
 .current-menu-item > a {
 
   color: $color-text-strong;
-  background-color: $color-link-hover;
+  background-color: $color-link;
 
 }
 
@@ -221,6 +243,12 @@
 .menu-item-has-children {
 
   background-color: rgba($color-brand-tertiary, .6);
+
+  .dropdown-toggle {
+
+    display: none;
+
+  }
 
   @include breakpoint(small) {
 
@@ -239,7 +267,7 @@
 
         vertical-align: middle;
 
-        border-top-color: $color-link-hover;
+        border-top-color: $color-link;
 
         content: "";
 
@@ -247,7 +275,16 @@
 
     }
 
-    &:hover > a {
+    > a .dropdown-toggle {
+
+      display: inline-block;
+
+      display: none; // Hide temporarily
+
+    }
+
+    &:hover > a,
+    &.focus > a {
 
       color: $color-text-strong;
       background-color: $color-link;
@@ -260,9 +297,10 @@
 
     }
 
-    &:hover > .sub-menu {
+    &:hover > .sub-menu,
+    &.focus > .sub-menu {
 
-      display: block;
+      left: 0;
 
     }
 
@@ -288,9 +326,9 @@
 
   }
 
-  a {
+  @include breakpoint(to-small) {
 
-    .main-small-navigation & {
+    a {
 
       padding-left: rem(40);
 
@@ -300,7 +338,8 @@
       background-position: $unit-s 50%;
 
       &:hover,
-      &:focus {
+      &:focus,
+      &.focus {
 
         background-image: $image-bullet-dark;
 
@@ -308,18 +347,15 @@
 
     }
 
-
   }
 
   @include breakpoint(small) {
 
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: -999em;
     z-index: $z-index-navigation-submenu;
 
-    display: none;
     min-width: rem(260);
 
     background-color: $color-link;
@@ -367,30 +403,3 @@
   }
 
 }
-
-/*
- * Prepare markup for theme update
- */
-
-// .main-navigation {}
-// .main-navigation.toggled {}
-
-// .menu-toggle {
-
-//   margin-top: rem(2);
-//   width: 100%;
-//   border-radius: 0;
-
-//   @include breakpoint(small) {
-
-//     display: none;
-
-//   }
-
-// }
-
-// .menu-toggle[aria-expanded="true"] {}
-// .menu-toggle[aria-expanded="false"] {}
-
-// .menu[aria-expanded="true"] {}
-// .menu[aria-expanded="false"] {}
