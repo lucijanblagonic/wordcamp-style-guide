@@ -1,26 +1,11 @@
 /* =Social widget
 ===================================================== */
 
-// Social
+// Widget: Social
 //
 // Custom social widget
 //
-// Markup:
-// <div id="secondary">
-//   <aside class="widget widget_text" id="text-2">
-//     <h1 class="widget-title">Follow WordCamp Name</h1>
-//     <div class="textwidget">
-//       <ul class="list-social">
-//         <li class="social-twitter" id="twitter">
-//           <a href="#"><strong>@WordCampName</strong> on Twitter</a>
-//         </li>
-//         <li class="social-facebook" id="facebook">
-//           <a href="#"><strong>WordCamp Name</strong> on Facebook</a>
-//         </li>
-//       </ul>
-//     </div>
-//   </aside>
-// </div>
+// Markup: widget-text-social.html
 //
 // Style guide: 6.widget.text-social
 
@@ -61,7 +46,8 @@
 
     @include breakpoint(small) {
 
-      min-width: rem(240);
+      width: 30%;
+      min-width: rem(200);
 
     }
 
@@ -101,14 +87,13 @@
       transform: translateX(-50%)  rotate(45deg);
 
       display: block;
-      width: rem(36);
-      height: rem(36);
-      border: 6px double $color-link;
-
-      background-color: $color-grey-10;
+      width: rem(40);
+      height: rem(40);
+      border: 4px solid $color-brand-primary;
 
       content :"";
 
+      border-radius: $border-radius-small;
       transition: all .1s ease;
 
     }
@@ -135,14 +120,14 @@
     &:focus,
     &:active {
 
-      color: $color-link-hover;
       text-decoration: none;
-      background-color: $color-brand-tertiary;
+      color: $color-text-strong-invert;
+      background-color: $color-brand-primary;
 
       &:before {
 
-        background-color: $color-link-hover;
-        border-color: $color-link-hover;
+        background-color: tint($color-brand-primary, 60%);
+        border-color: tint($color-brand-primary, 60%);
 
       }
 
@@ -159,6 +144,12 @@
   .social-facebook a:after {
 
     background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-facebook.png');
+
+  }
+
+  .social-instagram a:after {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2017/06/icon-instagram.png');
 
   }
 

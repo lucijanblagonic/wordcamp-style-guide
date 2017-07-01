@@ -9,15 +9,15 @@ ul,
 ol,
 dl {
 
-	margin-bottom: $unit-default;
+  margin-bottom: $unit-default;
 
-	ul,
-	ol,
-	dl {
+  ul,
+  ol,
+  dl {
 
-		margin-bottom: 0;
+    margin-bottom: 0;
 
-	}
+  }
 
 }
 
@@ -64,7 +64,7 @@ ul {
 
 li {
 
-	// @extend p;
+  // @extend p;
 
   margin-top: rem(4);
   margin-bottom: 0;
