@@ -5,69 +5,7 @@
 //
 // Table for buying tickets
 //
-// Markup:
-// <div id="tix" class="tix-js">
-//  <form action="#" method="POST">
-//    <table class="tix_tickets_table">
-//      <thead>
-//        <tr>
-//          <th class="tix-column-description">Description</th>
-//          <th class="tix-column-price">Price</th>
-//          <th class="tix-column-remaining">Remaining</th>
-//          <th class="tix-column-quantity">Quantity</th>
-//        </tr>
-//      </thead>
-//      <tbody>
-//        <tr class="tix-ticket-13">
-//          <td class="tix-column-description">
-//            <strong class="tix-ticket-title">WordCamp Europe - June 15-17, 2017</strong>
-//            <br><span class="tix-ticket-excerpt">Your WordCamp Europe ticket covers both days of the conference - June 16, 17th and contributor day on Thursday, June 15th. It grants you access to all sessions, lunch, coffee breaks, and the after party. It includes an exclusive #WCEU 2017 t-shirt, stickers, and other great swag. </span>
-//          </td>
-//          <td class="tix-column-price" style="vertical-align: middle;">€&nbsp;40.00</td>
-//          <td class="tix-column-remaining" style="vertical-align: middle;">488</td>
-//          <td class="tix-column-quantity" style="vertical-align: middle;">
-//            <select name="tix_tickets_selected[13]">
-//              <option value="0">0</option>
-//              <option selected="selected" value="1">1</option>
-//              <option value="2">2</option>
-//              <option value="3">3</option>
-//              <option value="4">4</option>
-//              <option value="5">5</option>
-//              <option value="6">6</option>
-//              <option value="7">7</option>
-//              <option value="8">8</option>
-//              <option value="9">9</option>
-//              <option value="10">10</option>
-//            </select>
-//          </td>
-//        </tr>
-//        <tr class="tix-row-coupon">
-//          <td colspan="4" style="text-align: right;">
-//            <a href="#" id="tix-coupon-link" class="">Click here to enter a coupon code</a>
-//            <div id="tix-coupon-container" style="display: none;">
-//              <input type="text" id="tix-coupon-input" name="tix_coupon" value="">
-//              <input type="submit" name="tix_coupon_submit" value="Apply Coupon">
-//            </div>
-//            <script>
-//              // Hide the link and show the coupon form on click.
-//              var link_el = document.getElementById( 'tix-coupon-link' );
-//              link_el.onclick = function() {
-//                this.style.display = 'none';
-//                document.getElementById( 'tix-coupon-container' ).style.display = 'block';
-//                document.getElementById( 'tix-coupon-input' ).focus();
-//                return false;
-//              };
-//            </script>
-//          </td>
-//        </tr>
-//      </tbody>
-//    </table>
-//    <p>
-//      <input type="submit" value="Register →" style="float: right; cursor: pointer;" class="">
-//      <br class="tix-clear">
-//    </p>
-//  </form>
-// </div>
+// Markup: tickets.html
 //
 // Style guide: 6.tickets
 
