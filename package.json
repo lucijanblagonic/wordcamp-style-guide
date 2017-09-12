@@ -15,7 +15,7 @@
     "gulp-imagemin": "^3.0.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-shell": "^0.6.3",
+    "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^2.6.1",
     "kss": "^2.4.0"
   },
