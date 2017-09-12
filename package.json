@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.1",
-    "gulp-autoprefixer": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-autoprefixer": "^4.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
@@ -15,8 +15,8 @@
     "gulp-imagemin": "^3.0.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-shell": "^0.5.2",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-sourcemaps": "^2.6.1",
     "kss": "^2.4.0"
   },
   "repository": {
