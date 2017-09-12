@@ -5,6 +5,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'), // Requiring autoprefixer (adds browser prefixes)
     cssnano = require('gulp-cssnano'),           // Requiring cssnano (minifies CSS)
     imagemin = require('gulp-imagemin'),         // Requiring imagemin (lossless image optimization)
+    plumber = require('gulp-plumber'),           // Requiring plumber ()
+    notify = require("gulp-notify"),             // Requiring notify ()
     browserSync = require('browser-sync'),       // Requiring browser-sync (browser refresh)
     shell = require('gulp-shell'),               // Requiring gulp-shell (used for KSS node)
     kssNode = 'node ' + __dirname + '/node_modules/kss/bin/kss-node '; // Require kss-node
@@ -29,6 +31,7 @@ gulp.task('browserSync', function() {
 // Start stylesheets task
 gulp.task('stylesheets', function() {
   gulp.src('source/assets/stylesheets/*.scss') // Get all *.scss files
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")})) // Show error
     .pipe(sourcemaps.init()) // Initialize sourcemap plugin
     .pipe(sass().on('error', sass.logError)) // Compiling sass
     .pipe(autoprefixer('last 2 version')) // Adding browser prefixes
