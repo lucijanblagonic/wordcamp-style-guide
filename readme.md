@@ -67,3 +67,5 @@ Articles and tools to start documenting interfaces and build style guides:
 ## Other Style Guides
 
 * [WordCamp Europe 2017](https://lucijanblagonic.github.io/wceu-2017/styleguide)
+* [WordCamp Europe 2018](https://lucijanblagonic.github.io/wceu-2018/styleguide)
+
