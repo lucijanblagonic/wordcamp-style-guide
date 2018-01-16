@@ -1,72 +1,82 @@
-# WordCamp Style Guide
+﻿ # Readme.md #
+## Temp: ## 
+* https://make.wordpress.org/community/2017/12/07/should-we-change-the-default-wordcamp-theme-to-campsite-2017/ (list of all WordCamps)
+## CampSite 2017 theme and a style guide ##
+*One paragraph to explain* 
+* Add articles to WordPress Make and CampSite 2017 theme
+## Why use the style guide ##
+*One paragraph to explain*
+* Add articles from WCEU17 blog
+## Style guide setup ##
+For using and modifying this style guide and CSS locally, you are going to need several tools.
+* Node.js and npm — Read how to install the Node.js on macOS and Windows
+* Terminal or Command Prompt on Windows to run commands
+* Working Gulp environment to generate CSS files and a style guide
+### macOS ###
+Make sure you have node.js installed. If you have, download the wordcamp-style-guide repository on your computer in the folder you want to setup gulp. Navigate to that folder with terminal. 
 
-Read [the article about the style guide](https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/) on WordCamp Europe blog. See the current version of the generated [style guide](https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/).
+Install gulp by using the command:
 
-![Style guide created with KSS methodology](screenshot-style-guide.png)
-![Style guide created with KSS methodology: Color panel](screenshot-style-guide-colors.png)
-![Style guide created with KSS methodology: Header panel](screenshot-style-guide-header.png)
+*npm install gulp*
 
-This blank style guide originated from the WordCamp Europe 2017 design team. Read the **article about the style guide** on the blog.
+Once gulp is installed, continue installing all gulp related packages with:
 
-The main elements are based on the wordcamp-base-redux-2
+*npm install*
 
----
+You are done. If you want to test that everything is working properly, run:
 
-## Getting Started
+*gulp*
 
-Install [node.js](http://nodejs.org).
+The process for on-the-fly compiling should be active now. You will see the live preview of the style guide in your browser and each time one of the files is changed (SCSS, HTML…) the style guide will be updated.
 
-	npm install gulp
-	npm install
+If you want to build the style guide once, without the browser-sync live preview, run:
 
-You are done.
+*gulp build*
 
-### `gulp`
+### Windows ###
+**These videos are recorded on virtual Windows 7 machine (where no development has ever been done and no dev tools are installed). [GIT Bash](https://git-scm.com/downloads) is used because that’s the only CLI tool for Windows that’s close enough to Linux terminal.**
 
-Use `gulp` for on–the–fly updates of your code (templates, js, css) and style guide.
+Repository: https://github.com/lucijanblagonic/wordcamp-style-guide
 
-### `gulp build`
+### Local setup ###
+1. **Clone repository** - [Video](https://drive.google.com/file/d/1hYB9cBHam6UaujkZzuouc48d94iLelTZ/view)
 
-This will create a `build` directory for project assets and a `styleguide` directory from your KSS documentation in CSS **without browser-sync live preview**.
+You can select any folder you wish and clone github repository into it. For some reason I couldn’t use https but http works just fine. Command from video:
+*git clone [http://github.com/lucijanblagonic/wordcamp-style-guide.git](http://github.com/lucijanblagonic/wordcamp-style-guide.git)* 
 
-## Directory Structure
+2. **Install node.js (npm comes in package)** - [video](https://drive.google.com/file/d/1gv_iR5TqLuTLT6uETNJckxQ5CetfGSOJ/view)
+3. **Install node modules** - [video](https://drive.google.com/file/d/1ee3axBDh_2TVdzt71kvw-eQhH_JMsDxf/view)
 
-Feel free to modify everything in the `source` directory and keep in mind that `styleguide` and `build` directories are rebuilt with each `gulp build` command.
+Be patient with *npm install*, it needs time (watch the video till the end).
 
-	gulpfile.js
-	package.json
-	readme.md
-	source/
-	├── assets/ [images, stylesheets]
-	├── styleguide-template/ [modified KSS template for generating style guides]
-	├── kss-config.json [style guide configuration]
-	└── styleguide.md [description of the project and the style guide]
+4. **Run gulp** - [video](https://drive.google.com/file/d/18pe0q83NYj67iwDBOhc9OoRtKX03-i2-/view)
 
-	build/ [generated via gulp]
-	styleguide/ [generated via gulp]
+In my settings, gulp wasn’t installed properly. Every time you see “Command not found” error it means that software/tool is not installed (or not installed properly). 
 
-## Interesting Bits
+Running command *npm install -g gulp* solved the problem. If you don’t know commands just type into terminal *npm --help*. This works for every command in terminal (git as well).
+At the end of video, local server will open IE (because that was still default browser) with security warning, which can be ignored.
 
-* Uses [Bourbon](bourbon.io), a lightweight Sass Tool Set
-* Uses [Modular scale](https://github.com/modularscale/modularscale-sass) for typography
-* Uses [Susy](susy.oddbird.net) for grids
-* CSS architecture based on ITCSS (Inverted Triangle CSS) by [Harry Roberts](http://csswizardry.com) [Article](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
+5. **Gulp tasks** - *gulp* and *gulp build* - [video](https://drive.google.com/file/d/1yh085RhcKVokfyNNvuJx0WTotklKMR3C/view)
 
-## Additional Resources
+Running *gulp build* will just re-build files from **source** directory to **styleguide** directory
 
-More information about [style guides](http://www.styleguides.io/).
+Running *gulp* will rebuild files and additionally run local server (it will open styleguide in your default browser) and you’ll be able to see your own local version in browser (along with changes you made to it). It should look like this -[https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/]( https://lucijanblagonic.github.io/wordcamp-style-guide/styleguide/)
 
-Articles and tools to start documenting interfaces and build style guides:
+## Connecting style guide ##
+If you are hosting your style guide repository on GitHub, you can use the power of GitHub to share compiled CSS with your WordCamp website. After CSS is updated on GitHub, you can update it on WordPress By using Hooks, you can make your WordCamp website update every time the CSS file is updated. Here are steps on how to setup that.
+* Make sure your style guide is available on GitHub and that you have Administrator access to your WordCamp website wp-admin
+* Go to your repository **settings** on GitHub and find **Hooks**.
+* Paste the hook URL: **year.wordcamp-name**.wordcamp.org/wp-admin/admin-ajax.php?action=wcrcss_webhook
+* Go to your WordCamp admin and find **Remote CSS** **under Appearance**.
+* Paste the link to your compiled CSS on GitHub. Example: [https://raw.githubusercontent.com/lucijanblagonic/wordcamp-style-guide/master/build/assets/stylesheets/style.css](https://raw.githubusercontent.com/lucijanblagonic/wordcamp-style-guide/master/build/assets/stylesheets/style.css)
 
-* [Documenting interfaces](http://polarnorth.org/blog/documenting-interfaces/)
-* [Interface inventory](https://github.com/lucijanblagonic/interface-inventory/)
-* [Moving the design process to the browser](http://polarnorth.org/blog/moving-the-design-process-to-the-browser/)
-
----
-
-## Other Style Guides
-
-* [WordCamp Europe 2017](https://lucijanblagonic.github.io/wceu-2017/styleguide)
-* [WordCamp Europe 2018](https://lucijanblagonic.github.io/wceu-2018/styleguide)
-* [WordCamp Zagreb 2017](https://lucijanblagonic.github.io/2017.zagreb.wordcamp.org/styleguide/)
+If you need more help, check the Help screen on Remote CSS page on your WordCamp website admin.
+## Making changes to your style guide ##
+[Description]
+* Changing variables (colors)
+* Adding or removing components
+* Adding images
+## Other style guides ##
+* Gallery and links to other style guides on GitHub
+* Add links to WordCamps using the CampSite theme
 
